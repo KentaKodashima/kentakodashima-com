@@ -3,6 +3,7 @@ module.exports = {
     title: `Kenta Kodashima | Full-Stack Developer`,
     description: `This is the portfolio website of Kenta Kodashima, a full-stack developer`,
     author: `Kenta Kodashima`,
+    url: `https://kentakodashima.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,5 +34,6 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`
   ],
 }
