@@ -34,6 +34,6 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-tslint`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-styled-components`
   ],
 }
