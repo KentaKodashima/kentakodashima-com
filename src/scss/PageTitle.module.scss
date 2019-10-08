@@ -1,4 +1,6 @@
-.sectionWrapper {
-  width: 100vh;
-  height: 100vh;
+@import 'variables';
+
+.pageTitle {
+  color: $accent;
+  font-size: 7.2rem;
 }
