@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import headerStyle from '../scss/components/Header.module.scss'
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -9,13 +11,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+    <div className={headerStyle.logoArea} >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -27,6 +23,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div className={headerStyle.menuBtn}>
+      <span className={headerStyle.menuBar}></span>
     </div>
   </header>
 )
