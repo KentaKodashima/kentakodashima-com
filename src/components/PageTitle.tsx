@@ -1,5 +1,5 @@
-import React from 'react'
-import pageTitleStyles from '../scss/components/PageTitle.module.scss'
+import React from "react"
+import pageTitleStyles from "../scss/components/PageTitle.module.scss"
 
 const PageTitle = ({ children }) => {
   return (
