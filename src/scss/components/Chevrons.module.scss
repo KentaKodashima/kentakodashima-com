@@ -1,0 +1,79 @@
+@import "../common/variables";
+
+.arrowsWrapper {
+
+}
+
+.leftArrow {
+  position: relative;
+}
+
+.rightArrow {
+  position: relative;
+}
+
+.leftArrowBar {
+  content: "";
+  position: absolute;
+  transition: all 100ms ease;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: $accentColor;
+  transform: rotate(-135deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    transition: all 100ms ease;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $accentColor;
+    transform: rotate(90deg);
+  }
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   transition: all 100ms ease;
+  //   display: block;
+  //   width: 25px;
+  //   height: 2px;
+  //   background-color: $accentColor;
+  //   transform: rotate(-135deg);
+  // }
+}
+
+.rihgtArrowBar {
+  content: "";
+  position: absolute;
+  transition: all 100ms ease;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: $accentColor;
+  transform: rotate(-45deg);
+
+  &:before {
+    content: "";
+    position: absolute;
+    transition: all 100ms ease;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $accentColor;
+    transform: rotate(90deg);
+  }
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   transition: all 100ms ease;
+  //   display: block;
+  //   width: 25px;
+  //   height: 2px;
+  //   background-color: $accentColor;
+  //   transform: rotate(-45deg);
+  // }
+}

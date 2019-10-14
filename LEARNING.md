@@ -20,3 +20,4 @@ Initializing `defaultProps` with empty values will make sure that the component 
 
 Reference: [https://www.gatsbyjs.org/docs/add-seo-component/](https://www.gatsbyjs.org/docs/add-seo-component/)
 
+## Images in Gatsby
