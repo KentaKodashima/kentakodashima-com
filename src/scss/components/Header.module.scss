@@ -1,5 +1,5 @@
-@import "../common/variables";
-@import "../common/mixin";
+@import '../common/variables';
+@import '../common/mixin';
 
 .headerBar {
   position: relative;
@@ -12,7 +12,6 @@
 }
 
 .logoArea {
-  
 }
 
 .menuBtn {
@@ -24,16 +23,16 @@
   .menuBar {
     @include hamburgerBorder(0);
     position: relative;
-  
+
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       transition: all 100ms ease;
       @include hamburgerBorder(-10px);
     }
-  
+
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       transition: all 100ms ease;
       @include hamburgerBorder(10px);

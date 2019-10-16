@@ -1,11 +1,15 @@
 @import "../common/variables";
 
 .arrowsWrapper {
-
+  position: fixed;
 }
 
 .leftArrow {
-  position: relative;
+  // position: relative;
+  position: fixed;
+  width: 150px;
+  top: 25%;
+  height: 50%;
 }
 
 .rightArrow {
@@ -13,27 +17,49 @@
 }
 
 .leftArrowBar {
-  content: "";
-  position: absolute;
-  transition: all 100ms ease;
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: $accentColor;
-  transform: rotate(-135deg);
+  // position: fixed;
+  // width: 150px;
+  // top: 25%;
+  // height: 50%;
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     transition: all 100ms ease;
     display: block;
-    width: 25px;
+    width: 50px;
     height: 2px;
     background-color: $accentColor;
-    transform: rotate(90deg);
+    transform: rotate(-45deg);
+    top: 50%;
+    transform-origin: 50% 100% 0;
   }
 
-  // &:after {
+  &:after {
+    content: '';
+    position: absolute;
+    transition: all 100ms ease;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: $accentColor;
+    transform: rotate(-135deg);
+    top: 50%;
+    transform-origin: 50% 100% 0;
+  }
+}
+
+.rihgtArrowBar {
+  // content: "";
+  // position: absolute;
+  // transition: all 100ms ease;
+  // display: block;
+  // width: 25px;
+  // height: 2px;
+  // background-color: $accentColor;
+  // transform: rotate(-45deg);
+
+  // &:before {
   //   content: "";
   //   position: absolute;
   //   transition: all 100ms ease;
@@ -41,30 +67,8 @@
   //   width: 25px;
   //   height: 2px;
   //   background-color: $accentColor;
-  //   transform: rotate(-135deg);
+  //   transform: rotate(90deg);
   // }
-}
-
-.rihgtArrowBar {
-  content: "";
-  position: absolute;
-  transition: all 100ms ease;
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: $accentColor;
-  transform: rotate(-45deg);
-
-  &:before {
-    content: "";
-    position: absolute;
-    transition: all 100ms ease;
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: $accentColor;
-    transform: rotate(90deg);
-  }
 
   // &:after {
   //   content: "";
