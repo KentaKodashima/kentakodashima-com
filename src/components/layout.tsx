@@ -1,21 +1,20 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React, { FunctionComponent } from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import '../scss/components/Layout.scss'
+import Header from './Header'
+import Footer from './Footer'
+import Container from './Container'
+import Chevrons from './Chevrons'
 
-import "../scss/components/Layout.scss"
-import Header from "./Header"
-import Footer from "./Footer"
-import Container from "./Container"
-import Arrows from "./Chevrons"
+type LayoutProps = {
+  isFooterVisible: boolean,
+  leftChevronLink: string,
+  rightChevronLink: string
+}
 
-const Layout = ({ children }) => {
+const Layout: FunctionComponent<LayoutProps> = (props, { children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,22 +25,27 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const {
+    isFooterVisible,
+    leftChevronLink,
+    rightChevronLink
+  } = props
+
   return (
     <div className="wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>
-        <Arrows />
-        <Container>
-          {children}
-        </Container>
+        <Chevrons 
+          leftChevronLink={leftChevronLink}
+          rightChevronLink={rightChevronLink}
+        />
+        <Container>{children}</Container>
       </main>
-      <Footer />
+      { isFooterVisible &&
+        <Footer />
+      }
     </div>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
