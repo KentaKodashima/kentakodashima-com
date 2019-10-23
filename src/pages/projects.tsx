@@ -9,7 +9,8 @@ import ProjectThumbnail from '../components/ProjectThumbnail'
 const ProjectsPage = () => (
   <Layout
     isFooterVisible={true}
-    leftChevronLink={}
+    leftChevronLink=''
+    rightChevronLink=''
   >
     <SEO title="Projects" />
     <ProjectThumbnail />

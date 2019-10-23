@@ -14,7 +14,7 @@ type LayoutProps = {
   rightChevronLink: string
 }
 
-const Layout: FunctionComponent<LayoutProps> = (props, { children }) => {
+const Layout: FunctionComponent<LayoutProps> = (props) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,19 +27,17 @@ const Layout: FunctionComponent<LayoutProps> = (props, { children }) => {
 
   const {
     isFooterVisible,
-    leftChevronLink,
-    rightChevronLink
+    children
   } = props
 
   return (
     <div className="wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>
-        <Chevrons 
-          leftChevronLink={leftChevronLink}
-          rightChevronLink={rightChevronLink}
-        />
-        <Container>{children}</Container>
+        <Chevrons />
+        <Container>
+          {children}
+        </Container>
       </main>
       { isFooterVisible &&
         <Footer />

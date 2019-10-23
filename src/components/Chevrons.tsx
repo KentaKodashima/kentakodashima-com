@@ -1,30 +1,32 @@
 import React, { FunctionComponent, useState } from 'react'
 
 import arrowStyle from '../scss/components/Chevrons.module.scss'
+import { Link } from 'gatsby'
+import { ChevronsContext } from '../themes/themeContext'
 
-type ChevronsProps = {
-  leftChevronLink: string,
-  rightChevronLink: string
-}
-
-const Chevrons: FunctionComponent<ChevronsProps> = ({ leftChevronLink, rightChevronLink }) => {
-  const [isLeftVisible, setIsLeftVisible] = useState(true)
-  const [isRightVisible, setIsRightVisible] = useState(true)
-
+const Chevrons: FunctionComponent = () => {
   return (
     <div className={arrowStyle.arrowsWrapper}>
-      <a 
-        className={arrowStyle.leftArrow} 
-        href={leftChevronLink}
-      >
-        <span className={arrowStyle.leftArrowBar}></span>
-      </a>
-      <a 
-        className={arrowStyle.rightArrow} 
-        href={rightChevronLink}
-      >
-        <span className={arrowStyle.rihgtArrowBar}></span>
-      </a>
+      <ChevronsContext.Consumer>
+        {({ leftLink }) => (
+          <Link 
+            className={arrowStyle.leftArrow} 
+            to={leftLink}
+          >
+            <span className={arrowStyle.leftArrowBar}></span>
+          </Link>
+        )}
+      </ChevronsContext.Consumer>
+      <ChevronsContext.Consumer>
+        {({ rightLink }) => (
+          <Link
+            className={arrowStyle.rightArrow} 
+            to={rightLink}
+          >
+            <span className={arrowStyle.rihgtArrowBar}></span>
+          </Link>
+        )}
+      </ChevronsContext.Consumer>
     </div>
   )
 }
