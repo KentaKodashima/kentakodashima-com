@@ -9,9 +9,7 @@ import Container from './Container'
 import Chevrons from './Chevrons'
 
 type LayoutProps = {
-  isFooterVisible: boolean,
-  leftChevronLink: string,
-  rightChevronLink: string
+  isFooterVisible: boolean
 }
 
 const Layout: FunctionComponent<LayoutProps> = (props) => {

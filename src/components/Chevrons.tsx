@@ -9,6 +9,7 @@ const Chevrons: FunctionComponent = () => {
     <div className={arrowStyle.arrowsWrapper}>
       <ChevronsContext.Consumer>
         {({ leftLink }) => (
+          leftLink &&
           <Link 
             className={arrowStyle.leftArrow} 
             to={leftLink}
@@ -19,6 +20,7 @@ const Chevrons: FunctionComponent = () => {
       </ChevronsContext.Consumer>
       <ChevronsContext.Consumer>
         {({ rightLink }) => (
+          rightLink &&
           <Link
             className={arrowStyle.rightArrow} 
             to={rightLink}

@@ -12,8 +12,6 @@ const IndexPage = () => {
     <ChevronsContext.Provider value={{ leftLink: undefined, rightLink: '/projects' }}>
       <Layout
         isFooterVisible={false}
-        leftChevronLink=''
-        rightChevronLink=''
       >
         <SEO title="Home" />
         <div className={indexPageStyle.heroText}>
