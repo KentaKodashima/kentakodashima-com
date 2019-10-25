@@ -1,7 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-
-import Image from '../components/image'
+import Img from 'gatsby-image'
 
 const ProjectThumbnail = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +18,11 @@ const ProjectThumbnail = () => {
   return (
     <div>
       <div>
-        <Image />
+        <Img
+          title='Thumbnail Image'
+          alt='Thumbnail Image'
+          fluid={data.thumbnailImage.childImageSharp.fluid}
+        />
       </div>
       <div>
         <h4>QESurvey</h4>
