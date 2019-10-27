@@ -13,11 +13,7 @@ const ProjectsPage = () => (
       isFooterVisible={true}
     >
       <SEO title="Projects" />
-      <div className={projectsPageStyles.thumbnailWrapper}>
-        <ProjectThumbnail />
-        <ProjectThumbnail />
-        <ProjectThumbnail />
-      </div>
+      
     </Layout>
   </ChevronsContext.Provider>
 )
