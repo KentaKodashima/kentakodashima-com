@@ -3,7 +3,7 @@ import React from 'react'
 import indexPageStyle from '../scss/pages/IndexPage.module.scss'
 import Layout from '../components/Layout'
 import Image from '../components/image'
-import SEO from '../components/seo'
+import SEO from '../components/SEO'
 import CatImg from '../images/hero-cat.svg'
 import { ChevronsContext } from '../themes/themeContext'
 
