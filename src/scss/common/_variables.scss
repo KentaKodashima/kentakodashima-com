@@ -2,10 +2,12 @@
 $fontFamilyBase: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial" ,sans-serif;
 
 // Colors
-$baseColor: '#F9F9F9';
-$accentColor: #1F1F1F;
-$middleColor: '#9F9F9F';
-$lightColor: '#D9D9D9';
+$olorBase: '#F9F9F9';
+$colorAccent: #1F1F1F;
+$colorMiddle: '#9F9F9F';
+$colorLight: '#D9D9D9';
 
 // Size
-$baseFontSize: 10px;
+$fontSizeBase: 10px;
+$fontSizeThumbnailTitle: 24px;//2.4rem;
+$fontSizeThumbnailDescription: 21px;//2.1rem;

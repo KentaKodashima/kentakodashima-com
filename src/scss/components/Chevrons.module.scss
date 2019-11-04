@@ -30,7 +30,7 @@
     display: block;
     width: 50px;
     height: 2px;
-    background-color: $accentColor;
+    background-color: $colorAccent;
     transform: rotate(-45deg);
     transform-origin: top left;
   }
@@ -44,7 +44,7 @@
     display: block;
     width: 50px;
     height: 2px;
-    background-color: $accentColor;
+    background-color: $colorAccent;
     transform: rotate(45deg);
     transform-origin: top left;
   }
@@ -60,7 +60,7 @@
     display: block;
     width: 50px;
     height: 2px;
-    background-color: $accentColor;
+    background-color: $colorAccent;
     transform: rotate(-45deg);
     transform-origin: top right;
   }
@@ -74,7 +74,7 @@
     display: block;
     width: 50px;
     height: 2px;
-    background-color: $accentColor;
+    background-color: $colorAccent;
     transform: rotate(45deg);
     transform-origin: top right;
   }

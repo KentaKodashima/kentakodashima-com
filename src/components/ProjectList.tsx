@@ -7,14 +7,19 @@ type ProjectListProps = {
   projectListItems: string[]
 }
 
-const ProjectList: FunctionComponent<ProjectListProps> = ({ projectListItems }) => {
+// const ProjectList: FunctionComponent<ProjectListProps> = ({ projectListItems }) => {
+const ProjectList: FunctionComponent = () => {
   return (
     <div className={projectListStyles.thumbnailWrapper}>
-      {
+      <ProjectThumbnail />
+      <ProjectThumbnail />
+      <ProjectThumbnail />
+      <ProjectThumbnail />
+      {/* {
         projectListItems.map((project) => {
           <ProjectThumbnail project={project}/>
         })
-      }
+      } */}
     </div>
   )
 }

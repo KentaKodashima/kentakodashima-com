@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import projectsPageStyles from '../scss/pages/ProjectsPage.module.scss'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import ProjectThumbnail from '../components/ProjectThumbnail'
+import ProjectList from '../components/ProjectList'
 import { ChevronsContext } from '../themes/themeContext'
 
 const ProjectsPage = () => (
@@ -13,7 +13,7 @@ const ProjectsPage = () => (
       isFooterVisible={true}
     >
       <SEO title="Projects" />
-      
+      <ProjectList />
     </Layout>
   </ChevronsContext.Provider>
 )

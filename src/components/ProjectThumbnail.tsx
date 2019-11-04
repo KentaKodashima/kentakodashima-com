@@ -2,6 +2,18 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import projectThumbnailStyles from '../scss/components/ProjectThumbnail.module.scss'
+import Container from './Container'
+
+type ProjectThumbnailProps = {
+  project: {
+    title: string,
+    alt: string,
+    image: string,
+    description: string
+  }
+}
+
 const ProjectThumbnail = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -16,18 +28,32 @@ const ProjectThumbnail = () => {
   `)
 
   return (
-    <div>
-      <div>
+    <div className={projectThumbnailStyles.thumbnailWrapper}>
+      <a 
+        href="#"
+        className={projectThumbnailStyles.thumbnailAnchorStyle}
+      >
         <Img
           title='Thumbnail Image'
           alt='Thumbnail Image'
           fluid={data.thumbnailImage.childImageSharp.fluid}
+          imgStyle={{
+            objectFit: 'contain'
+          }}
         />
-      </div>
-      <div>
-        <h4>QESurvey</h4>
-        <p>React + NodeJS</p>
-      </div>
+        <div className={projectThumbnailStyles.thumbnailTextWrapper}>
+          <h4 
+            className={projectThumbnailStyles.thumbnailTextTitle}
+          >
+            QESurvey
+          </h4>
+          <p 
+            className={projectThumbnailStyles.thumbnailTextDescription}
+          >
+            React + NodeJS
+          </p>
+        </div>
+      </a>
     </div>
   )
 }

@@ -1,3 +1,23 @@
 backend:
   name: github
   repo: KentaKodashima/kentakodashima-com
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name: projects
+    label: Projects
+    folder: projects
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: intro, label: Intro, widget: markdown }
+      - { name: screenshots, label: Screenshots, widget: image }
+      - { name: description, label: markdown }
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: url, label: URL }
