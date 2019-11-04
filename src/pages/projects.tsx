@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import projectsPageStyles from '../scss/pages/ProjectsPage.module.scss'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import ProjectList from '../components/ProjectList'
 import { ChevronsContext } from '../themes/themeContext'
