@@ -1,10 +1,14 @@
-import React from "react"
+import React, { FunctionComponent } from "react"
 import pageTitleStyles from "../scss/components/PageTitle.module.scss"
 
-const PageTitle = ({ children }) => {
+type PageTitleProps = {
+  title: string
+}
+
+const PageTitle: FunctionComponent<PageTitleProps> = ({ title }) => {
   return (
-    <h2 className={pageTitleStyles.sectionWrapper}>
-      {children}
+    <h2 className={pageTitleStyles.pageTitle}>
+      {title}
     </h2>
   )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import projectsPageStyles from '../scss/pages/ProjectsPage.module.scss'
+import { ChevronsContext } from '../themes/themeContext'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import ProjectList from '../components/ProjectList'
-import { ChevronsContext } from '../themes/themeContext'
+import PageTitle from '../components/PageTitle'
+import Tab from '../components/Tab'
 
 const ProjectsPage = () => (
   <ChevronsContext.Provider value={{ leftLink: '/', rightLink: '/blog' }}>
@@ -13,6 +14,12 @@ const ProjectsPage = () => (
       isFooterVisible={true}
     >
       <SEO title="Projects" />
+      <PageTitle 
+        title='Projects'
+      />
+      <Tab 
+        tabItems={['All', 'Mobile', 'Web']}
+      />
       <ProjectList />
     </Layout>
   </ChevronsContext.Provider>

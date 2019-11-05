@@ -1,0 +1,11 @@
+@import '../common/variables';
+
+.tabWrapper {
+  list-style: none;
+  text-align: center;
+}
+
+.tabItems {
+  display: inline-block;
+  padding: 16px;
+}
