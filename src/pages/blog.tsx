@@ -1,19 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import { ChevronsContext } from '../themes/themeContext'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+import PageTitle from '../components/PageTitle'
+import ArticleList from '../components/ArticleList'
 
 const BlogPage = () => {
   return (
-    <Layout
-      isFooterVisible={true}
-    >
-      <SEO title="Page two" />
-      <h1>Hi from the second page</h1>
-      <p>Welcome to page 2</p>
-      <Link to="/">Go back to the homepage</Link>
-    </Layout>
+    <ChevronsContext.Provider value={{ leftLink: '/projects', rightLink: '/contact' }}>
+      <Layout
+        isFooterVisible={true}
+      >
+        <SEO title="Blog" />
+        <PageTitle 
+          title='Blog'
+        />
+        <ArticleList />
+      </Layout>
+    </ChevronsContext.Provider>
   )
 }
 

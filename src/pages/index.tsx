@@ -1,6 +1,6 @@
 import React from 'react'
 
-import indexPageStyle from '../scss/pages/IndexPage.module.scss'
+import indexPageStyle from '../scss/pages/index.module.scss'
 import Layout from '../components/Layout'
 import Image from '../components/image'
 import SEO from '../components/SEO'
