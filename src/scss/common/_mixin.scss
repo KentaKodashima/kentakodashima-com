@@ -15,7 +15,7 @@ reproduced or used in any manner whatsoever.
 
 @mixin hamburgerBorder($top) {
   display: block;
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: $colorAccent;
   top: $top;

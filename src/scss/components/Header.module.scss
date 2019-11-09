@@ -4,12 +4,17 @@
 .headerBar {
   position: fixed;
   width: 100%;
-  background: transparent;
+  height: 100px;
+  top: 0;
+  background-color: $colorBase;
+  z-index: 2;
 }
 
 .headerContentWrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .logoArea {
@@ -29,14 +34,14 @@
       content: '';
       position: absolute;
       transition: all 100ms ease;
-      @include hamburgerBorder(-10px);
+      @include hamburgerBorder(-15px);
     }
 
     &:after {
       content: '';
       position: absolute;
       transition: all 100ms ease;
-      @include hamburgerBorder(10px);
+      @include hamburgerBorder(15px);
     }
   }
 }

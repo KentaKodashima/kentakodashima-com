@@ -31,7 +31,7 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
   return (
     <div className="wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>
+      <main className="contentWrapper">
         <Chevrons />
         <Container>
           {children}
