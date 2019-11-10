@@ -33,6 +33,7 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`
   ],
 }
