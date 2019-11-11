@@ -1,26 +1,30 @@
 import styled from 'styled-components'
 import Colors from '../../themes/Colors'
 
-export const StyledBurger = styled.button`
-  position: relative;
-  height: 30px;
+type StyledBurgerProps = {
+  open: boolean
+}
+
+export const StyledBurger = styled.button<StyledBurgerProps>`
+  display: block;
   padding: 25px 15px;
   border: none;
   background-color: transparent;
 
   span {
-    position: absolute;
-    width: 50px;
+    position: relative;
+    display: inline-block;
+    width: 52px;
     height: 2px;
     background-color: ${({ open }) => open ? 'transparent' : Colors.accent};
-    top: 50%;
+    top: 0;
 
     &:before {
       content: '';
       position: absolute;
       transition: all 100ms ease;
       display: block;
-      width: 50px;
+      width: 52px;
       height: 2px;
       background-color: ${Colors.accent};
       top: -15px;
@@ -32,7 +36,7 @@ export const StyledBurger = styled.button`
       position: absolute;
       transition: all 100ms ease;
       display: block;
-      width: 50px;
+      width: 52px;
       height: 2px;
       background-color: ${Colors.accent};
       top: 15px;
