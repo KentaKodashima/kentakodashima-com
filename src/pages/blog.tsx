@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { ChevronsContext } from '../themes/themeContext'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import PageTitle from '../components/PageTitle'
+import PageTitle from '../components/PageTitle/PageTitle'
 import ArticleList from '../components/ArticleList'
 
 const BlogPage = () => {

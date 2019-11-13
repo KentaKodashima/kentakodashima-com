@@ -19,29 +19,3 @@
 
 .logoArea {
 }
-
-// .menuBtn {
-//   height: 30px;
-//   padding: 25px 15px;
-//   border: none;
-//   background-color: transparent;
-
-//   .menuBar {
-//     @include hamburgerBorder(0);
-//     position: relative;
-
-//     &:before {
-//       content: '';
-//       position: absolute;
-//       transition: all 100ms ease;
-//       @include hamburgerBorder(-15px);
-//     }
-
-//     &:after {
-//       content: '';
-//       position: absolute;
-//       transition: all 100ms ease;
-//       @include hamburgerBorder(15px);
-//     }
-//   }
-// }

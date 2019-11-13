@@ -5,31 +5,4 @@
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 16px;
-
-  .socialIconsWrapper {
-    margin-bottom: 16px;
-
-    >li {
-      display: inline-block;
-      width: 60px;
-      height: 60px;
-      background-color: $colorAccent;
-      margin-right: 8px;
-
-      >a {
-        width: 100%;
-        height: 100%;
-
-        .socialIcon {
-          color: $colorBase;
-          font-size: 6rem;
-          padding: 8px;
-    
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-  }
 }

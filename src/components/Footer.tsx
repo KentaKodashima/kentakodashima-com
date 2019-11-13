@@ -9,34 +9,14 @@ import {
 
 import footerStyle from '../scss/components/Footer.module.scss'
 import Container from './Container'
+import SNSIcons from './SNSIcons'
 
 const Footer = () => {
   const [isVisible, setIsVidible] = useState(false)
 
   return (
     <footer className={footerStyle.footer}>
-      <ul className={footerStyle.socialIconsWrapper}>
-        <li>
-          <a href="https://github.com/KentaKodashima">
-            <FontAwesomeIcon className={footerStyle.socialIcon} icon={faGithub} />
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@KentaKodashima">
-            <FontAwesomeIcon className={footerStyle.socialIcon} icon={faMediumM} />
-          </a>
-        </li>
-        <li>
-          <a href="www.linkedin.com/in/kenta-kodashima">
-            <FontAwesomeIcon className={footerStyle.socialIcon} icon={faLinkedinIn} />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/kenta.kodashima.5">
-            <FontAwesomeIcon className={footerStyle.socialIcon} icon={faFacebookF} />
-          </a>
-        </li>
-      </ul>
+      <SNSIcons />
       <Container>© {new Date().getFullYear()} Kenta Kodashima</Container>
     </footer>
   )

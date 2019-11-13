@@ -5,7 +5,7 @@ import contactFormStyles from '../scss/components/ContactForm.module.scss'
 const ContactForm = () => {
   return (
     <form 
-      ction="" 
+      action="" 
       id="contactForm"
       className={contactFormStyles.contactFormWrapper}
     >
