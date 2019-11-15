@@ -5,24 +5,26 @@ import Layout from '../components/Layout'
 import Image from '../components/image'
 import SEO from '../components/SEO'
 import CatImg from '../images/hero-cat.svg'
-import { ChevronsContext } from '../themes/themeContext'
+import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
 
 const IndexPage = () => {
   return (
-    <ChevronsContext.Provider value={{ leftLink: undefined, rightLink: '/projects' }}>
-      <Layout
-        isFooterVisible={false}
-      >
-        <SEO title="Home" />
-        <div className={indexPageStyle.heroText}>
-          <h2>Kenta Kodashima</h2>
-          <h3>Full-Stack Developer</h3>
-        </div>
-        <div className={indexPageStyle.heroImage}>
-          <img src={CatImg} />
-        </div>
-      </Layout>
-    </ChevronsContext.Provider>
+    <MarginTopContext.Provider value={{ removeMarginTop: true }}>
+      <ChevronsContext.Provider value={{ leftLink: undefined, rightLink: '/projects' }}>
+        <Layout
+          isFooterVisible={false}
+        >
+          <SEO title="Home" />
+          <div className={indexPageStyle.heroText}>
+            <h2>Kenta Kodashima</h2>
+            <h3>Full-Stack Developer</h3>
+          </div>
+          <div className={indexPageStyle.heroImage}>
+            <img src={CatImg} />
+          </div>
+        </Layout>
+      </ChevronsContext.Provider>
+    </MarginTopContext.Provider>
   )
 }
 

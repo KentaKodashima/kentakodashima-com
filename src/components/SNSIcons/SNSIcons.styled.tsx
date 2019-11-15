@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
-import Colors from '../../themes/Colors'
-
 export const StyledSNSIcons = styled.ul`
   >li {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-color: ${Colors.accent};
+    background-color: ${props => props.theme.accent};
     margin-right: 8px;
 
     &:last-child {
