@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 import { ThemeType } from '../../themes/Theme'
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
   html {
     font-family: 'Muli', sans-serif;
     font-size: 10px;
