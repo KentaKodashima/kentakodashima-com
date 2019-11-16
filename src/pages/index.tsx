@@ -16,8 +16,8 @@ const IndexPage = () => {
         >
           <SEO title="Home" />
           <div className={indexPageStyle.heroText}>
-            <h2>Kenta Kodashima</h2>
-            <h3>Full-Stack Developer</h3>
+            <h2 className={indexPageStyle.heroTitle}>Kenta Kodashima</h2>
+            <h3 className={indexPageStyle.heroSubTitle}>Full-Stack Developer</h3>
           </div>
           <div className={indexPageStyle.heroImage}>
             <img src={CatImg} />
