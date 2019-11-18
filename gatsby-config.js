@@ -7,13 +7,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -29,20 +22,54 @@ module.exports = {
       },
     },
     {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/assets`,
+        name: 'media',
+      },
+    },
+    { // Local images
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    { // Blog article thumbnails
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `articles`,
         path: `${__dirname}/src/pages/blog`,
       }
     },
-    {
+    { // Project thumbnails
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
         path: `${__dirname}/src/pages/projects`,
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: `media`,
+            }, 
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWith: 960
+            }
+          }
+        ],
+      },
+    },
+    // `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

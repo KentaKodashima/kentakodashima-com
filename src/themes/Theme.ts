@@ -7,6 +7,9 @@ export type ThemeType = {
   fontFamilyBase: string
   fontFamilyEmphasize: string
   fontFamilyHeader: string
+  fontSizeBase: string
+  fontSizeThumbnailTitle: string
+  fontSizeThumbnailDescription: string
 }
 
 export const Theme = {
@@ -18,4 +21,7 @@ export const Theme = {
   fontFamilyBase: '"Muli-Regular", sans-serif',
   fontFamilyEmphasize: '"Muli-Bold", sans-serif',
   fontFamilyHeader: '"Muli-ExtraBold", sans-serif',
+  fontSizeBase: '10px',
+  fontSizeThumbnailTitle: '2.1rem',
+  fontSizeThumbnailDescription: '1.6rem'
 }

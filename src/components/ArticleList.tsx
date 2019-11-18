@@ -8,7 +8,6 @@ type ArticleListProps = {
   projectListItems: string[]
 }
 
-// const ProjectList: FunctionComponent<ProjectListProps> = ({ projectListItems }) => {
 const ArticleList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
     query blogArticlesQuery  {
@@ -16,10 +15,18 @@ const ArticleList: FunctionComponent = () => {
         edges {
           node {
             frontmatter {
-              date
+              date(formatString: "YYYY, MMMM DD")
               intro
               title
               url
+              thumbnail {
+                id
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
@@ -30,14 +37,9 @@ const { edges: articles } = data.allMarkdownRemark
 
   return (
     <div className={articleListStyles.articleListWrapper}>
-      {/* <ArticleThumbnail />
-      <ArticleThumbnail />
-      <ArticleThumbnail />
-      <ArticleThumbnail /> */}
       {
         articles.map(({ node: { frontmatter: article } }) => {
-          console.log(article, 'frontmatter')
-          // <ProjectThumbnail project={project}/>
+          return <ArticleThumbnail article={article}/>
         })
       }
     </div>

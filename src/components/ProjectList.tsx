@@ -17,7 +17,7 @@ const ProjectList: FunctionComponent = () => {
       <ProjectThumbnail />
       {/* {
         projectListItems.map((project) => {
-          <ProjectThumbnail project={project}/>
+          return <ProjectThumbnail project={project}/>
         })
       } */}
     </div>
