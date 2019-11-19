@@ -43,13 +43,13 @@ module.exports = {
         path: `${__dirname}/src/pages/blog`,
       }
     },
-    { // Project thumbnails
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projects`,
-        path: `${__dirname}/src/pages/projects`,
-      }
-    },
+    // { // Project thumbnails
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `projects`,
+    //     path: `${__dirname}/src/pages/projects`,
+    //   }
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
