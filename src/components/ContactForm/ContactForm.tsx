@@ -9,23 +9,24 @@ import {
 const ContactForm = () => {
   return (
     <StyledContactForm 
-      action="" 
-      id="contactForm"
+      action='' 
+      id='contactForm'
     >
       <StyledContactFormInput 
-        type="text" 
-        name="name" 
+        type='text'
+        name='name' 
+        placeholder='Your Name'
       />
       <StyledContactFormInput 
-        type="email" 
-        name="email"
+        type='email'
+        name='email'
+        placeholder='Your Email'
       />
       <StyledContactFormTextArea 
-        name="comment" 
-        form="contactForm"
-      >
-          Your message...
-      </StyledContactFormTextArea>
+        name='comment'
+        form='contactForm'
+        placeholder='Your Message'
+      />
     </StyledContactForm>
   )
 }

@@ -23,5 +23,6 @@ export const Theme = {
   fontFamilyHeader: '"Muli-ExtraBold", sans-serif',
   fontSizeBase: '10px',
   fontSizeThumbnailTitle: '2.1rem',
-  fontSizeThumbnailDescription: '1.6rem'
+  fontSizeThumbnailDescription: '1.6rem',
+  fontSizeNavMenu: '4.8rem'
 }

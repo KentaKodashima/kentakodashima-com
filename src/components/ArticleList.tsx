@@ -39,7 +39,7 @@ const { edges: articles } = data.allMarkdownRemark
     <div className={articleListStyles.articleListWrapper}>
       {
         articles.map(({ node: { frontmatter: article } }) => {
-          return <ArticleThumbnail article={article}/>
+          return <ArticleThumbnail key={article.thumbnail.id} article={article}/>
         })
       }
     </div>

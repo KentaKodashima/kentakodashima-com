@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import BurgerButton from '../BurgerButton/BurgerButton'
+import BurgerButton from '../BurgerButton'
+import NavMenu from '../NavMenu'
 import {
   StyledHeader,
   StyledHeaderContainer,
@@ -10,11 +11,15 @@ import {
   StyledHeaderLogo
 } from './Header.styled'
 
+
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
 
   return (
     <StyledHeader>
+      <NavMenu 
+        open={open}
+      />
       <StyledHeaderContainer>
         <StyledHeaderContentWrapper>
           <div>
