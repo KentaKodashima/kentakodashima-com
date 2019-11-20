@@ -10,6 +10,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
+      - { name: type, label: Type, widget: select, options: ['Web', 'Mobile'] }
       - { name: thumbnail, label: Thumbnail Image, widget: image }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: markdown }

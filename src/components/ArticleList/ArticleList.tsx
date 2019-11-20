@@ -1,12 +1,8 @@
 import React, { FunctionComponent } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-import articleListStyles from '../scss/components/ArticleList.module.scss'
-import ArticleThumbnail from './ArticleThumbnail'
-
-type ArticleListProps = {
-  projectListItems: string[]
-}
+import { StyledArticleList } from './ArticleList.styled'
+import ArticleThumbnail from '../ArticleThumbnail'
 
 const ArticleList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
@@ -33,16 +29,16 @@ const ArticleList: FunctionComponent = () => {
       }
     }
   `)
-const { edges: articles } = data.allMarkdownRemark
+  const { edges: articles } = data.allMarkdownRemark
 
   return (
-    <div className={articleListStyles.articleListWrapper}>
+    <StyledArticleList>
       {
         articles.map(({ node: { frontmatter: article } }) => {
           return <ArticleThumbnail key={article.thumbnail.id} article={article}/>
         })
       }
-    </div>
+    </StyledArticleList>
   )
 }
 

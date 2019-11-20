@@ -29,6 +29,7 @@ const Header = ({ siteTitle }) => {
                 style={{
                   color: `black`,
                   textDecoration: `none`,
+                  fontSize: '50px'
                 }}
               >
                 K

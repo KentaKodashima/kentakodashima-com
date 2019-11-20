@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-// import articleThumbnailStyles from '../scss/components/ArticleThumbnail.module.scss'
 import { 
   ArticleThumbnailWrapper,
   ArticleThumbnailAnchor,
@@ -27,6 +26,18 @@ type ArticleThumbnailProps = {
 }
 
 const ArticleThumbnail: FunctionComponent<ArticleThumbnailProps> = ({ article }) => {
+  const _excerptFormatter = (text: string) => {
+    const excerptMaxLength = 90
+    let formattedString: string
+
+    if (text.length > excerptMaxLength) {
+      formattedString = text.substring(0, excerptMaxLength)
+      return formattedString + '...'
+    }
+
+    return text
+  }
+
   return (
     <ArticleThumbnailWrapper>
       <ArticleThumbnailAnchor 
@@ -49,7 +60,7 @@ const ArticleThumbnail: FunctionComponent<ArticleThumbnailProps> = ({ article })
           </ArticleThumbnailTextDescription>
           <ArticleThumbnailBar />
           <ArticleThumbnailTextDescription>
-            {article.intro}
+            {_excerptFormatter(article.intro)}
           </ArticleThumbnailTextDescription>
         </ArticleThumbnailTextWrapper>
       </ArticleThumbnailAnchor>
