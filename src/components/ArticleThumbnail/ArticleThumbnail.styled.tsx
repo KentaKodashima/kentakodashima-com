@@ -22,7 +22,7 @@ export const ArticleThumbnailTextTitle = styled.h4`
 `
 
 export const ArticleThumbnailTextDescription = styled.p`
-  font-size: ${({ theme }) => theme.fontSizeThumbnailDescription};
+  font-size: ${({ theme }) => theme.fontSizeBodyText};
   margin: 0;
   color: ${({ theme }) => theme.middle};
 `
