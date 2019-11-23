@@ -10,7 +10,14 @@ import ContactForm from '../components/ContactForm'
 const ContactPage = () => {
   return (
     <MarginTopContext.Provider value={{ removeMarginTop: false }}>
-      <ChevronsContext.Provider value={{ leftLink: '/blog', rightLink: undefined }}>
+      <ChevronsContext.Provider 
+        value={{ 
+          leftLink: '/blog', 
+          rightLink: undefined,
+          leftLinkText: 'Blog',
+          rightLinkText: undefined
+        }}
+      >
         <Layout
           isFooterVisible={true}
         >

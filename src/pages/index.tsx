@@ -10,7 +10,14 @@ import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
 const IndexPage = () => {
   return (
     <MarginTopContext.Provider value={{ removeMarginTop: true }}>
-      <ChevronsContext.Provider value={{ leftLink: undefined, rightLink: '/projects' }}>
+      <ChevronsContext.Provider 
+        value={{ 
+          leftLink: undefined, 
+          rightLink: '/projects',
+          leftLinkText: undefined,
+          rightLinkText: 'Projects'
+        }}
+      >
         <Layout
           isFooterVisible={false}
         >

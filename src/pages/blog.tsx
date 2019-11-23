@@ -9,7 +9,13 @@ import ArticleList from '../components/ArticleList'
 const BlogPage = () => {
   return (
     <MarginTopContext.Provider value={{ removeMarginTop: false }}>
-      <ChevronsContext.Provider value={{ leftLink: '/projects', rightLink: '/contact' }}>
+      <ChevronsContext.Provider 
+        value={{ 
+          leftLink: '/projects',
+          rightLink: '/contact',
+          leftLinkText: 'Projects',
+          rightLinkText: 'Contact'
+        }}>
         <Layout
           isFooterVisible={true}
         >

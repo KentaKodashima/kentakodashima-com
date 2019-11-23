@@ -14,6 +14,7 @@ collections:
       - { name: thumbnail, label: Thumbnail Image, widget: image }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: markdown }
+      - { name: images, label: Extra Images, widget: image }
   - name: 'blog'
     label: 'Blog'
     folder: 'src/pages/blog'

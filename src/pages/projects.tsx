@@ -10,7 +10,13 @@ import Tab from '../components/Tab'
 
 const ProjectsPage = () => (
   <MarginTopContext.Provider value={{ removeMarginTop: false }}>
-    <ChevronsContext.Provider value={{ leftLink: '/', rightLink: '/blog' }}>
+    <ChevronsContext.Provider 
+      value={{
+        leftLink: '/',
+        rightLink: '/blog',
+        leftLinkText: 'Home',
+        rightLinkText: 'Blog'
+      }}>
       <Layout
         isFooterVisible={true}
       >

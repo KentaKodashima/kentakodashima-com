@@ -8,28 +8,32 @@ import {
   StyledChevronLeftLink,
   StyledChevronRightLink,
   StyledChevronLeftArrowBar,
-  StyledChevronRightArrowBar
+  StyledChevronRightArrowBar,
+  StyledChevronLeftText,
+  StyledChevronRightText
 } from './Chevrons.styled'
 
 const Chevrons: FunctionComponent = () => {
   return (
     <StyledChevron>
       <ChevronsContext.Consumer>
-        {({ leftLink }) => (
+        {({ leftLink, leftLinkText }) => (
           leftLink &&
           <StyledChevronLeftLink 
             to={leftLink}
           >
+            <StyledChevronLeftText>{leftLinkText}</StyledChevronLeftText>
             <StyledChevronLeftArrowBar />
           </StyledChevronLeftLink>
         )}
       </ChevronsContext.Consumer>
       <ChevronsContext.Consumer>
-        {({ rightLink }) => (
+        {({ rightLink, rightLinkText }) => (
           rightLink &&
           <StyledChevronRightLink
             to={rightLink}
           >
+            <StyledChevronRightText>{rightLinkText}</StyledChevronRightText>
             <StyledChevronRightArrowBar />
           </StyledChevronRightLink>
         )}
