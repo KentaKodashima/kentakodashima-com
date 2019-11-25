@@ -34,11 +34,9 @@ collections:
       - { name: technologies, label: Technologies, widget: markdown }
       - name: images
         label: Extra Images
-        widget: image
-        allow_multiple: true
-        media_library:
-          config:
-            multiple: true
+        widget: list
+        fields:
+          - { name: image, label: Image, widget: image, allow_multiple: true }
 
   - name: 'blog'
     label: 'Blog'
