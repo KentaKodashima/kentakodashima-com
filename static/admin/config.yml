@@ -3,6 +3,7 @@ backend:
   repo: KentaKodashima/kentakodashima-com
 media_folder: static/assets
 public_folder: /assets
+publish_mode: editorial_workflow
 collections:
   - name: 'projects'
     label: 'Projects'
@@ -10,11 +11,27 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: type, label: Type, widget: select, options: ['Web', 'Mobile'] }
+      - { name: category-type, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
       - { name: thumbnail, label: Thumbnail Image, widget: image }
+      - { name: main-image, label: Main Image, widget: image }
+      -   name: app-links
+          label: App or Website Links
+          widget: list
+          fields:
+            - name: app-link
+              label: App or Website Link
+              widget: object
+              fields:
+                - { name: url, label: URL, wdget: string }
+                - { name: link-type, label: Media Type, widget: select, options: ['iOS', 'Android', 'Web'] }
+      - { name: github-link, label: Github Link, widget: string }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: markdown }
-      - { name: images, label: Extra Images, widget: image }
+      - name: images
+        label: Extra Images
+        widget: image
+        allow_multiple: true
+
   - name: 'blog'
     label: 'Blog'
     folder: 'src/pages/blog'
