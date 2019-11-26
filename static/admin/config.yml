@@ -12,11 +12,12 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: category-type, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
-      - { name: thumbnail, label: Thumbnail Image, widget: image }
+      - { name: thumbnail, label: Thumbnail Image, widget: image, required: false }
       - { name: main-image, label: Main Image, widget: image }
       -   name: app-links
           label: App or Website Links
           widget: list
+          required: false
           fields:
             - name: app-link
               label: App or Website Link
@@ -24,12 +25,13 @@ collections:
               fields:
                 - { name: url, label: URL, wdget: string }
                 - { name: link-type, label: Media Type, widget: select, options: ['iOS', 'Android', 'Web'] }
-      - { name: github-link, label: Github Link, widget: string }
+      - { name: github-link, label: Github Link, widget: string, required: false }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: markdown }
       - name: images
         label: Extra Images
         widget: list
+        required: false
         fields:
           - { name: image, label: Image, widget: image, allow_multiple: true }
 
