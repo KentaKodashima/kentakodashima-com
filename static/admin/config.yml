@@ -1,12 +1,7 @@
 backend:
   name: github
   repo: KentaKodashima/kentakodashima-com
-media_folder: static/assets
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: kentakodashima-com
-    api_key: 739737913297934
+media_folder: /static/assets
 public_folder: /assets
 publish_mode: editorial_workflow
 collections:
