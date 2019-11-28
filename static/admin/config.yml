@@ -33,7 +33,7 @@ collections:
         widget: list
         required: false
         fields:
-          - { name: image, label: Image, widget: image, allow_multiple: true }
+          - { name: image, label: Image, widget: image }
 
   - name: 'blog'
     label: 'Blog'
