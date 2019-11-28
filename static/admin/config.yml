@@ -13,7 +13,11 @@ collections:
       - { name: title, label: Title }
       - { name: category-type, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
       - { name: thumbnail, label: Thumbnail Image, widget: image, required: false }
-      - { name: main-image, label: Main Image, widget: image }
+      -   name: main-images
+          label: Main Images
+          widget: list
+          fields:
+            - { name: image, label: Image, widget: image }
       -   name: app-links
           label: App or Website Links
           widget: list
@@ -28,7 +32,7 @@ collections:
       - { name: github-link, label: Github Link, widget: string, required: false }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: markdown }
-      - name: images
+      - name: extra-images
         label: Extra Images
         widget: list
         required: false
