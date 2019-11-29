@@ -1,5 +1,5 @@
 ---
-title: Amtrip
+title: Recipe Flicker
 category-type: Mobile
 thumbnail: /assets/appicon1024_transparent.png
 main-images:
