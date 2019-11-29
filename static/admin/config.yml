@@ -12,7 +12,8 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: category-type, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
-      - { name: thumbnail, label: Thumbnail Image, widget: image, required: false }
+      - { name: thumbnail, label: Thumbnail Image, widget: image }
+      - { name: thumbnail-subtitle, label: Thumbnail Subtitle, widget: string }
       -   name: main-images
           label: Main Images
           widget: list

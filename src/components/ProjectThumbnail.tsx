@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -6,15 +6,38 @@ import projectThumbnailStyles from '../scss/components/ProjectThumbnail.module.s
 import Container from './Container'
 
 type ProjectThumbnailProps = {
-  project: {
-    title: string,
-    alt: string,
-    image: string,
-    description: string
+  projectObj: {
+    node: {
+      childMarkdownRemark: {
+        frontmatter: {
+          title: string
+          category_type: string
+          thumbnail: {
+            childImageSharp: {
+              fluid: {
+                
+              }
+            }
+          }
+          thumbnail_subtitle: string
+          main_images: []
+          app_links: {
+            app_link: {
+              link_type: string
+              url: string
+            }
+          }
+          github_link: string
+          about: string
+          technologies: string
+          extra_images?: []
+        }
+      }
+    }
   }
 }
 
-const ProjectThumbnail = () => {
+const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ projectObj }) => {
   const data = useStaticQuery(graphql`
     query {
       thumbnailImage: file(relativePath: { eq: "thumbnail-web.png" }) {
@@ -26,6 +49,8 @@ const ProjectThumbnail = () => {
       }
     }
   `)
+
+  const { node: { childMarkdownRemark: { frontmatter: project } } } = projectObj
 
   return (
     <div className={projectThumbnailStyles.thumbnailWrapper}>
@@ -45,7 +70,7 @@ const ProjectThumbnail = () => {
           <h4 
             className={projectThumbnailStyles.thumbnailTextTitle}
           >
-            QESurvey
+            {project.title}
           </h4>
           <p 
             className={projectThumbnailStyles.thumbnailTextDescription}
