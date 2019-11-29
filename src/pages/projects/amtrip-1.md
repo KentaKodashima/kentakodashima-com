@@ -2,6 +2,7 @@
 title: Amtrip
 category-type: Mobile
 thumbnail: /assets/amtrip_icon.png
+thumbnail-subtitle: Swift + Realm
 main-images:
   - image: /assets/top_multi_thumbs.png
   - image: /assets/creation_page.jpg
