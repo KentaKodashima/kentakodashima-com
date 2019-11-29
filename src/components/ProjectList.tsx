@@ -4,11 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import projectListStyles from '../scss/components/ProjectList.module.scss'
 import ProjectThumbnail from './ProjectThumbnail'
 
-type ProjectListProps = {
-  projectListItems: string[]
-}
-
-// const ProjectList: FunctionComponent<ProjectListProps> = ({ projectListItems }) => {
 const ProjectList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
     query projectsQuery {
@@ -16,30 +11,30 @@ const ProjectList: FunctionComponent = () => {
         edges {
           node {
             frontmatter {
-              about
+              title
+              category_type
+              thumbnail {
+                id
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              thumbnail_subtitle
+              main_images {
+                image
+              }
               app_links {
                 app_link {
                   link_type
                   url
                 }
               }
-              category_type
-              date
               github_link
+              about
               technologies
-              title
-              url
-              thumbnail {
-                childImageSharp {
-                  fluid {
-                    src
-                  }
-                }
-              }
               extra_images {
-                image
-              }
-              main_images {
                 image
               }
             }    
@@ -52,13 +47,9 @@ const ProjectList: FunctionComponent = () => {
 
   return (
     <div className={projectListStyles.thumbnailWrapper}>
-      {/* <ProjectThumbnail />
-      <ProjectThumbnail />
-      <ProjectThumbnail />
-      <ProjectThumbnail /> */}
       {
         projectNodes.map(({ node: { frontmatter: project } }) => {
-          return <ProjectThumbnail key={project.id} project={project}/>
+          return <ProjectThumbnail key={project.thumbnail.id} project={project}/>
         })
       }
     </div>

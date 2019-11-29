@@ -10,10 +10,9 @@ type ProjectThumbnailProps = {
     title: string
     category_type: string
     thumbnail: {
+      id: string
       childImageSharp: {
-        fluid: {
-          
-        }
+        fluid: any
       }
     }
     thumbnail_subtitle: string
@@ -53,9 +52,10 @@ const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ project })
         <Img
           title='Thumbnail Image'
           alt='Thumbnail Image'
-          fluid={data.thumbnailImage.childImageSharp.fluid}
+          fluid={project.thumbnail.childImageSharp.fluid}
           imgStyle={{
-            objectFit: 'contain'
+            objectFit: 'cover',
+            maxHeight: 200
           }}
         />
         <div className={projectThumbnailStyles.thumbnailTextWrapper}>
