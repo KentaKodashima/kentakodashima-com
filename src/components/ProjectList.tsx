@@ -11,46 +11,44 @@ type ProjectListProps = {
 // const ProjectList: FunctionComponent<ProjectListProps> = ({ projectListItems }) => {
 const ProjectList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
-    query projectsQuery  {
-      allFile(filter: {sourceInstanceName: {regex: "/projects/"}}) {
+    query projectsQuery {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/projects)/.*\\.md$/"}}) {
         edges {
           node {
-            childMarkdownRemark {
-              frontmatter {
-                about
-                app_links {
-                  app_link {
-                    link_type
-                    url
-                  }
-                }
-                category_type
-                date
-                github_link
-                technologies
-                title
-                url
-                thumbnail {
-                  childImageSharp {
-                    fluid {
-                      src
-                    }
-                  }
-                }
-                extra_images {
-                  image
-                }
-                main_images {
-                  image
+            frontmatter {
+              about
+              app_links {
+                app_link {
+                  link_type
+                  url
                 }
               }
-            }
+              category_type
+              date
+              github_link
+              technologies
+              title
+              url
+              thumbnail {
+                childImageSharp {
+                  fluid {
+                    src
+                  }
+                }
+              }
+              extra_images {
+                image
+              }
+              main_images {
+                image
+              }
+            }    
           }
         }
       }
     }
   `)
-  const { edges: projects } = data.allFile
+  const { edges: projectNodes } = data.allMarkdownRemark
 
   return (
     <div className={projectListStyles.thumbnailWrapper}>
@@ -59,8 +57,8 @@ const ProjectList: FunctionComponent = () => {
       <ProjectThumbnail />
       <ProjectThumbnail /> */}
       {
-        projects.map((projectObj) => {
-          return <ProjectThumbnail projectObj={projectObj}/>
+        projectNodes.map(({ node: { frontmatter: project } }) => {
+          return <ProjectThumbnail key={project.id} project={project}/>
         })
       }
     </div>

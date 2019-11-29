@@ -6,38 +6,32 @@ import projectThumbnailStyles from '../scss/components/ProjectThumbnail.module.s
 import Container from './Container'
 
 type ProjectThumbnailProps = {
-  projectObj: {
-    node: {
-      childMarkdownRemark: {
-        frontmatter: {
-          title: string
-          category_type: string
-          thumbnail: {
-            childImageSharp: {
-              fluid: {
-                
-              }
-            }
-          }
-          thumbnail_subtitle: string
-          main_images: []
-          app_links: {
-            app_link: {
-              link_type: string
-              url: string
-            }
-          }
-          github_link: string
-          about: string
-          technologies: string
-          extra_images?: []
+  project: {
+    title: string
+    category_type: string
+    thumbnail: {
+      childImageSharp: {
+        fluid: {
+          
         }
       }
     }
+    thumbnail_subtitle: string
+    main_images: []
+    app_links: {
+      app_link: {
+        link_type: string
+        url: string
+      }
+    }
+    github_link: string
+    about: string
+    technologies: string
+    extra_images?: []
   }
 }
 
-const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ projectObj }) => {
+const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ project }) => {
   const data = useStaticQuery(graphql`
     query {
       thumbnailImage: file(relativePath: { eq: "thumbnail-web.png" }) {
@@ -49,8 +43,6 @@ const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ projectObj
       }
     }
   `)
-
-  const { node: { childMarkdownRemark: { frontmatter: project } } } = projectObj
 
   return (
     <div className={projectThumbnailStyles.thumbnailWrapper}>

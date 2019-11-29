@@ -6,35 +6,34 @@ import ArticleThumbnail from '../ArticleThumbnail'
 
 const ArticleList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
-    query blogArticlesQuery  {
-      allMarkdownRemark {
+    query blogArticlesQuery {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/blog)/.*\\.md$/"}}) {
         edges {
           node {
             frontmatter {
-              date(formatString: "YYYY, MMMM DD")
-              intro
               title
-              url
               thumbnail {
-                id
                 childImageSharp {
                   fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                   }
                 }
               }
+              url
+              date
+              intro
             }
           }
         }
       }
     }
   `)
-  const { edges: articles } = data.allMarkdownRemark
+  const { edges: articleNodes } = data.allMarkdownRemark
 
   return (
     <StyledArticleList>
       {
-        articles.map(({ node: { frontmatter: article } }) => {
+        articleNodes.map(({ node: { frontmatter: article } }) => {
           return <ArticleThumbnail key={article.thumbnail.id} article={article}/>
         })
       }
