@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import projectListStyles from '../scss/components/ProjectList.module.scss'
-import ProjectThumbnail from './ProjectThumbnail'
+import { StyledProjectListWrapper } from './ProjectList.styled'
+import ProjectThumbnail from '../ProjectThumbnail'
 
 const ProjectList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +16,7 @@ const ProjectList: FunctionComponent = () => {
               thumbnail {
                 id
                 childImageSharp {
-                  fluid(maxWidth: 300) {
+                  fluid(maxWidth: 200, maxHeight: 150) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -46,13 +46,13 @@ const ProjectList: FunctionComponent = () => {
   const { edges: projectNodes } = data.allMarkdownRemark
 
   return (
-    <div className={projectListStyles.thumbnailWrapper}>
+    <StyledProjectListWrapper>
       {
         projectNodes.map(({ node: { frontmatter: project } }) => {
           return <ProjectThumbnail key={project.thumbnail.id} project={project}/>
         })
       }
-    </div>
+    </StyledProjectListWrapper>
   )
 }
 

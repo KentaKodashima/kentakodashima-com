@@ -2,11 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import ProjectList from '../components/ProjectList'
-import PageTitle from '../components/PageTitle'
-import Tab from '../components/Tab'
+import {
+  Layout,
+  ProjectList,
+  PageTitle,
+  SEO,
+  Tab
+} from '../components'
 
 const ProjectsPage = () => (
   <MarginTopContext.Provider value={{ removeMarginTop: false }}>

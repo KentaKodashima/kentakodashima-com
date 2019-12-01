@@ -1,10 +1,12 @@
 import React from 'react'
 
 import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
-import PageTitle from '../components/PageTitle/PageTitle'
-import ArticleList from '../components/ArticleList'
+import {
+  Layout,
+  PageTitle,
+  ArticleList,
+  SEO
+} from '../components'
 
 const BlogPage = () => {
   return (
