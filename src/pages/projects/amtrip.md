@@ -1,7 +1,7 @@
 ---
 title: Recipe Flicker
 category-type: Mobile
-thumbnail: /assets/appicon1024_transparent.png
+thumbnail: /assets/recipe-flicker-thumbnail.png
 thumbnail-subtitle: Swift / Firebase / Realm
 main-images:
   - image: /assets/home_flicking_55.gif
