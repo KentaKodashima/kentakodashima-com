@@ -1,13 +1,13 @@
 import React, { FunctionComponent } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import {
   StyledThumbnailWrapper,
   StyledThumbnailAnchor,
   StyledTextWrapper,
   StyledThumbnailTitle,
-  StyledDescription
+  StyledDescription,
+  StyledGatsbyImage,
 } from './ProjectThumbnail.styled'
 
 type ProjectThumbnailProps = {
@@ -39,18 +39,14 @@ const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ project })
   return (
     <StyledThumbnailWrapper>
       <StyledThumbnailAnchor href="#">
-        <Img
-          title='Thumbnail Image'
-          alt='Thumbnail Image'
-          fluid={{ ...project.thumbnail.childImageSharp.fluid, aspectRatio: 1 }}
+        <StyledGatsbyImage
+          title={project.title}
+          alt={project.title}
+          fluid={{ ...project.thumbnail.childImageSharp.fluid }}
         />
         <StyledTextWrapper>
-          <StyledThumbnailTitle >
-            {project.title}
-          </StyledThumbnailTitle>
-          <StyledDescription>
-            {project.thumbnail_subtitle}
-          </StyledDescription>
+          <StyledThumbnailTitle>{project.title}</StyledThumbnailTitle>
+          <StyledDescription>{project.thumbnail_subtitle}</StyledDescription>
         </StyledTextWrapper>
       </StyledThumbnailAnchor>
     </StyledThumbnailWrapper>

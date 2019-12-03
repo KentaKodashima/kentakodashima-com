@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 export const StyledThumbnailWrapper = styled.div`
   flex: 0 1 32%;
@@ -15,6 +16,10 @@ export const StyledThumbnailWrapper = styled.div`
 export const StyledThumbnailAnchor = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.accent};
+`
+
+export const StyledGatsbyImage = styled(Img)`
+  max-height: 150px;
 `
 
 export const StyledTextWrapper = styled.div`

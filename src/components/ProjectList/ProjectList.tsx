@@ -16,7 +16,7 @@ const ProjectList: FunctionComponent = () => {
               thumbnail {
                 id
                 childImageSharp {
-                  fluid(maxWidth: 200, maxHeight: 150) {
+                  fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -47,11 +47,9 @@ const ProjectList: FunctionComponent = () => {
 
   return (
     <StyledProjectListWrapper>
-      {
-        projectNodes.map(({ node: { frontmatter: project } }) => {
-          return <ProjectThumbnail key={project.thumbnail.id} project={project}/>
-        })
-      }
+      {projectNodes.map(({ node: { frontmatter: project } }) => {
+        return <ProjectThumbnail key={project.thumbnail.id} project={project} />
+      })}
     </StyledProjectListWrapper>
   )
 }
