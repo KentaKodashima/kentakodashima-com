@@ -15,11 +15,11 @@ export const StyledThumbnailWrapper = styled.div`
 `
 export const StyledThumbnailAnchor = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.accent};
+  color: ${({ theme }) => theme.colors.accent};
 `
 
 export const StyledGatsbyImage = styled(Img)`
-  max-height: 150px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.middle};
 `
 
 export const StyledTextWrapper = styled.div`
@@ -27,11 +27,11 @@ export const StyledTextWrapper = styled.div`
 `
 
 export const StyledThumbnailTitle = styled.h4`
-  font-size: ${({ theme }) => theme.fontSizeThumbnailTitle};
+  font-size: ${({ theme }) => theme.fontSize.thumbnailTitle};
   margin-bottom: 8px;
 `
 
 export const StyledDescription = styled.p`
-  font-size: ${({ theme }) => theme.fontSizeThumbnailDescription};
+  font-size: ${({ theme }) => theme.fontSize.thumbnailSubtitle};
   margin: 0;
 `

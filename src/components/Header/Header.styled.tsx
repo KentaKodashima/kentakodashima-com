@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   width: 100%;
   height: 100px;
   top: 0;
-  background-color: ${({ theme }) => theme.base};
+  background-color: ${({ theme }) => theme.colors.base};
   z-index: 2;
 `
 

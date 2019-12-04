@@ -13,7 +13,7 @@ export const StyledNavMenu = styled.nav<StyledNavMenuProps>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: ${({ theme }) => theme.base};
+  background: ${({ theme }) => theme.colors.base};
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -24,7 +24,7 @@ export const StyledNavMenu = styled.nav<StyledNavMenuProps>`
 `
 
 export const StyledNavLink = styled(Link)`
-  font-size: ${({ theme }) => theme.fontSizeNavMenu};
-  color: ${({ theme }) => theme.accent};
+  font-size: ${({ theme }) => theme.fontSize.navMenu};
+  color: ${({ theme }) => theme.colors.accent};
   text-decoration: none;
 `

@@ -11,7 +11,7 @@ import styled from 'styled-components'
 import { StyledSNSIcons } from './SNSIcons.styled'
 
 const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  color: ${props => props.theme.base};
+  color: ${props => props.theme.colors.base};
   font-size: 6rem;
   padding: 8px;
 `

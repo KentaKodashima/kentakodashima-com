@@ -5,7 +5,7 @@ export const StyledSNSIcons = styled.ul`
     display: inline-block;
     width: 60px;
     height: 60px;
-    background-color: ${props => props.theme.accent};
+    background-color: ${({ theme }) => theme.colors.accent};
     margin-right: 8px;
 
     &:last-child {

@@ -1,28 +1,42 @@
 export type ThemeType = {
-  base: string
-  accent: string
-  middle: string
-  light: string
-  fontFamilyDefault: string
-  fontFamilyBase: string
-  fontFamilyEmphasize: string
-  fontFamilyHeader: string
-  fontSizeBase: string
-  fontSizeThumbnailTitle: string
-  fontSizeThumbnailDescription: string
+  colors: {
+    base: string
+    accent: string
+    middle: string
+    light: string
+  },
+  fontSize: {
+    base: string
+    body: string
+    thumbnailTitle: string
+    navMenu: string
+  },
+  fontFamily: {
+    default: string
+    base: string
+    bold: string
+    extraBold: string
+  },
 }
 
 export const Theme = {
-  base: '#F9F9F9',
-  accent: '#1F1F1F',
-  middle: '#9F9F9F',
-  light: '#D9D9D9',
-  fontFamilyDefault: '"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial" ,sans-serif',
-  fontFamilyBase: '"Muli-Regular", sans-serif',
-  fontFamilyEmphasize: '"Muli-Bold", sans-serif',
-  fontFamilyHeader: '"Muli-ExtraBold", sans-serif',
-  fontSizeBase: '10px',
-  fontSizeThumbnailTitle: '2.1rem',
-  fontSizeBodyText: '1.6rem',
-  fontSizeNavMenu: '4.8rem'
+  colors: {
+    base: '#F9F9F9',
+    accent: '#1F1F1F',
+    middle: '#9F9F9F',
+    light: '#D9D9D9',
+  },
+  fontSize: {
+    base: '10px',
+    body: '16px',
+    thumbnailTitle: '2.4rem',
+    thumbnailSubtitle: '2.1rem',
+    navMenu: '4.8rem'
+  },
+  fontFamily: {
+    default: '"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial" ,sans-serif',
+    base: '"Muli-Regular", sans-serif',
+    bold: '"Muli-Bold", sans-serif',
+    extraBold: '"Muli-ExtraBold", sans-serif',
+  },
 }

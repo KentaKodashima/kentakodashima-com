@@ -15,7 +15,7 @@ export const StyledBurger = styled.button<StyledBurgerProps>`
     display: inline-block;
     width: 52px;
     height: 2px;
-    background-color: ${props => props.open ? 'transparent' : props.theme.accent};
+    background-color: ${props => props.open ? 'transparent' : props.theme.colors.accent};
     top: 0;
 
     &:before {
@@ -25,7 +25,7 @@ export const StyledBurger = styled.button<StyledBurgerProps>`
       display: block;
       width: 52px;
       height: 2px;
-      background-color: ${({ theme }) => theme.accent};
+      background-color: ${({ theme }) => theme.colors.accent};
       top: -15px;
       transform: ${({ open }) => open ? 'rotate(45deg) translate(11px, 11px)' : 'none'};
     }
@@ -37,7 +37,7 @@ export const StyledBurger = styled.button<StyledBurgerProps>`
       display: block;
       width: 52px;
       height: 2px;
-      background-color: ${({ theme }) => theme.accent};
+      background-color: ${({ theme }) => theme.colors.accent};
       top: 15px;
       transform: ${({ open }) => open ? 'rotate(-45deg) translate(11px, -11px)' : 'none'};
     }

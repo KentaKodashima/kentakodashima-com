@@ -15,7 +15,7 @@ export const StyledChevronLeftArrowBar = styled.span`
     display: block;
     width: 50px;
     height: 2px;
-    background-color: ${({ theme }) => theme.accent};
+    background-color: ${({ theme }) => theme.colors.accent};
     transform: rotate(-45deg);
     transform-origin: top left;
   }
@@ -29,7 +29,7 @@ export const StyledChevronLeftArrowBar = styled.span`
     display: block;
     width: 50px;
     height: 2px;
-    background-color: ${({ theme }) => theme.accent};
+    background-color: ${({ theme }) => theme.colors.accent};
     transform: rotate(45deg);
     transform-origin: top left;
   }
@@ -45,7 +45,7 @@ export const StyledChevronRightArrowBar = styled.span`
     display: block;
     width: 50px;
     height: 2px;
-    background-color: ${({ theme }) => theme.accent};
+    background-color: ${({ theme }) => theme.colors.accent};
     transform: rotate(-45deg);
     transform-origin: top right;
   }
@@ -59,16 +59,16 @@ export const StyledChevronRightArrowBar = styled.span`
     display: block;
     width: 50px;
     height: 2px;
-    background-color: ${({ theme }) => theme.accent};
+    background-color: ${({ theme }) => theme.colors.accent};
     transform: rotate(45deg);
     transform-origin: top right;
   }
 `
 
 export const StyledChevronLeftText = styled.span`
-  color: ${({ theme }) => theme.accent};
+  color: ${({ theme }) => theme.colors.accent};
   text-decoration: none;
-  font-size: ${({ theme }) => theme.fontSizeBodyText};
+  font-size: ${({ theme }) => theme.fontSize.body};
   position: absolute;
   top: calc(50% - 0.5em);
   left: 25%;
@@ -76,9 +76,9 @@ export const StyledChevronLeftText = styled.span`
 `
 
 export const StyledChevronRightText = styled.span`
-  color: ${({ theme }) => theme.accent};
+  color: ${({ theme }) => theme.colors.accent};
   text-decoration: none;
-  font-size: ${({ theme }) => theme.fontSizeBodyText};
+  font-size: ${({ theme }) => theme.fontSize.body};
   position: absolute;
   top: calc(50% - 0.5em);
   right: 25%;
@@ -134,21 +134,3 @@ export const StyledChevronRightLink = styled(Link)`
     }
   }
 ` 
-
-// ${StyledChevronRightLink}:hover {
-//   &:before {
-//     transform: rotate(-35deg);
-//   }
-//   &:after {
-//     transform: rotate(35deg);
-//   }
-// }
-
-// ${StyledChevronLeftLink}:hover {
-//   &:before {
-//     transform: rotate(-35deg);
-//   }
-//   &:after {
-//     transform: rotate(35deg);
-//   }
-// }

@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
   }
   body {
     margin: 0;
-    color: ${({ theme }) => theme.accent};
-    background-color: ${({ theme }) => theme.base};
+    color: ${({ theme }) => theme.colors.accent};
+    background-color: ${({ theme }) => theme.colors.base};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -270,7 +270,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: ${({ theme }) => theme.fontFamilyHeader};
+    font-family: ${({ theme }) => theme.fontFamily.extraBold};
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 1.38316rem;
@@ -286,7 +286,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: ${({ theme }) => theme.fontFamilyHeader};
+    font-family: ${({ theme }) => theme.fontFamily.extraBold};
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 1rem;
@@ -302,7 +302,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: ${({ theme }) => theme.fontFamilyHeader};
+    font-family: ${({ theme }) => theme.fontFamily.extraBold};
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 0.85028rem;
@@ -318,7 +318,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: ${({ theme }) => theme.fontFamilyHeader};
+    font-family: ${({ theme }) => theme.fontFamily.extraBold};
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 0.78405rem;

@@ -9,8 +9,8 @@ export const StyledContactFormInput = styled.input`
   width: 100%;
   height: 52px;
   margin-bottom: 8px;
-  background-color: $colorMiddle;
-  color: $colorBase;
+  background-color: ${({ theme }) => theme.colors.middle};
+  color: ${({ theme }) => theme.colors.base};
   padding: 8px;
   font-size: 1.6rem;
 `
@@ -20,8 +20,8 @@ export const StyledContactFormTextArea = styled.textarea`
   width: 100%;
   height: 152px;
   margin-bottom: 32px;
-  background-color: $colorMiddle;
-  color: $colorBase;
+  background-color: ${({ theme }) => theme.colors.middle};
+  color: ${({ theme }) => theme.colors.base};
   padding: 8px;
   font-size: 1.6rem;
 `
@@ -32,8 +32,8 @@ export const StyledSubmitButton = styled.button`
   border: none;
   padding: 16px;
   margin: 0 auto;
-  color: ${({ theme }) => theme.base };
-  background-color: ${({ theme }) => theme.accent };
-  font-size: ${({ theme }) => theme.fontSizeBodyText };
+  color: ${({ theme }) => theme.colors.base };
+  background-color: ${({ theme }) => theme.colors.accent };
+  font-size: ${({ theme }) => theme.fontSize.body };
   font-weight: bold;
 `

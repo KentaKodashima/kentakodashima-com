@@ -15,7 +15,7 @@ export const ArticleThumbnailWrapper = styled.div`
 
 export const ArticleThumbnailAnchor = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.accent};
+  color: ${({ theme }) => theme.colors.accent};
 `
 
 export const ArticleThumbnailTextWrapper = styled.div`
@@ -23,12 +23,12 @@ export const ArticleThumbnailTextWrapper = styled.div`
 `
 
 export const ArticleThumbnailTextTitle = styled.h4`
-  font-size: ${({ theme }) => theme.fontSizeThumbnailTitle};
+  font-size: ${({ theme }) => theme.fontSize.thumbnailTitle};
   margin-bottom: 8px;
 `
 
 export const ArticleThumbnailTextDescription = styled.p`
-  font-size: ${({ theme }) => theme.fontSizeBodyText};
+  font-size: ${({ theme }) => theme.fontSize.body};
   margin: 0;
   color: ${({ theme }) => theme.middle};
 `
@@ -36,6 +36,6 @@ export const ArticleThumbnailTextDescription = styled.p`
 export const ArticleThumbnailBar = styled.div`
   width: 40%;
   height: 2px;
-  background-color: ${({ theme }) => theme.middle};
+  background-color: ${({ theme }) => theme.colors.middle};
   margin: 8px 0;
 `
