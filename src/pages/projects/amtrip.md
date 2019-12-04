@@ -1,27 +1,20 @@
 ---
-title: Recipe Flicker
+title: Amtrip
 category-type: Mobile
-thumbnail: /assets/recipe-flicker-thumbnail.png
-thumbnail-subtitle: Swift / Firebase / Realm
+thumbnail: /assets/amtrip-thumbnail.png
+thumbnail-subtitle: Swift + Realm
 main-images:
-  - image: /assets/home_flicking_55.gif
-github-link: 'https://github.com/KentaKodashima/RecipeFlicker'
+  - image: /assets/top_multi_thumbs.png
+  - image: /assets/creation_page.jpg
+  - image: /assets/creation_google_places_api.png
+app-links: []
+github-link: 'https://github.com/KentaKodashima/Amtrip'
 about: >-
-  Recipe Flicker is an iOS app that I built with my friends when I was in
-  school. The concept behind the app is to simplify the process of finding the
-  meals for the day. By offering random recipes in a intuitive manner, it helps
-  people to decide what to eat.
+  Amtrip is a traveler's journal app. Using this app, users can easily make
+  records of their trips.
 technologies: |-
   - Swift
-  - Alamofire
-  - SwiftyJSON
-  - KingFisher
-  - Firebase
   - Realm
-  - EDAMAM Recipe Search API
-extra-images:
-  - image: /assets/favorite_all_deletion_58.png
-  - image: /assets/favorite_collection_58.png
-  - image: /assets/home_no_data_55.png
+  - Google Places Autocomplete API
 ---
 
