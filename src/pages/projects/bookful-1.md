@@ -31,8 +31,7 @@ about: >-
   - This app is available on the [Google Play
   Store](https://play.google.com/store/apps/details?id=kentakodashima.com.bookful).
 technologies: |-
-  \- Java  
-
-  \- Realm
+  - Java  
+  - Realm
 ---
 
