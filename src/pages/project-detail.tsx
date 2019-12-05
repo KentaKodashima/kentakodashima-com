@@ -23,8 +23,8 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
       <Layout
         isFooterVisible={true}
       >
-        <SEO title={state.title} />
-        <PageTitle title={state.title} />
+        <SEO title={state ? state.title : ''} />
+        <PageTitle title={state ? state.title : ''} />
         {/* <div>
           { 
             state.main_images.map(({ image }) => {
