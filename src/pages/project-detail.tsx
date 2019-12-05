@@ -33,8 +33,8 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
             })
           }
         </div> */}
-        <ProjectDetailSection title='About this project' body={state.about} />
-        <ProjectDetailSection title='Technologies' body={state.technologies} />
+        <ProjectDetailSection title='About this project' body={state ? state.about : ''} />
+        <ProjectDetailSection title='Technologies' body={state ? state.technologies : ''} />
       </Layout>
     </MarginTopContext.Provider>
   )
