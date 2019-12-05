@@ -14,7 +14,7 @@ collections:
       - { name: category-type, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
       - { name: thumbnail, label: Thumbnail Image, widget: image }
       - { name: thumbnail-subtitle, label: Thumbnail Subtitle, widget: string }
-      - { name: main-images, label: Main Images, widget: list, fields: [{ name: image, label: Image, widget: image }]
+      - { name: main-images, label: Main Images, widget: list, fields: [{ name: image, label: Image, widget: image }] }
       -   name: app-links
           label: App or Website Links
           widget: list
