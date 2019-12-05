@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 export const StyledThumbnailWrapper = styled.div`
   flex: 0 1 32%;
@@ -13,7 +14,7 @@ export const StyledThumbnailWrapper = styled.div`
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
   }
 `
-export const StyledThumbnailAnchor = styled.a`
+export const StyledThumbnailAnchor = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.accent};
 `

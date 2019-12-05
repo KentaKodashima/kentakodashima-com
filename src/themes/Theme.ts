@@ -10,6 +10,9 @@ export type ThemeType = {
     body: string
     thumbnailTitle: string
     navMenu: string
+    heroSubtitle: string
+    sectionTitlle: string
+    pageTitle: string
   },
   fontFamily: {
     default: string
@@ -31,7 +34,10 @@ export const Theme = {
     body: '16px',
     thumbnailTitle: '2.4rem',
     thumbnailSubtitle: '2.1rem',
-    navMenu: '4.8rem'
+    navMenu: '4.8rem',
+    heroSubtitle: '4.8rem',
+    sectionTitle: '4.8rem',
+    pageTitle: '7.2rem'
   },
   fontFamily: {
     default: '"SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial" ,sans-serif',

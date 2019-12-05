@@ -21,9 +21,9 @@ const BlogPage = () => {
         <Layout
           isFooterVisible={true}
         >
-          <SEO title="Blog" />
+          <SEO title='My Blog' />
           <PageTitle 
-            title='Blog'
+            title='My Blog'
           />
           <ArticleList />
         </Layout>
