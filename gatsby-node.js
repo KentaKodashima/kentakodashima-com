@@ -8,6 +8,7 @@
 
 // Fix: https://github.com/gatsbyjs/gatsby/issues/4753
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
