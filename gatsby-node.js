@@ -9,7 +9,7 @@
 // Fix: https://github.com/gatsbyjs/gatsby/issues/4753
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
-exports.onCreateNode = ({ node }) => {
+exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
   const { frontmatter } = node
   if (frontmatter) {
