@@ -14,18 +14,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  const { frontmatter } = node
-  if (frontmatter) {
-    const { image } = frontmatter
-    if (image) {
-      if (image.indexOf('/images') === 0) {
-        frontmatter.image = path.relative(
-          path.dirname(node.fileAbsolutePath),
-          path.join(__dirname, '/static/assets/', image)
-        )
-      }
-    }
-  }
+  fmImagesToRelative(node)
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
@@ -35,6 +24,4 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
-
-  fmImagesToRelative(node)
 }
