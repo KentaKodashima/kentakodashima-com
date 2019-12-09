@@ -25,14 +25,14 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
       >
         <SEO title={state ? state.title : ''} />
         <PageTitle title={state ? state.title : ''} />
-        {/* <div>
+        <div>
           { 
             state.main_images.map(({ image }) => {
               console.log(image)
               return <img src={image} alt="Image"/>
             })
           }
-        </div> */}
+        </div>
         <ProjectDetailSection title='About this project' body={state ? state.about : ''} />
         <ProjectDetailSection title='Technologies' body={state ? state.technologies : ''} />
       </Layout>

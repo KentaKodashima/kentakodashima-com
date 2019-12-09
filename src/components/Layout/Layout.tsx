@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
 
-// import '../scss/components/Layout.scss'
 import { MarginTopContext } from '../../themes/themeContext'
 import { GlobalStyle } from './GlobalStyle'
 import { Theme } from '../../themes/Theme'
