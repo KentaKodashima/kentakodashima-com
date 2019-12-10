@@ -1,10 +1,11 @@
 ---
 title: Bookful
+priority: 5
 category-type: Mobile
 thumbnail: /assets/bookful-thumbnail.png
 thumbnail-subtitle: Java / Realm
 main-images:
-  - image: /assets/bookful.png
+  - /assets/bookful.png
 app-links:
   - app-link:
       link-type: Android
@@ -30,7 +31,7 @@ about: >-
 
   - This app is available on the [Google Play
   Store](https://play.google.com/store/apps/details?id=kentakodashima.com.bookful).
-technologies: |-
+technologies:
   - Java  
   - Realm
 ---

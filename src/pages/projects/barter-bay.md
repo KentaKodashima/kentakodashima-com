@@ -1,12 +1,13 @@
 ---
 title: Barter Bay
+priority: 1
 category-type: Mobile
 thumbnail: /assets/barterbay-thumbnail.png
 thumbnail-subtitle: React / Redux / GraphQL / PostgreSQL / Node
 main-images:
-  - image: /assets/barterbay-home.png
-  - image: /assets/barterbay-reward.png
-  - image: /assets/barterbay-deck.png
+  - /assets/barterbay-home.png
+  - /assets/barterbay-reward.png
+  - /assets/barterbay-deck.png
 app-links:
   - app-link:
       link-type: iOS
@@ -23,7 +24,7 @@ about: >-
   trade for free. We connect you to real people both locally and globally. By
   using Barter Bay, you can save money and declutter at the same time. ☀️ What’s
   more, it’s completely free!
-technologies: |-
+technologies:
   - React Native
   - Redux
   - GraphQL

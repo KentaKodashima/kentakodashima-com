@@ -1,17 +1,18 @@
 ---
 title: Recipe Flicker
+priority: 4
 category-type: Mobile
 thumbnail: /assets/recipe-flicker-thumbnail.png
 thumbnail-subtitle: Swift / Firebase / Realm
 main-images:
-  - image: /assets/home_flicking_55.gif
+  - /assets/home_flicking_55.gif
 github-link: 'https://github.com/KentaKodashima/RecipeFlicker'
 about: >-
   Recipe Flicker is an iOS app that I built with my friends when I was in
   school. The concept behind the app is to simplify the process of finding the
   meals for the day. By offering random recipes in a intuitive manner, it helps
   people to decide what to eat.
-technologies: |-
+technologies:
   - Swift
   - Alamofire
   - SwiftyJSON
@@ -20,8 +21,8 @@ technologies: |-
   - Realm
   - EDAMAM Recipe Search API
 extra-images:
-  - image: /assets/favorite_all_deletion_58.png
-  - image: /assets/favorite_collection_58.png
-  - image: /assets/home_no_data_55.png
+  - /assets/favorite_all_deletion_58.png
+  - /assets/favorite_collection_58.png
+  - /assets/home_no_data_55.png
 ---
 
