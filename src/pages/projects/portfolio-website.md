@@ -9,7 +9,7 @@ main-images:
 app-links:
   - app-link:
       link-type: Web
-      url: kentakodashima@gmail.com
+      url: kentakodashima.com
 github-link: 'https://github.com/KentaKodashima/kentakodashima-com'
 about: This is my portfolio website that express what I can do.
 technologies:
