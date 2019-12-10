@@ -21,10 +21,9 @@ const ProjectList: FunctionComponent = () => {
                   }
                 }
               }
+              extra_images
+              main_images
               thumbnail_subtitle
-              main_images {
-                image
-              }
               app_links {
                 app_link {
                   link_type
@@ -34,9 +33,6 @@ const ProjectList: FunctionComponent = () => {
               github_link
               about
               technologies
-              extra_images {
-                image
-              }
             }    
           }
         }
