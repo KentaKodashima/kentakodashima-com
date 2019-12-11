@@ -5,8 +5,8 @@ category-type: Mobile
 thumbnail: /assets/amtrip-thumbnail.png
 thumbnail-subtitle: Swift / Realm
 main-image1: /assets/top_multi_thumbs.png
-main-image1: /assets/creation_page.jpg
-main-image1: /assets/creation_google_places_api.png
+main-image2: /assets/creation_page.jpg
+main-image3: /assets/creation_google_places_api.png
 # main-images:
 #   - /assets/top_multi_thumbs.png
 #   - /assets/creation_page.jpg
