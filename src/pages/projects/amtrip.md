@@ -4,10 +4,13 @@ priority: 2
 category-type: Mobile
 thumbnail: /assets/amtrip-thumbnail.png
 thumbnail-subtitle: Swift / Realm
-main-images:
-  - /assets/top_multi_thumbs.png
-  - /assets/creation_page.jpg
-  - /assets/creation_google_places_api.png
+main-image1: /assets/top_multi_thumbs.png
+main-image1: /assets/creation_page.jpg
+main-image1: /assets/creation_google_places_api.png
+# main-images:
+#   - /assets/top_multi_thumbs.png
+#   - /assets/creation_page.jpg
+#   - /assets/creation_google_places_api.png
 app-links: []
 github-link: 'https://github.com/KentaKodashima/Amtrip'
 about: >-

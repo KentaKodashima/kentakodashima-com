@@ -4,8 +4,9 @@ priority: 4
 category-type: Mobile
 thumbnail: /assets/recipe-flicker-thumbnail.png
 thumbnail-subtitle: Swift / Firebase / Realm
-main-images:
-  - /assets/home_flicking_55.gif
+main-image1: /assets/home_flicking_55.gif
+# main-images:
+#   - /assets/home_flicking_55.gif
 github-link: 'https://github.com/KentaKodashima/RecipeFlicker'
 about: >-
   Recipe Flicker is an iOS app that I built with my friends when I was in

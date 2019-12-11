@@ -4,10 +4,13 @@ priority: 1
 category-type: Mobile
 thumbnail: /assets/barterbay-thumbnail.png
 thumbnail-subtitle: React / Redux / GraphQL / PostgreSQL / Node
-main-images:
-  - /assets/barterbay-home.png
-  - /assets/barterbay-reward.png
-  - /assets/barterbay-deck.png
+main-image1: /assets/barterbay-home.png
+main-image2: /assets/barterbay-reward.png
+main-image3: /assets/barterbay-deck.png
+# main-images:
+#   - /assets/barterbay-home.png
+#   - /assets/barterbay-reward.png
+#   - /assets/barterbay-deck.png
 app-links:
   - app-link:
       link-type: iOS

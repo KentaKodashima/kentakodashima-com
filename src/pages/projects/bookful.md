@@ -4,8 +4,9 @@ priority: 5
 category-type: Mobile
 thumbnail: /assets/bookful-thumbnail.png
 thumbnail-subtitle: Java / Realm
-main-images:
-  - /assets/bookful.png
+main-image1: /assets/bookful.png
+# main-images:
+#   - /assets/bookful.png
 app-links:
   - app-link:
       link-type: Android

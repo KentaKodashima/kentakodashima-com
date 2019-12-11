@@ -4,8 +4,9 @@ priority: 4
 category-type: Web
 thumbnail: /assets/portfolio-thumbnail.png
 thumbnail-subtitle: React / Typescript / Gatsby / Netlify CMS
-main-images:
-  - /assets/portfolio-main.png
+main-image1: /assets/portfolio-main.png
+# main-images:
+#   - /assets/portfolio-main.png
 app-links:
   - app-link:
       link-type: Web
