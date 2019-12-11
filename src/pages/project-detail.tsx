@@ -4,6 +4,7 @@ import {
   Layout,
   SEO,
   PageTitle,
+  ProjectDetailMainImages,
   ProjectDetailSection
 } from '../components'
 import Img from 'gatsby-image'
@@ -18,6 +19,32 @@ type ProjectDetailPageProps = {
 
 
 const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location: { state } }) => {
+  const _renderSingleMainImage = (image: any) => {
+    return (
+      <div>
+        <Img
+          title={state.title}
+          alt={state.title}
+          fluid={{ ...image.childImageSharp.fluid }}
+        />
+      </div>
+    )
+  }
+
+  const _renderMainImages = (mainImages: any[]) => {
+    return (
+      mainImages.map((image) => {
+        return (
+          <Img
+            title={state.title}
+            alt={state.title}
+            fluid={{ ...image.childImageSharp.fluid }}
+          />
+        )
+      })
+    )
+  }
+  
   return (
     <MarginTopContext.Provider value={{ removeMarginTop: false }}>
       <Layout
@@ -25,16 +52,9 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
       >
         <SEO title={state ? state.title : ''} />
         <PageTitle title={state ? state.title : ''} />
-        {/* <div>
-          { 
-            state.main_images.map(({ image }) => {
-              console.log(image)
-              return <img src={image} alt="Image"/>
-            })
-          }
-        </div> */}
-        <ProjectDetailSection title='About this project' body={state ? state.about : ''} />
-        <ProjectDetailSection title='Technologies' body={state ? state.technologies : ''} />
+        <ProjectDetailMainImages state={state} />
+        <ProjectDetailSection title='About this project' about={state ? state.about : ''} />
+        <ProjectDetailSection title='Technologies' technologies={state ? state.technologies : []} />
       </Layout>
     </MarginTopContext.Provider>
   )

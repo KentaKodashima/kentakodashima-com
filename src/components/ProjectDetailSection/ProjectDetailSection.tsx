@@ -4,18 +4,30 @@ import { StyledProjectDetailSection } from './ProjectDetailSection.styled'
 
 type ProjectDetailSectionProps = {
   title: string
-  body: string
+  about?: string
+  technologies?: string[]
 }
 
-const ProjectDetailSection: FunctionComponent<ProjectDetailSectionProps> = ({ title, body }) => {
+const ProjectDetailSection: FunctionComponent<ProjectDetailSectionProps> = ({ title, technologies, about }) => {
   return (
     <StyledProjectDetailSection>
       <h3>
         {title}
       </h3>
-      <p>
-        {body}
-      </p>
+      { about &&
+        <p>
+          {about}
+        </p>
+      }
+      { technologies &&
+        <ul>
+          {
+            technologies.map(technology => {
+              return <li>{technology}</li>
+            })
+          }
+        </ul>
+      }
     </StyledProjectDetailSection>
   )
 }

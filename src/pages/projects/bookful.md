@@ -1,17 +1,16 @@
 ---
 title: Bookful
 priority: 5
-category-type: Mobile
+categoryType: Mobile
 thumbnail: /assets/bookful-thumbnail.png
-thumbnail-subtitle: Java / Realm
-main-image1: /assets/bookful.png
-# main-images:
-#   - /assets/bookful.png
-app-links:
-  - app-link:
-      link-type: Android
+thumbnailSubtitle: Java / Realm
+mainImages:
+  - /assets/bookful.png
+appLinks:
+  - appLink:
+      linkType: Android
       url: 'https://play.google.com/store/apps/details?id=kentakodashima.com.bookful'
-github-link: 'https://github.com/KentaKodashima/Bookful'
+githubLink: 'https://github.com/KentaKodashima/Bookful'
 about: >-
   Bookful is a simple tool to keep records of the books you've read. It is kind
   of a hard task to remember the contents of the books by reading just one time.

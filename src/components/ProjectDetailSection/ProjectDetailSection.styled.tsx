@@ -14,4 +14,10 @@ export const StyledProjectDetailSection = styled.div<StyledProjectDetailSectionP
   >p {
     font-size: ${({ theme }) => theme.fontSize.body};
   }
+
+  >ul {
+    >li {
+      font-size: ${({ theme }) => theme.fontSize.body};
+    }
+  }
 `

@@ -12,7 +12,7 @@ const ProjectList: FunctionComponent = () => {
           node {
             frontmatter {
               title
-              category_type
+              categoryType
               thumbnail {
                 id
                 childImageSharp {
@@ -21,14 +21,30 @@ const ProjectList: FunctionComponent = () => {
                   }
                 }
               }
-              thumbnail_subtitle
-              app_links {
-                app_link {
-                  link_type
+              mainImages {
+                id
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              extraImages {
+                id
+                childImageSharp {
+                  fluid(maxWidth: 300) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              thumbnailSubtitle
+              appLinks {
+                appLink {
+                  linkType
                   url
                 }
               }
-              github_link
+              githubLink
               about
               technologies
             }    

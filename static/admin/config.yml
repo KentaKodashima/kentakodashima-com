@@ -11,28 +11,25 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: priority, label: Priority, widget: number, default: 0, valueType: int }
-      - { name: category-type, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
+      - { name: categoryType, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
       - { name: thumbnail, label: Thumbnail Image, widget: image }
-      - { name: thumbnail-subtitle, label: Thumbnail Subtitle, widget: string }
-      - { name: main-image1, label: Main Image 1, widget: image }
-      - { name: main-image2, label: Main Image 2, widget: image, required: false }
-      - { name: main-image3, label: Main Image 3, widget: image, required: false }
-      # - { name: main-images, label: Main Images, widget: list, field: { name: image, label: Image, widget: image } }
-      -   name: app-links
+      - { name: thumbnailSubtitle, label: Thumbnail Subtitle, widget: string }
+      - { name: mainImages, label: Main Images, widget: list, field: { name: image, label: Image, widget: image } }
+      -   name: appLinks
           label: App or Website Links
           widget: list
           required: false
           fields:
-            - name: app-link
+            - name: appLink
               label: App or Website Link
               widget: object
               fields:
                 - { name: url, label: URL, wdget: string }
-                - { name: link-type, label: Media Type, widget: select, options: ['iOS', 'Android', 'Web'] }
-      - { name: github-link, label: Github Link, widget: string, required: false }
+                - { name: linkType, label: Media Type, widget: select, options: ['iOS', 'Android', 'Web'] }
+      - { name: githubLink, label: Github Link, widget: string, required: false }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: list, field: { name: technology, label: Technology Name, widget: string } }
-      # - { name: extra-images, label: Extra Images, widget: list, required: false, field: { name: image, label: Image, widget: image } }
+      - { name: extraImages, label: Extra Images, widget: list, required: false, field: { name: image, label: Image, widget: image } }
 
   - name: 'blog'
     label: 'Blog'

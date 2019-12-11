@@ -1,22 +1,32 @@
 export type ProjectType = {
   title: string
-  category_type: string
+  categoryType: string
   thumbnail: {
     id: string
     childImageSharp: {
       fluid: any
     }
   }
-  thumbnail_subtitle: string
-  main_images: []
-  app_links: {
-    app_link: {
-      link_type: string
+  thumbnailSubtitle: string
+  mainImages: [{
+    id: string
+    childImageSharp: {
+      fluid: any
+    }
+  }]
+  appLinks: {
+    appLink: {
+      linkType: string
       url: string
     }
   }
-  github_link: string
+  githubLink: string
   about: string
-  technologies: string
-  extra_images?: []
+  technologies: string[]
+  extraImages?: [{
+    id: string
+    childImageSharp: {
+      fluid: any
+    }
+  }]
 }

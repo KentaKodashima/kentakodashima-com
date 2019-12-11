@@ -1,17 +1,17 @@
 ---
 title: Portfolio Website
 priority: 4
-category-type: Web
+categoryType: Web
 thumbnail: /assets/portfolio-thumbnail.png
-thumbnail-subtitle: React / Typescript / Gatsby / Netlify CMS
-main-image1: /assets/portfolio-main.png
-# main-images:
-#   - /assets/portfolio-main.png
-app-links:
-  - app-link:
-      link-type: Web
+thumbnailSubtitle: React / Typescript / Gatsby / Netlify CMS
+# main1: /assets/portfolio-main.png
+mainImages:
+  - /assets/portfolio-main.png
+appLinks:
+  - appLink:
+      linkType: Web
       url: kentakodashima.com
-github-link: 'https://github.com/KentaKodashima/kentakodashima-com'
+githubLink: 'https://github.com/KentaKodashima/kentakodashima-com'
 about: This is my portfolio website that express what I can do.
 technologies:
   - React
