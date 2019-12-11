@@ -21,7 +21,7 @@ const ProjectList: FunctionComponent = () => {
                   }
                 }
               }
-              main-image1 {
+              main_image1 {
                 id
                 childImageSharp {
                   fluid(maxWidth: 300) {
@@ -29,7 +29,7 @@ const ProjectList: FunctionComponent = () => {
                   }
                 }
               }
-              main-image2 {
+              main_image2 {
                 id
                 childImageSharp {
                   fluid(maxWidth: 300) {
@@ -37,7 +37,7 @@ const ProjectList: FunctionComponent = () => {
                   }
                 }
               }
-              main-image3 {
+              main_image3 {
                 id
                 childImageSharp {
                   fluid(maxWidth: 300) {
