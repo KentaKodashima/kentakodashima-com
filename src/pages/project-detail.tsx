@@ -50,11 +50,15 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
       <Layout
         isFooterVisible={true}
       >
-        <SEO title={state ? state.title : ''} />
-        <PageTitle title={state ? state.title : ''} />
-        <ProjectDetailMainImages state={state} />
-        <ProjectDetailSection title='About this project' about={state ? state.about : ''} />
-        <ProjectDetailSection title='Technologies' technologies={state ? state.technologies : []} />
+        { state &&
+          <React.Fragment>
+            <SEO title={state.title} />
+            <PageTitle title={state.title} />
+            <ProjectDetailMainImages state={state} />
+            <ProjectDetailSection title='About this project' about={state.about} />
+            <ProjectDetailSection title='Technologies' technologies={state.technologies} />
+          </React.Fragment>
+        }
       </Layout>
     </MarginTopContext.Provider>
   )
