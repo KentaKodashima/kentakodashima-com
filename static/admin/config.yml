@@ -3,7 +3,6 @@ backend:
   repo: KentaKodashima/kentakodashima-com
 media_folder: static/assets
 public_folder: /assets
-publish_mode: editorial_workflow
 collections:
   - name: 'projects'
     label: 'Projects'

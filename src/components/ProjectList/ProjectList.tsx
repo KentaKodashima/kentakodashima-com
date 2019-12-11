@@ -21,30 +21,6 @@ const ProjectList: FunctionComponent = () => {
                   }
                 }
               }
-              main_image1 {
-                id
-                childImageSharp {
-                  fluid(maxWidth: 300) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              main_image2 {
-                id
-                childImageSharp {
-                  fluid(maxWidth: 300) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              main_image3 {
-                id
-                childImageSharp {
-                  fluid(maxWidth: 300) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
               thumbnail_subtitle
               app_links {
                 app_link {
