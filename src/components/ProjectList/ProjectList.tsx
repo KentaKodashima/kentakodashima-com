@@ -10,6 +10,9 @@ const ProjectList: FunctionComponent = () => {
       allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/projects)/.*\\.md$/"}}) {
         edges {
           node {
+            fields {
+              slug
+            }
             frontmatter {
               title
               categoryType
@@ -57,8 +60,8 @@ const ProjectList: FunctionComponent = () => {
 
   return (
     <StyledProjectListWrapper>
-      {projectNodes.map(({ node: { frontmatter: project } }) => {
-        return <ProjectThumbnail key={project.thumbnail.id} project={project} />
+      {projectNodes.map(({ node }) => {
+        return <ProjectThumbnail key={node.frontmatter.thumbnail.id} project={node.frontmatter} slug={node.fields.slug} />
       })}
     </StyledProjectListWrapper>
   )

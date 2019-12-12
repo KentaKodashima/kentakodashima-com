@@ -1,4 +1,5 @@
 ---
+templateKey: project-detail
 title: Bookful
 priority: 5
 categoryType: Mobile

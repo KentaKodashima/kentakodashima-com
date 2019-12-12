@@ -1,4 +1,5 @@
 ---
+templateKey: project-detail
 title: Amtrip
 priority: 2
 categoryType: Mobile

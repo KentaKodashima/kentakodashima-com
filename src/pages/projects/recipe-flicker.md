@@ -1,4 +1,5 @@
 ---
+templateKey: project-detail
 title: Recipe Flicker
 priority: 4
 categoryType: Mobile

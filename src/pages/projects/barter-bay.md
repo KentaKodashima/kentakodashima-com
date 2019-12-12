@@ -1,4 +1,5 @@
 ---
+templateKey: project-detail
 title: Barter Bay
 priority: 1
 categoryType: Mobile

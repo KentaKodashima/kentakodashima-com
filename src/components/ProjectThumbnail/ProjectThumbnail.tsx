@@ -13,13 +13,14 @@ import { ProjectType } from '../../themes/types'
 
 type ProjectThumbnailProps = {
   project: ProjectType
+  slug: string
 }
 
-const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ project }) => {
+const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ project, slug }) => {
   return (
     <StyledThumbnailWrapper>
       <StyledThumbnailAnchor
-        to={'/project-detail'}
+        to={slug}
         state={project}
       >
         <StyledGatsbyImage
@@ -29,7 +30,7 @@ const ProjectThumbnail: FunctionComponent<ProjectThumbnailProps> = ({ project })
         />
         <StyledTextWrapper>
           <StyledThumbnailTitle>{project.title}</StyledThumbnailTitle>
-          <StyledDescription>{project.thumbnail_subtitle}</StyledDescription>
+          <StyledDescription>{project.thumbnailSubtitle}</StyledDescription>
         </StyledTextWrapper>
       </StyledThumbnailAnchor>
     </StyledThumbnailWrapper>

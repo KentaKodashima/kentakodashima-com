@@ -1,4 +1,5 @@
 ---
+templateKey: project-detail
 title: Portfolio Website
 priority: 4
 categoryType: Web
