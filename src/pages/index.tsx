@@ -22,7 +22,7 @@ const IndexPage = () => {
         <Layout
           isFooterVisible={false}
         >
-          <SEO title="Home" />
+          <SEO title='Home' />
           <div className={indexPageStyle.heroText}>
             <h2 className={indexPageStyle.heroTitle}>Kenta Kodashima</h2>
             <h3 className={indexPageStyle.heroSubTitle}>Full-Stack Developer</h3>
