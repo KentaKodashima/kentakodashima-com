@@ -11,6 +11,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import Container from '../Container'
 import Chevrons from '../Chevrons'
+import Transition from '../Transition'
 
 type LayoutProps = {
   isFooterVisible: boolean
@@ -34,27 +35,29 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
   } = props
 
   return (
-    <ThemeProvider theme={Theme}>
-      <GlobalStyle />
-      <div className="wrapper">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <MarginTopContext.Consumer>
-          {({ removeMarginTop }) => (
-            <StyledLayoutMain
-              removeMarginTop={removeMarginTop}
-            >
-              <Chevrons />
-              <Container>
-                {children}
-              </Container>
-            </StyledLayoutMain>
-          )}
-        </MarginTopContext.Consumer>
-        { isFooterVisible &&
-          <Footer />
-        }
-      </div>
-    </ThemeProvider>
+    <Transition>
+      <ThemeProvider theme={Theme}>
+        <GlobalStyle />
+        <div className="wrapper">
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <MarginTopContext.Consumer>
+            {({ removeMarginTop }) => (
+              <StyledLayoutMain
+                removeMarginTop={removeMarginTop}
+              >
+                <Chevrons />
+                <Container>
+                  {children}
+                </Container>
+              </StyledLayoutMain>
+            )}
+          </MarginTopContext.Consumer>
+          { isFooterVisible &&
+            <Footer />
+          }
+        </div>
+      </ThemeProvider>
+    </Transition>
   )
 }
 

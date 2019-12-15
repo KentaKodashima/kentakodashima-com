@@ -6,7 +6,7 @@ export const StyledThumbnailWrapper = styled.div`
   flex: 0 1 32%;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  margin-bottom: 24px;
+  margin: 0 4px 24px;
 
   &:hover {
     transform: translateY(-10px);
