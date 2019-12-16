@@ -8,7 +8,7 @@ import {
   ProjectDetailSection
 } from '../components'
 import Img from 'gatsby-image'
-import { MarginTopContext } from '../themes/themeContext'
+import { MarginTopContext } from '../themes/contexts'
 import { ProjectType } from '../themes/types'
 
 type ProjectDetailPageProps = {

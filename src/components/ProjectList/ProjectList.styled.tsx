@@ -1,6 +1,18 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { ThemeType } from '../../themes/theme'
 
-export const StyledProjectListWrapper = styled.div`
+type StyledProjectListWrapperProps = {
+  theme: ThemeType
+}
+
+export const StyledProjectListWrapper = styled.div<StyledProjectListWrapperProps>`
   display: flex;
   flex-wrap: wrap;
+
+  ${({ theme }: StyledProjectListWrapperProps) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  `}
 `

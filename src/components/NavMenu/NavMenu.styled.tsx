@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 
-import { ThemeType } from '../../themes/Theme'
+import { ThemeType } from '../../themes/theme'
 
 type StyledNavMenuProps = {
   open: boolean,
@@ -27,4 +27,10 @@ export const StyledNavLink = styled(Link)`
   font-size: ${({ theme }) => theme.fontSize.navMenu};
   color: ${({ theme }) => theme.colors.accent};
   text-decoration: none;
+
+  ${({ theme }: StyledNavMenuProps) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      font-size: ${({ theme }) => theme.fontSize.mobile.navMenu};
+    }
+  `}
 `

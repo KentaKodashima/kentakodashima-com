@@ -1,4 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { ThemeType } from '../../themes/theme'
+
+type Props = {
+  theme: ThemeType
+}
 
 export const ArticleThumbnailWrapper = styled.div`
   flex: 0 1 49%;
@@ -13,7 +18,7 @@ export const ArticleThumbnailWrapper = styled.div`
   }
 `
 
-export const ArticleThumbnailAnchor = styled.a`
+export const ArticleThumbnailAnchor = styled.a<Props>`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.accent};
 `
@@ -22,12 +27,18 @@ export const ArticleThumbnailTextWrapper = styled.div`
   padding: 16px;
 `
 
-export const ArticleThumbnailTextTitle = styled.h4`
+export const ArticleThumbnailTextTitle = styled.h4<Props>`
   font-size: ${({ theme }) => theme.fontSize.thumbnailTitle};
   margin-bottom: 8px;
+
+  ${({ theme }: Props) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      font-size: ${({ theme }) => theme.fontSize.mobile.thumbnailTitle};
+    }
+  `}
 `
 
-export const ArticleThumbnailTextDescription = styled.p`
+export const ArticleThumbnailTextDescription = styled.p<Props>`
   font-size: ${({ theme }) => theme.fontSize.body};
   margin: 0;
   color: ${({ theme }) => theme.middle};

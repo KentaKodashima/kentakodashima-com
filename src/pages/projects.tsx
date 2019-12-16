@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
+import { ChevronsContext, MarginTopContext } from '../themes/contexts'
 import {
   Layout,
   ProjectList,

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { ThemeType } from '../../themes/Theme'
+import { ThemeType } from '../../themes/theme'
 
 export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
   html {
@@ -208,7 +208,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
   }
   body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: ${({ theme }) => theme.fontFamilyBase};
+    font-family: ${({ theme }) => theme.fontFamily.base};
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -238,7 +238,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: ${({ theme }) => theme.fontFamilyHeader};
+    font-family: ${({ theme }) => theme.fontFamily.extraBold};
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 2.25rem;
@@ -254,7 +254,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     padding-top: 0;
     margin-bottom: 1.45rem;
     color: inherit;
-    font-family: ${({ theme }) => theme.fontFamilyHeader};
+    font-family: ${({ theme }) => theme.fontFamily.extraBold};
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 1.62671rem;

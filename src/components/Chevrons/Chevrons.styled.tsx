@@ -1,8 +1,20 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 
-export const StyledChevron = styled.div`
+import { ThemeType } from '../../themes/theme'
+
+type StyledChevronProps = {
+  theme: ThemeType
+}
+
+export const StyledChevron = styled.div<StyledChevronProps>`
   position: fixed;
+
+  ${({ theme }: StyledChevronProps) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      display: none;
+    }
+  `}
 `
 
 export const StyledChevronLeftArrowBar = styled.span`

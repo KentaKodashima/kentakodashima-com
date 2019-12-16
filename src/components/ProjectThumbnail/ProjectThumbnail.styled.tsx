@@ -1,6 +1,11 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
+import { ThemeType } from '../../themes/theme'
+
+type Props = {
+  theme: ThemeType
+}
 
 export const StyledThumbnailWrapper = styled.div`
   flex: 0 1 32%;
@@ -27,12 +32,24 @@ export const StyledTextWrapper = styled.div`
   padding: 16px;
 `
 
-export const StyledThumbnailTitle = styled.h4`
+export const StyledThumbnailTitle = styled.h4<Props>`
   font-size: ${({ theme }) => theme.fontSize.thumbnailTitle};
   margin-bottom: 8px;
+
+  ${({ theme }: Props) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      font-size: ${({ theme }) => theme.fontSize.mobile.thumbnailTitle};
+    }
+  `}
 `
 
-export const StyledDescription = styled.p`
+export const StyledDescription = styled.p<Props>`
   font-size: ${({ theme }) => theme.fontSize.thumbnailSubtitle};
   margin: 0;
+
+  ${({ theme }: Props) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      font-size: ${({ theme }) => theme.fontSize.mobile.thumbnailSubtitle};
+    }
+  `}
 `

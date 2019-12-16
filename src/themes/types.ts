@@ -30,3 +30,28 @@ export type ProjectType = {
     }
   }]
 }
+
+export type LocationType = {
+  ancestorOrigins: Object
+  assign: Function
+  hash: string
+  host: string
+  hostname: string
+  href: string
+  key: string
+  origin: string
+  pathname: string
+  port: string
+  protocol: string
+  reload: Function
+  replace: Function
+  search: string
+  state: Object
+  toString: Function
+}
+
+export type PageTransitionContextType = {
+  location: LocationType
+  direction: string
+  provideDirection: (direction: string) => {}
+}

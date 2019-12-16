@@ -1,7 +1,7 @@
 import React from 'react'
 
 import contactStyles from '../scss/pages/contact.module.scss'
-import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
+import { ChevronsContext, MarginTopContext } from '../themes/contexts'
 import {
   Layout,
   PageTitle,

@@ -1,4 +1,17 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  color: ${({ theme }) => theme.colors.base};
+  font-size: 6rem;
+  padding: 8px;
+
+  ${({ theme }) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      font-size: 3.8rem;
+    }
+  `}
+`
 
 export const StyledSNSIcons = styled.ul`
   >li {

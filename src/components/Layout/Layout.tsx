@@ -1,17 +1,15 @@
 import React, { FunctionComponent } from 'react'
-import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
 
-import { MarginTopContext } from '../../themes/themeContext'
+import { MarginTopContext } from '../../themes/contexts'
 import { GlobalStyle } from './GlobalStyle'
-import { Theme } from '../../themes/Theme'
+import { theme } from '../../themes/theme'
 import { StyledLayoutMain } from './Layout.styled'
 import Header from '../Header'
 import Footer from '../Footer'
 import Container from '../Container'
 import Chevrons from '../Chevrons'
-import Transition from '../Transition'
 
 type LayoutProps = {
   isFooterVisible: boolean
@@ -35,29 +33,27 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
   } = props
 
   return (
-    <Transition>
-      <ThemeProvider theme={Theme}>
-        <GlobalStyle />
-        <div className="wrapper">
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <MarginTopContext.Consumer>
-            {({ removeMarginTop }) => (
-              <StyledLayoutMain
-                removeMarginTop={removeMarginTop}
-              >
-                <Chevrons />
-                <Container>
-                  {children}
-                </Container>
-              </StyledLayoutMain>
-            )}
-          </MarginTopContext.Consumer>
-          { isFooterVisible &&
-            <Footer />
-          }
-        </div>
-      </ThemeProvider>
-    </Transition>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <div className="wrapper">
+        <Header />
+        <MarginTopContext.Consumer>
+          {({ removeMarginTop }) => (
+            <StyledLayoutMain
+              removeMarginTop={removeMarginTop}
+            >
+              <Chevrons />
+              <Container>
+                {children}
+              </Container>
+            </StyledLayoutMain>
+          )}
+        </MarginTopContext.Consumer>
+        { isFooterVisible &&
+          <Footer />
+        }
+      </div>
+    </ThemeProvider>
   )
 }
 

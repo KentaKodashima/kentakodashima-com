@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ThemeType } from '../../themes/Theme'
+import { ThemeType } from '../../themes/theme'
 
 type StyledProjectDetailSectionProps = {
   theme: ThemeType

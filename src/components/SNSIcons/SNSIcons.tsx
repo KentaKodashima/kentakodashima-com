@@ -1,20 +1,12 @@
 import React, { FunctionComponent } from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faGithub,
   faMediumM,
   faLinkedinIn,
   faFacebookF
 } from '@fortawesome/free-brands-svg-icons'
-import styled from 'styled-components'
 
-import { StyledSNSIcons } from './SNSIcons.styled'
-
-const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
-  color: ${props => props.theme.colors.base};
-  font-size: 6rem;
-  padding: 8px;
-`
+import { StyledSNSIcons, StyledFontAwesomeIcon } from './SNSIcons.styled'
 
 const Container: FunctionComponent = () => {
   return (

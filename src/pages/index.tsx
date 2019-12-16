@@ -6,7 +6,7 @@ import {
   SEO
 } from '../components'
 import CatImg from '../images/hero-cat.svg'
-import { ChevronsContext, MarginTopContext } from '../themes/themeContext'
+import { ChevronsContext, MarginTopContext } from '../themes/contexts'
 
 const IndexPage = () => {
   return (

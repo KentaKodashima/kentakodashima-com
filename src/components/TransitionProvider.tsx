@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import Transition from './Transition'
 
 export const PageTransitionContext = React.createContext({
   direction: '',
   provideDirection: (direction: string) => {},
-  location: Object
+  location: {}
 })
 
 export const TransitionProvider = ({ children, location }) => {
@@ -21,17 +22,17 @@ export const TransitionProvider = ({ children, location }) => {
     }
   }, [])
 
-  console.log(location, 'location in provider')
-
   return (
     <PageTransitionContext.Provider
-        value={{
-          direction,
-          provideDirection: provideDirection,
-          location
-        }}
-      >
+      value={{
+        direction,
+        provideDirection,
+        location
+      }}
+    >
+      <Transition>
         {children}
+      </Transition>
     </PageTransitionContext.Provider>
   )
 }

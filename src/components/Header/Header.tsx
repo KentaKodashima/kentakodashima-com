@@ -12,7 +12,7 @@ import {
 } from './Header.styled'
 
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -44,14 +44,6 @@ const Header = ({ siteTitle }) => {
       </StyledHeaderContainer>
     </StyledHeader>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header
