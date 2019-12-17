@@ -24,7 +24,7 @@
   font-size: 7.2rem;
 
   @include max-screen(480px) {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -32,6 +32,6 @@
   font-size: 4.8rem;
 
   @include max-screen(480px) {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }

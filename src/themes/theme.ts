@@ -53,10 +53,11 @@ export const theme = {
     sectionTitle: '4.8rem',
     pageTitle: '7.2rem',
     mobile: {
-      pageTitle: '3.6rem',
+      pageTitle: '3.2rem',
       navMenu: '3.2rem',
       thumbnailTitle: '1.8rem',
-      thumbnailSubtitle: '1.6rem'
+      thumbnailSubtitle: '1.6rem',
+      sectionTitle: '2.4rem'
     }
   },
   fontFamily: {

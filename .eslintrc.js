@@ -24,6 +24,13 @@ module.exports = {
     'no-console': 0,
     'no-empty-interface': 0,
     'interface-name': [0, 'always-prefix'],
+    '@typescript-eslint/explicit-function-return-type': [
+      'warn',
+      {
+        'allowExpressions': 1,
+        'allowTypedFunctionExpressions': 1
+      }
+    ]
     // '@typescript-eslint/rule-name': 'error', // Not supported in master yet
     // '@typescript-eslint/explicit-member-accessibility': ['error'], // Not supported in master yet
   },

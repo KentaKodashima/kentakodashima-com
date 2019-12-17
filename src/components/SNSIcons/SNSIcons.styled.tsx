@@ -14,6 +14,12 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `
 
 export const StyledSNSIcons = styled.ul`
+  ${({ theme }) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      margin: 0 auto;
+    }
+  `}
+
   >li {
     display: inline-block;
     width: 60px;
