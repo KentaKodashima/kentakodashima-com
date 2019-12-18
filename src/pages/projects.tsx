@@ -26,9 +26,9 @@ const ProjectsPage = () => (
         <PageTitle 
           title='Projects'
         />
-        <Tab 
+        {/* <Tab
           tabItems={['All', 'Mobile', 'Web']}
-        />
+        /> */}
         <ProjectList />
       </Layout>
     </ChevronsContext.Provider>
