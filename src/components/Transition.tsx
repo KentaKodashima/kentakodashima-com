@@ -121,7 +121,6 @@ class Transition extends React.PureComponent {
       <PageTransitionContext.Consumer>
         {(context: PageTransitionContextType) => (
           <TransitionGroup>
-            {console.log(context, 'this is context')}
             <ReactTransition
               key={context.location.pathname}
               timeout={{

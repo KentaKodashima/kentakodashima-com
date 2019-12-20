@@ -7,7 +7,7 @@ import ArticleThumbnail from '../ArticleThumbnail'
 const ArticleList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
     query blogArticlesQuery {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/blog)/.*\\.md$/"}}) {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/blog)/.*\\.md$/"}}, sort: {fields: frontmatter___priority}) {
         edges {
           node {
             frontmatter {
