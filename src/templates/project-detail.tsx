@@ -8,7 +8,7 @@ import {
   ProjectDetailSection
 } from '../components'
 import Img from 'gatsby-image'
-import { MarginTopContext } from '../themes/contexts'
+import { PaddingTopContext } from '../themes/contexts'
 import { ProjectType } from '../themes/types'
 
 type ProjectDetailPageProps = {
@@ -46,7 +46,7 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
   }
   
   return (
-    <MarginTopContext.Provider value={{ removeMarginTop: false }}>
+    <PaddingTopContext.Provider value={{ removePaddingTop: false }}>
       <Layout
         isFooterVisible={true}
       >
@@ -60,7 +60,7 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
           </React.Fragment>
         }
       </Layout>
-    </MarginTopContext.Provider>
+    </PaddingTopContext.Provider>
   )
 }
 
