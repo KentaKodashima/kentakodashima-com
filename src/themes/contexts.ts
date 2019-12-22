@@ -7,6 +7,6 @@ export const ChevronsContext = React.createContext({
   rightLinkText: ''
 })
 
-export const MarginTopContext = React.createContext({
-  removeMarginTop: false
+export const PaddingTopContext = React.createContext({
+  removePaddingTop: false
 })

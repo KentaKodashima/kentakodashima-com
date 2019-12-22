@@ -5,5 +5,5 @@ type StyledLayoutMainProps = {
 }
 
 export const StyledLayoutMain = styled.main<StyledLayoutMainProps>`
-  margin-top: ${({ removeMarginTop }) => removeMarginTop ? '0px' : '100px'};
+  padding-top: ${({ removeMarginTop }) => removeMarginTop ? '0px' : '100px'};
 `

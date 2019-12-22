@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ChevronsContext, MarginTopContext } from '../themes/contexts'
+import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 import {
   Layout,
   PageTitle,
@@ -10,7 +10,7 @@ import {
 
 const BlogPage = () => {
   return (
-    <MarginTopContext.Provider value={{ removeMarginTop: false }}>
+    <PaddingTopContext.Provider value={{ removePaddingTop: false }}>
       <ChevronsContext.Provider 
         value={{ 
           leftLink: '/projects',
@@ -28,7 +28,7 @@ const BlogPage = () => {
           <ArticleList />
         </Layout>
       </ChevronsContext.Provider>
-    </MarginTopContext.Provider>
+    </PaddingTopContext.Provider>
   )
 }
 

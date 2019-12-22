@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { ChevronsContext, MarginTopContext } from '../themes/contexts'
+import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 import {
   Layout,
   ProjectList,
@@ -11,7 +11,7 @@ import {
 } from '../components'
 
 const ProjectsPage = () => (
-  <MarginTopContext.Provider value={{ removeMarginTop: false }}>
+  <PaddingTopContext.Provider value={{ removePaddingTop: false }}>
     <ChevronsContext.Provider 
       value={{
         leftLink: '/',
@@ -32,7 +32,7 @@ const ProjectsPage = () => (
         <ProjectList />
       </Layout>
     </ChevronsContext.Provider>
-  </MarginTopContext.Provider>
+  </PaddingTopContext.Provider>
 )
 
 export default ProjectsPage

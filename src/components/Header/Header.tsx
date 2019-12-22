@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <NavMenu 
+      <NavMenu
         open={open}
       />
       <StyledHeaderContainer>

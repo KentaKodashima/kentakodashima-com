@@ -13,13 +13,14 @@ export const StyledNavMenu = styled.nav<StyledNavMenuProps>`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: ${({ theme }) => theme.colors.base};
-  width: 100vw;
-  height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
-  transition: transform 0.2s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  background: ${({ theme }) => theme.colors.base};
+  transition: 0.3s ease-in-out;
+  opacity: ${({ open }) => open ? 1 : 0};
   transform: ${({ open }) => open ? 'translate(0, 0)' : 'translate(100%, -100%)'};
 `
 

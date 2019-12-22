@@ -6,11 +6,11 @@ import {
   SEO
 } from '../components'
 import CatImg from '../images/hero-cat.svg'
-import { ChevronsContext, MarginTopContext } from '../themes/contexts'
+import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 
 const IndexPage = () => {
   return (
-    <MarginTopContext.Provider value={{ removeMarginTop: true }}>
+    <PaddingTopContext.Provider value={{ removePaddingTop: true }}>
       <ChevronsContext.Provider 
         value={{ 
           leftLink: undefined, 
@@ -32,7 +32,7 @@ const IndexPage = () => {
           </div>
         </Layout>
       </ChevronsContext.Provider>
-    </MarginTopContext.Provider>
+    </PaddingTopContext.Provider>
   )
 }
 

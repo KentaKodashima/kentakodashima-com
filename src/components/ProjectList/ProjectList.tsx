@@ -15,6 +15,7 @@ const ProjectList: FunctionComponent = () => {
             }
             frontmatter {
               title
+              priority
               categoryType
               thumbnail {
                 id
@@ -56,6 +57,7 @@ const ProjectList: FunctionComponent = () => {
       }
     }
   `)
+  console.log(data, 'data')
   const { edges: projectNodes } = data.allMarkdownRemark
 
   return (

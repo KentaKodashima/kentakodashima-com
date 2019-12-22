@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { ThemeProvider } from 'styled-components'
 
-import { MarginTopContext } from '../../themes/contexts'
+import { PaddingTopContext } from '../../themes/contexts'
 import { GlobalStyle } from './GlobalStyle'
 import { theme } from '../../themes/theme'
 import { StyledLayoutMain } from './Layout.styled'
@@ -37,8 +37,8 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
       <GlobalStyle />
       <div className="wrapper">
         <Header />
-        <MarginTopContext.Consumer>
-          {({ removeMarginTop }) => (
+        <PaddingTopContext.Consumer>
+          {({ removePaddingTop: removeMarginTop }) => (
             <StyledLayoutMain
               removeMarginTop={removeMarginTop}
             >
@@ -48,7 +48,7 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
               </Container>
             </StyledLayoutMain>
           )}
-        </MarginTopContext.Consumer>
+        </PaddingTopContext.Consumer>
         { isFooterVisible &&
           <Footer />
         }

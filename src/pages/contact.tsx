@@ -1,7 +1,7 @@
 import React from 'react'
 
 import contactStyles from '../scss/pages/contact.module.scss'
-import { ChevronsContext, MarginTopContext } from '../themes/contexts'
+import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 import {
   Layout,
   PageTitle,
@@ -11,7 +11,7 @@ import {
 
 const ContactPage = () => {
   return (
-    <MarginTopContext.Provider value={{ removeMarginTop: false }}>
+    <PaddingTopContext.Provider value={{ removePaddingTop: false }}>
       <ChevronsContext.Provider 
         value={{ 
           leftLink: '/blog', 
@@ -32,7 +32,7 @@ const ContactPage = () => {
           </div>
         </Layout>
       </ChevronsContext.Provider>
-    </MarginTopContext.Provider>
+    </PaddingTopContext.Provider>
   )
 }
 
