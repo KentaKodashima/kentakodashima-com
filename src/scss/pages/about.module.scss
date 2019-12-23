@@ -1,0 +1,31 @@
+@import '../common/variables';
+
+.contentWrapper {
+  display: flex;
+
+  .leftCol {
+    flex: 2;
+    margin-right: 50px;
+  }
+
+  .rightCol {
+    flex: 3;
+
+    .sectionTitle {
+      color: $colorMiddle;
+      font-size: $fontSizeThumbnailTitle;
+    }
+
+    .separator {
+      width: 50%;
+      height: 2px;
+      background-color: $colorLight;
+      margin: 20px 0;
+    }
+
+    .paragraph {
+      font-size: 1.6rem;
+      color: $colorMiddle;
+    }
+  }
+}

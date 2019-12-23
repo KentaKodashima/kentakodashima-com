@@ -14,9 +14,9 @@ const BlogPage = () => {
       <ChevronsContext.Provider 
         value={{ 
           leftLink: '/projects',
-          rightLink: '/contact',
+          rightLink: '/about',
           leftLinkText: 'Projects',
-          rightLinkText: 'Contact'
+          rightLinkText: 'About Me'
         }}>
         <Layout
           isFooterVisible={true}

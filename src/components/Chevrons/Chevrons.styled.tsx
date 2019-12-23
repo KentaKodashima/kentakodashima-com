@@ -9,6 +9,8 @@ type StyledChevronProps = {
 
 export const StyledChevron = styled.div<StyledChevronProps>`
   position: fixed;
+  width: 1px;
+  height: 1px;
 
   ${({ theme }: StyledChevronProps) => css`
     @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {

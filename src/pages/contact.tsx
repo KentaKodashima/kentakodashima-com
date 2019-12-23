@@ -14,9 +14,9 @@ const ContactPage = () => {
     <PaddingTopContext.Provider value={{ removePaddingTop: false }}>
       <ChevronsContext.Provider 
         value={{ 
-          leftLink: '/blog', 
+          leftLink: '/about', 
           rightLink: undefined,
-          leftLinkText: 'Blog',
+          leftLinkText: 'About Me',
           rightLinkText: undefined
         }}
       >

@@ -18,6 +18,10 @@ const rightVariants = {
       when: 'beforeChildren',
       staggerChildren: 0.3,
     },
+    transitionEnd: {
+      translateX: 0,
+      translateZ: 0
+    }
   },
   exit: {
     translateX: '-100%',
@@ -35,8 +39,12 @@ const leftVariants = {
       duration: duration,
       delay: duration,
       when: 'beforeChildren',
-      staggerChildren: 0.3,
+      staggerChildren: 0.3
     },
+    transitionEnd: {
+      translateX: 0,
+      translateZ: 0
+    }
   },
   exit: {
     translateX: '100%',
