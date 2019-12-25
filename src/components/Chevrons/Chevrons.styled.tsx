@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import { ThemeType } from '../../themes/theme'
 
@@ -7,7 +8,8 @@ type StyledChevronProps = {
   theme: ThemeType
 }
 
-export const StyledChevron = styled.div<StyledChevronProps>`
+// export const StyledChevron = styled.div<StyledChevronProps>`
+export const StyledChevron = styled(motion.div)`
   position: fixed;
   width: 1px;
   height: 1px;

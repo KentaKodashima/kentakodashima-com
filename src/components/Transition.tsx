@@ -4,11 +4,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { PageTransitionContext } from '../components/TransitionProvider'
 import { PageTransitionContextType } from '../themes/types'
 
-const duration = 0.5
+const duration = 0.6
 
 const rightVariants = {
   initial: {
     translateX: '100%',
+    translateZ: '0',
   },
   enter: {
     translateX: '0%',

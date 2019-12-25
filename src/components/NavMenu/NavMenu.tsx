@@ -19,6 +19,9 @@ const NavMenu = ({ open }) => {
       <StyledNavLink to='/blog'>
         Blog
       </StyledNavLink>
+      <StyledNavLink to='/about'>
+        About
+      </StyledNavLink>
       <StyledNavLink to='/contact'>
         Contact
       </StyledNavLink>

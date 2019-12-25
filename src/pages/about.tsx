@@ -52,16 +52,13 @@ const AboutPage = () => {
               </h3>
               <div className={aboutStyles.separator}></div>
               <p className={aboutStyles.paragraph}>
-                Hi, I’m Kenta.
+                Hi, I’m Kenta, a passionate and responsible developer who strives to come up with the best solution under the given conditions.
               </p>
               <p className={aboutStyles.paragraph}>
-                As a passionate and responsible developer, I strive to come up with the best solutions under the given conditions.
+                I find the meaning of my existance in helping people around me, so I have been mentoring my friends to learn HTML/CSS, ES6, React, etc.
               </p>
               <p className={aboutStyles.paragraph}>
-                I have engaged in a lot of exciting projects using technologies such as React Native, React, Node/Express, GraphQL, PostgreSQL, WordPress, Sass, jQuery etc.
-              </p>
-              <p className={aboutStyles.paragraph}>
-                I find the meaning in my existance when I can help people.
+                I also have published more than 25 articles on Medium. Some of my articles got some attentions enough to receive over 200 claps with 12.2k views.
               </p>
               <p className={aboutStyles.paragraph}>
                 Aside from technologies, I enjoy studying Philosophy and playing piano.
