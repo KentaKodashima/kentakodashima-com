@@ -7,7 +7,8 @@ import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 import {
   Layout,
   PageTitle,
-  SEO
+  SEO,
+  VerticalScrollIndicator
 } from '../components'
 
 const AboutPage = () => {
@@ -40,6 +41,7 @@ const AboutPage = () => {
           <PageTitle
             title='About Me'
           />
+          <VerticalScrollIndicator />
           <div className={aboutStyles.contentWrapper}>
             <div className={aboutStyles.leftCol}>
               <Img

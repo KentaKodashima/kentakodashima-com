@@ -7,7 +7,8 @@ import {
   ProjectList,
   PageTitle,
   SEO,
-  Tab
+  Tab,
+  VerticalScrollIndicator
 } from '../components'
 
 const ProjectsPage = () => (
@@ -26,6 +27,7 @@ const ProjectsPage = () => (
         <PageTitle 
           title='Projects'
         />
+        <VerticalScrollIndicator />
         {/* <Tab
           tabItems={['All', 'Mobile', 'Web']}
         /> */}

@@ -1,15 +1,30 @@
 @import '../common/variables';
+@import '../common/mixin';
 
 .contentWrapper {
   display: flex;
 
+  @include max-screen($mobileLandMax) {
+    flex-direction: column;
+  }
+
   .leftCol {
     flex: 2;
     margin-right: 50px;
+
+    @include max-screen($mobileLandMax) {
+      flex: 1;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   .rightCol {
     flex: 3;
+
+    @include max-screen($mobileLandMax) {
+      flex: 1;
+    }
 
     .sectionTitle {
       color: $colorMiddle;

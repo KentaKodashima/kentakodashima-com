@@ -5,7 +5,8 @@ import {
   Layout,
   PageTitle,
   ArticleList,
-  SEO
+  SEO,
+  VerticalScrollIndicator
 } from '../components'
 
 const BlogPage = () => {
@@ -25,6 +26,7 @@ const BlogPage = () => {
           <PageTitle 
             title='My Blog'
           />
+          <VerticalScrollIndicator />
           <ArticleList />
         </Layout>
       </ChevronsContext.Provider>

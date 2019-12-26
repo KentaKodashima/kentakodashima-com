@@ -6,7 +6,8 @@ import {
   Layout,
   PageTitle,
   ContactForm,
-  SEO
+  SEO,
+  VerticalScrollIndicator
 } from '../components'
 
 const ContactPage = () => {
@@ -28,6 +29,7 @@ const ContactPage = () => {
             <PageTitle
               title='Contact'
             />
+            <VerticalScrollIndicator />
             <ContactForm />
           </div>
         </Layout>
