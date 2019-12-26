@@ -26,6 +26,12 @@ export const StyledVeticalScrollIndicator = styled.div<StyledVeticalScrollIndica
   /* content: "" */
   position: relative;
 
+  ${({ theme }: StyledVeticalScrollIndicatorProps) => css`
+    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+      display: none;
+    }
+  `}
+
   span {
     position: absolute;
     top: 0;

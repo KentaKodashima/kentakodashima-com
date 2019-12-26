@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, FunctionComponent } from 'react'
+
 import Transition from './Transition'
+import { LocationType } from '../themes/types'
 
 export const PageTransitionContext = React.createContext({
   direction: '',
@@ -7,7 +9,11 @@ export const PageTransitionContext = React.createContext({
   location: {}
 })
 
-export const TransitionProvider = ({ children, location }) => {
+type TransitionProviderProps = {
+  location: LocationType
+}
+
+export const TransitionProvider: FunctionComponent<TransitionProviderProps> = ({ children, location }) => {
   const [direction, setDirection] = useState('')
 
   const provideDirection = (direction: string) => {
