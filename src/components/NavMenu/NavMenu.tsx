@@ -10,19 +10,34 @@ const NavMenu = ({ open }) => {
     <StyledNavMenu
       open={open}
     >
-      <StyledNavLink to='/'>
+      <StyledNavLink
+        to='/'
+        activeStyle={{ display: 'none' }}
+      >
         Home
       </StyledNavLink>
-      <StyledNavLink to='/projects'>
+      <StyledNavLink
+        to='/projects'
+        activeStyle={{ display: 'none' }}
+      >
         Projects
       </StyledNavLink>
-      <StyledNavLink to='/blog'>
+      <StyledNavLink 
+        to='/blog'
+        activeStyle={{ display: 'none' }} 
+      >
         Blog
       </StyledNavLink>
-      <StyledNavLink to='/about'>
+      <StyledNavLink
+        to='/about'
+        activeStyle={{ display: 'none' }}
+      >
         About
       </StyledNavLink>
-      <StyledNavLink to='/contact'>
+      <StyledNavLink
+        to='/contact'
+        activeStyle={{ display: 'none' }}
+      >
         Contact
       </StyledNavLink>
     </StyledNavMenu>

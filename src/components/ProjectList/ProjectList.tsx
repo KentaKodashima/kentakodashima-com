@@ -57,7 +57,6 @@ const ProjectList: FunctionComponent = () => {
       }
     }
   `)
-  console.log(data, 'data')
   const { edges: projectNodes } = data.allMarkdownRemark
 
   return (

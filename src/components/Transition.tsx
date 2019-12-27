@@ -9,7 +9,7 @@ const duration = 0.6
 const rightVariants = {
   initial: {
     translateX: '100%',
-    translateZ: '0',
+    translateZ: '0'
   },
   enter: {
     translateX: '0%',
@@ -33,6 +33,7 @@ const rightVariants = {
 const leftVariants = {
   initial: {
     translateX: '-100%',
+    translateZ: '0'
   },
   enter: {
     translateX: '0%',
@@ -56,10 +57,12 @@ const leftVariants = {
 class Transition extends React.PureComponent {
   render() {
     const { children } = this.props
+    console.log(this.props, 'transition props')
 
     return (
       <PageTransitionContext.Consumer>
         {(context: PageTransitionContextType) => (
+          context.direction ?
           <AnimatePresence>
             <motion.div
               key={context.location.pathname}
@@ -68,9 +71,15 @@ class Transition extends React.PureComponent {
               animate='enter'
               exit='exit'
             >
+              {console.log(context, 'in animation')}
               {children}
             </motion.div>
           </AnimatePresence>
+          :
+          <div>
+            {console.log(context, 'normal div')}
+            {children}
+          </div>
         )}
       </PageTransitionContext.Consumer>
     )

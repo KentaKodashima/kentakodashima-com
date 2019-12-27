@@ -17,15 +17,18 @@ export const TransitionProvider: FunctionComponent<TransitionProviderProps> = ({
   const [direction, setDirection] = useState('')
 
   const provideDirection = (direction: string) => {
-    localStorage.setItem('direction', JSON.stringify(direction))
+    // localStorage.setItem('direction', JSON.stringify(direction))
+    console.log('its called')
     setDirection(direction)
   }
 
   useEffect(() => {
-    const direction = JSON.parse(localStorage.getItem('direction'))
-    if (direction) {
-      setDirection(direction)
-    }
+    // const direction = JSON.parse(localStorage.getItem('direction'))
+    // if (direction) {
+    //   setDirection(direction)
+    // }
+    // localStorage.clear()
+    // setDirection(null)
   }, [])
 
   return (

@@ -33,8 +33,8 @@ const ArticleList: FunctionComponent = () => {
   return (
     <StyledArticleList>
       {
-        articleNodes.map(({ node: { frontmatter: article } }) => {
-          return <ArticleThumbnail key={article.thumbnail.id} article={article}/>
+        articleNodes.map(({ node: { frontmatter: article } }, index) => {
+          return <ArticleThumbnail key={index} article={article}/>
         })
       }
     </StyledArticleList>

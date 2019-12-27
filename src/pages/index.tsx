@@ -9,7 +9,6 @@ import CatImg from '../images/hero-cat.svg'
 import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 
 const IndexPage = props => {
-  console.log(props, 'index props')
   return (
     <PaddingTopContext.Provider value={{ removePaddingTop: true }}>
       <ChevronsContext.Provider 
