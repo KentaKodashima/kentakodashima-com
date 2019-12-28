@@ -71,15 +71,24 @@ class Transition extends React.PureComponent {
               animate='enter'
               exit='exit'
             >
-              {console.log(context, 'in animation')}
               {children}
             </motion.div>
           </AnimatePresence>
           :
-          <div>
-            {console.log(context, 'normal div')}
-            {children}
-          </div>
+          <AnimatePresence>
+            <motion.div
+              key={context.location.pathname}
+              initial='initial'
+              animate='enter'
+              exit='exit'
+            >
+              {children}
+            </motion.div>
+          </AnimatePresence>
+          // <div>
+          //   {console.log(context, 'normal div')}
+          //   {children}
+          // </div>
         )}
       </PageTransitionContext.Consumer>
     )

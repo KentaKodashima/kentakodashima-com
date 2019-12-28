@@ -13,12 +13,16 @@ type TransitionProviderProps = {
   location: LocationType
 }
 
-export const TransitionProvider: FunctionComponent<TransitionProviderProps> = ({ children, location }) => {
+export const TransitionProvider: FunctionComponent<TransitionProviderProps> = (props) => {
   const [direction, setDirection] = useState('')
+  const {children, location} = props
 
   const provideDirection = (direction: string) => {
     // localStorage.setItem('direction', JSON.stringify(direction))
-    console.log('its called')
+    console.log(props, 'its called')
+    // if (props.path !== location.pathname) {
+    //   setDirection(direction)
+    // }
     setDirection(direction)
   }
 

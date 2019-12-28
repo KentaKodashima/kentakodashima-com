@@ -8,3 +8,4 @@ This is the repository for my portfolio website. The website is built using Gats
 - GatsbyJS
 - Typescript
 - Netlify CMS
+- Styled Components
