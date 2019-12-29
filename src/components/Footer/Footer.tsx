@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { StyledFooter } from './Footer.styled'
+import { StyledFooter, StyledCredit } from './Footer.styled'
 import Container from '../Container'
 import SNSIcons from '../SNSIcons'
 
@@ -9,6 +9,11 @@ const Footer = () => {
     <StyledFooter>
       <SNSIcons />
       <Container>© {new Date().getFullYear()} Kenta Kodashima</Container>
+      <Container>
+        <StyledCredit>
+          The cool cat image is created by my awesome designer friend, <a href='http://katherinexz.com/' target='_blank'>Katherine Zhang</a>.
+        </StyledCredit>
+      </Container>
     </StyledFooter>
   )
 }

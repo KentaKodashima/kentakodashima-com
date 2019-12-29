@@ -85,7 +85,10 @@ const ContactPage = () => {
             show={modalValues.show}
             title={modalValues.title}
             message={modalValues.message}
-            onButtonClick={() => setModalValuesState({ ...modalValuesInitialState })}
+            onButtonClick={() => {
+              setModalValuesState({ ...modalValuesInitialState })
+              setFormValuesState({ ...formValuesInitialState })
+            }}
           />
           <div className={contactStyles.contactWrapper}>
             <PageTitle

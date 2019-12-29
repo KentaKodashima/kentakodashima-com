@@ -30,6 +30,9 @@ const IndexPage = props => {
           <div className={indexPageStyle.heroImage}>
             <img src={CatImg} />
           </div>
+          {/* <div className={indexPageStyle.credit}>
+            The cool cat image is created by my awesome designer friend, <a href='http://katherinexz.com/' target='_blank'>Katherine Zhang</a>.
+          </div> */}
         </Layout>
       </ChevronsContext.Provider>
     </PaddingTopContext.Provider>

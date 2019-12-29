@@ -14,7 +14,7 @@ import {
   StyledChevronRightText
 } from './Chevrons.styled'
 
-const duration = 0.6
+const duration = 0.5
 
 const variants = {
   initial: {

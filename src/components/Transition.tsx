@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { PageTransitionContext } from '../components/TransitionProvider'
 import { PageTransitionContextType } from '../themes/types'
 
-const duration = 0.6
+const duration = 0.5
 
 const rightVariants = {
   initial: {
