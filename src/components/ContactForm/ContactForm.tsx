@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent, ChangeEvent, FormEvent } from 'react'
 
 import {
   StyledContactForm,
@@ -7,13 +7,19 @@ import {
   StyledSubmitButton
 } from './ContactForm.styled'
 
-const ContactForm = () => {
+type ContactFormProps = {
+  onChange: (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => void
+  onFormSubmit: (e: FormEvent<HTMLFormElement>) => Promise<void>
+}
+
+const ContactForm: FunctionComponent<ContactFormProps> = ({ onChange, onFormSubmit }) => {
   return (
     <StyledContactForm
       name='contactForm'
       method='POST'
-      netlify-honeypot='bot-field'
-      data-netlify='true'
+      onSubmit={onFormSubmit}
+      // netlify-honeypot='bot-field'
+      // data-netlify='true'
     >
       <input type='hidden' name='bot-field' />
       <input type='hidden' name='form-name' value='contactForm' />
@@ -21,16 +27,19 @@ const ContactForm = () => {
         type='text'
         name='name' 
         placeholder='Your Name'
+        onChange={onChange}
       />
       <StyledContactFormInput 
         type='email'
         name='email'
         placeholder='Your Email'
+        onChange={onChange}
       />
       <StyledContactFormTextArea 
         name='comment'
         form='contactForm'
         placeholder='Your Message'
+        onChange={onChange}
       />
       <StyledSubmitButton
         type='submit'

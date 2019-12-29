@@ -50,7 +50,7 @@ const AboutPage = () => {
             </div>
             <div className={aboutStyles.rightCol}>
               <h3 className={aboutStyles.sectionTitle}>
-                A Full-Stack Developer with about 2 years of experience.
+                A Full-Stack Developer with 2 years of experience.
               </h3>
               <div className={aboutStyles.separator}></div>
               <p className={aboutStyles.paragraph}>

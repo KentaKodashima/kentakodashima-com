@@ -18,22 +18,8 @@ export const TransitionProvider: FunctionComponent<TransitionProviderProps> = (p
   const {children, location} = props
 
   const provideDirection = (direction: string) => {
-    // localStorage.setItem('direction', JSON.stringify(direction))
-    console.log(props, 'its called')
-    // if (props.path !== location.pathname) {
-    //   setDirection(direction)
-    // }
     setDirection(direction)
   }
-
-  useEffect(() => {
-    // const direction = JSON.parse(localStorage.getItem('direction'))
-    // if (direction) {
-    //   setDirection(direction)
-    // }
-    // localStorage.clear()
-    // setDirection(null)
-  }, [])
 
   return (
     <PageTransitionContext.Provider

@@ -4,43 +4,64 @@ import {
   StyledNavMenu,
   StyledNavLink
 } from './NavMenu.styled'
+import { PageTransitionContext } from '../TransitionProvider'
+import { PageTransitionContextType } from '../../themes/types'
 
 const NavMenu = ({ open }) => {
   return (
-    <StyledNavMenu
-      open={open}
-    >
-      <StyledNavLink
-        to='/'
-        activeStyle={{ display: 'none' }}
-      >
-        Home
-      </StyledNavLink>
-      <StyledNavLink
-        to='/projects'
-        activeStyle={{ display: 'none' }}
-      >
-        Projects
-      </StyledNavLink>
-      <StyledNavLink 
-        to='/blog'
-        activeStyle={{ display: 'none' }} 
-      >
-        Blog
-      </StyledNavLink>
-      <StyledNavLink
-        to='/about'
-        activeStyle={{ display: 'none' }}
-      >
-        About
-      </StyledNavLink>
-      <StyledNavLink
-        to='/contact'
-        activeStyle={{ display: 'none' }}
-      >
-        Contact
-      </StyledNavLink>
-    </StyledNavMenu>
+    <PageTransitionContext.Consumer>
+      {(context: PageTransitionContextType) => (
+        <StyledNavMenu
+          open={open}
+        >
+          <StyledNavLink
+            to='/'
+            activeStyle={{ display: 'none' }}
+            onClick={() => {
+              context.provideDirection('right')
+            }}
+          >
+            Home
+          </StyledNavLink>
+          <StyledNavLink
+            to='/projects'
+            activeStyle={{ display: 'none' }}
+            onClick={() => {
+              context.provideDirection('right')
+            }}
+          >
+            Projects
+          </StyledNavLink>
+          <StyledNavLink 
+            to='/blog'
+            activeStyle={{ display: 'none' }} 
+            onClick={() => {
+              context.provideDirection('right')
+            }}
+          >
+            Blog
+          </StyledNavLink>
+          <StyledNavLink
+            to='/about'
+            activeStyle={{ display: 'none' }}
+            onClick={() => {
+              context.provideDirection('right')
+            }}
+          >
+            About
+          </StyledNavLink>
+          <StyledNavLink
+            to='/contact'
+            activeStyle={{ display: 'none' }}
+            onClick={() => {
+              context.provideDirection('right')
+            }}
+          >
+            Contact
+          </StyledNavLink>
+        </StyledNavMenu>
+      )}
+    </PageTransitionContext.Consumer>
   )
 }
 

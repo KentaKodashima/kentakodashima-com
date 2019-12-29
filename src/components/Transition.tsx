@@ -57,7 +57,6 @@ const leftVariants = {
 class Transition extends React.PureComponent {
   render() {
     const { children } = this.props
-    console.log(this.props, 'transition props')
 
     return (
       <PageTransitionContext.Consumer>
@@ -85,10 +84,6 @@ class Transition extends React.PureComponent {
               {children}
             </motion.div>
           </AnimatePresence>
-          // <div>
-          //   {console.log(context, 'normal div')}
-          //   {children}
-          // </div>
         )}
       </PageTransitionContext.Consumer>
     )

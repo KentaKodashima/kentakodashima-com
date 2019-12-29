@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, ChangeEvent, FormEvent } from 'react'
 
 import contactStyles from '../scss/pages/contact.module.scss'
 import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
@@ -11,6 +11,40 @@ import {
 } from '../components'
 
 const ContactPage = () => {
+  const [formValuesState, setFormValuesState] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+
+  const onChange = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>): void => {
+    setFormValuesState({ ...formValuesState, [e.target.name]: e.target.value })
+  }
+
+  const onFormSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
+    e.preventDefault();
+
+    try{
+      const response = await fetch("/.netlify/functions/handleContactForm", {
+        method: "POST",
+        body: JSON.stringify(formValuesState),
+      })
+
+      if (!response.ok) {
+        //not 200 response
+        console.log(response, 'somthing went wrong')
+        return
+      }
+
+      //all OK
+      
+    } catch(e){
+      console.log(e, 'somthing went wrong')
+      //error
+    }
+  }
+
   return (
     <PaddingTopContext.Provider value={{ removePaddingTop: false }}>
       <ChevronsContext.Provider 
@@ -30,7 +64,10 @@ const ContactPage = () => {
               title='Contact'
             />
             <VerticalScrollIndicator />
-            <ContactForm />
+            <ContactForm
+              onChange={onChange}
+              onFormSubmit={onFormSubmit}
+            />
           </div>
         </Layout>
       </ChevronsContext.Provider>
