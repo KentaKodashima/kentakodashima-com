@@ -32,5 +32,6 @@ technologies:
   - PostgreSQL
   - NodeJS / Express
   - JWT
+  - Expo
 ---
 
