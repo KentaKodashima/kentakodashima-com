@@ -45,7 +45,7 @@ export const theme = {
   },
   fontSize: {
     base: '10px',
-    body: '16px',
+    body: '1.6rem',
     thumbnailTitle: '2.4rem',
     thumbnailSubtitle: '2.1rem',
     navMenu: '4.8rem',

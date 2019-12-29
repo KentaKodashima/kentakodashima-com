@@ -12,7 +12,6 @@ import { TransitionProvider } from './src/components'
 export const wrapPageElement = ({ element, props }) => {
   return (
     <TransitionProvider {...props}>
-      {console.log(props, 'props in wrapPageElement')}
       {element}
     </TransitionProvider>
   )

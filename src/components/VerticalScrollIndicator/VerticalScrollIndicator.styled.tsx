@@ -6,7 +6,6 @@ type StyledVeticalScrollIndicatorProps = {
   theme: ThemeType
 }
 
-
 const animation = keyframes`
   0% {
     transform: rotate(-45deg) translate(0, 0);

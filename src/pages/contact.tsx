@@ -7,16 +7,26 @@ import {
   PageTitle,
   ContactForm,
   SEO,
-  VerticalScrollIndicator
+  VerticalScrollIndicator,
+  Modal
 } from '../components'
 
+const formValuesInitialState = {
+  name: '',
+  email: '',
+  subject: '',
+  message: '',
+}
+
+const modalValuesInitialState = {
+  show: false,
+  title: '',
+  message: ''
+}
+
 const ContactPage = () => {
-  const [formValuesState, setFormValuesState] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  })
+  const [formValuesState, setFormValuesState] = useState(formValuesInitialState)
+  const [modalValues, setModalValuesState] = useState(modalValuesInitialState)
 
   const onChange = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>): void => {
     setFormValuesState({ ...formValuesState, [e.target.name]: e.target.value })
@@ -31,17 +41,29 @@ const ContactPage = () => {
         body: JSON.stringify(formValuesState),
       })
 
+      // if not 200
       if (!response.ok) {
-        //not 200 response
-        console.log(response, 'somthing went wrong')
+        setModalValuesState({
+          show: true,
+          title: 'Something went wrong.',
+          message: 'Failed to send your message.'
+        })
         return
       }
 
-      //all OK
-      
+      setFormValuesState({ ...formValuesInitialState })
+      setModalValuesState({
+        show: true,
+        title: 'Your message has been sent successfully!',
+        message: 'Thank you for reaching out to me.'
+      })
     } catch(e){
       console.log(e, 'somthing went wrong')
-      //error
+      setModalValuesState({
+        show: true,
+        title: 'Something went wrong.',
+        message: 'Failed to send your message.'
+      })
     }
   }
 
@@ -59,6 +81,12 @@ const ContactPage = () => {
           isFooterVisible={true}
         >
           <SEO title="Contact" />
+          <Modal
+            show={modalValues.show}
+            title={modalValues.title}
+            message={modalValues.message}
+            onButtonClick={() => setModalValuesState({ ...modalValuesInitialState })}
+          />
           <div className={contactStyles.contactWrapper}>
             <PageTitle
               title='Contact'
