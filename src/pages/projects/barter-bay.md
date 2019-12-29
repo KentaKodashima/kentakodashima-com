@@ -27,11 +27,11 @@ about: >-
   more, it’s completely free!
 technologies:
   - React Native
+  - Expo
   - Redux
   - GraphQL
   - PostgreSQL
   - NodeJS / Express
   - JWT
-  - Expo
 ---
 
