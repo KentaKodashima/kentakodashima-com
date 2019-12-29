@@ -18,5 +18,8 @@ technologies:
   - Typescript
   - Gatsby
   - Netlify CMS
+  - Styled Components
+  - React Hooks API
+  - React Context API
 ---
 
