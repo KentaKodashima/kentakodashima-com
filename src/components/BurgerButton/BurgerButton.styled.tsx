@@ -6,17 +6,16 @@ type StyledBurgerProps = {
 
 export const StyledBurger = styled.button<StyledBurgerProps>`
   display: block;
-  padding: 25px 15px;
+  height: 36px;
   border: none;
   background-color: transparent;
 
   span {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 52px;
     height: 2px;
     background-color: ${props => props.open ? 'transparent' : props.theme.colors.accent};
-    top: 0;
 
     &:before {
       content: '';

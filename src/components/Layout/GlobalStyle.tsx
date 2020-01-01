@@ -242,7 +242,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     font-weight: bold;
     text-rendering: optimizeLegibility;
     // font-size: 2.25rem;
-    line-height: 1.1;
+    line-height: 1;
   }
   h2 {
     margin-left: 0;
