@@ -1,6 +1,6 @@
 ---
 title: (WordPress) WordPress Development with Docker-Compose and Wordmove
-priority: 3
+priority: 4
 thumbnail: /assets/docker.png
 url: >-
   https://medium.com/@KentaKodashima/wordpress-wordpress-development-with-docker-compose-and-wordmove-cf720d2618d
