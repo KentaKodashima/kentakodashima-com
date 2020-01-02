@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import indexPageStyle from '../scss/pages/index.module.scss'
 import {
@@ -9,6 +9,14 @@ import CatImg from '../images/hero-cat.svg'
 import { ChevronsContext, PaddingTopContext } from '../themes/contexts'
 
 const IndexPage = props => {
+  useEffect(() => {
+    // Fix for 100vh on mobile browsers
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`)
+    })
+  })
+
   return (
     <PaddingTopContext.Provider value={{ removePaddingTop: true }}>
       <ChevronsContext.Provider 

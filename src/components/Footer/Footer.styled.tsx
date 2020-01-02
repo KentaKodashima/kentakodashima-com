@@ -17,6 +17,10 @@ export const StyledCredit = styled.div`
   font-size: 1.1rem;
   margin-top: 8px;
 
+  >a {
+    color: ${({ theme }: StyledFooterProps) => theme.colors.accent};
+  }
+
   >a:visited {
     color: ${({ theme }: StyledFooterProps) => theme.colors.accent};
   }

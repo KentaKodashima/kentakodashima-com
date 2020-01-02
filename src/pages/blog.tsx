@@ -6,7 +6,8 @@ import {
   PageTitle,
   ArticleList,
   SEO,
-  VerticalScrollIndicator
+  VerticalScrollIndicator,
+  LinkButton
 } from '../components'
 
 const BlogPage = () => {
@@ -28,6 +29,12 @@ const BlogPage = () => {
           />
           <VerticalScrollIndicator />
           <ArticleList />
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <LinkButton
+              href='https://medium.com/@KentaKodashima'
+              title='View all articles from me on Medium'
+            />
+          </div>
         </Layout>
       </ChevronsContext.Provider>
     </PaddingTopContext.Provider>
