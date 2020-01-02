@@ -21,10 +21,13 @@ appLinks:
       linkType: Web
       url: 'https://barterbay.ca/'
 about: >-
-  Barter Bay provides an online trading platform where you can buy, sell and
-  trade for free. We connect you to real people both locally and globally. By
-  using Barter Bay, you can save money and declutter at the same time. ☀️ What’s
-  more, it’s completely free!
+  Barter Bay is an online trading platform where users can buy, sell and trade
+  items that they no longer use for free. The app consists of the Node/Express
+  authentication server, the GraphQL contents server and the app itself.
+
+
+  My responsibility is to maintain the app and add new features. So far, I was
+  in charge of fixing some bugs and adding the daily reward feature.
 technologies:
   - React Native
   - Expo
