@@ -1,6 +1,11 @@
 @import '../common/variables';
+@import '../common/mixin';
 
 .contactWrapper {
   width: 80%;
   margin: 0 auto;
+
+  @include max-screen($mobileLandMax) {
+    width: 100%;
+  }
 }

@@ -75,5 +75,8 @@ export const theme = {
     tabletMax: '960px',
     pcMin: '961px',
     pcMax: '1024px',
+  },
+  constants: {
+    DURATION: 0.5
   }
 }

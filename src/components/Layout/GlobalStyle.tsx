@@ -121,6 +121,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     font: inherit;
     margin: 0;
     outline: none !important;
+    border: none;
   }
   optgroup {
     font-weight: 700;
@@ -167,6 +168,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
   }
   textarea {
     overflow: auto;
+    border: none;
   }
   [type="checkbox"],
   [type="radio"] {

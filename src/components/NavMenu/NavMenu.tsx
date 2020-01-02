@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent, Dispatch, SetStateAction } from 'react'
 
 import { 
   StyledNavMenu,
@@ -7,7 +7,11 @@ import {
 import { PageTransitionContext } from '../TransitionProvider'
 import { PageTransitionContextType } from '../../themes/types'
 
-const NavMenu = ({ open }) => {
+type NavMenuProps = {
+  open: boolean
+}
+
+const NavMenu: FunctionComponent<NavMenuProps> = ({ open }) => {
   return (
     <PageTransitionContext.Consumer>
       {(context: PageTransitionContextType) => (

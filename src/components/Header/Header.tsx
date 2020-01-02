@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import { AnimatePresence } from 'framer-motion'
 
 import { PageTransitionContextType } from '../../themes/types'
@@ -13,8 +12,9 @@ import {
   StyledHeaderContentWrapper,
   StyledHeaderLogo
 } from './Header.styled'
+import { theme } from '../../themes/theme'
 
-const duration = 0.5
+const duration = theme.constants.DURATION
 
 const variants = {
   initial: {

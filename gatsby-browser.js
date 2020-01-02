@@ -17,7 +17,7 @@ export const wrapPageElement = ({ element, props }) => {
   )
 }
 
-const transitionDelay = 600
+const transitionDelay = 500 * 2
 export const shouldUpdateScroll = ({
   routerProps: { location },
   getSavedScrollPosition

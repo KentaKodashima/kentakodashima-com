@@ -13,8 +13,9 @@ import {
   StyledChevronLeftText,
   StyledChevronRightText
 } from './Chevrons.styled'
+import { theme } from '../../themes/theme'
 
-const duration = 0.5
+const duration = theme.constants.DURATION
 
 const variants = {
   initial: {
