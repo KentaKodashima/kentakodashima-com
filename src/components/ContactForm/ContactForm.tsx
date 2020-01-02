@@ -18,8 +18,6 @@ const ContactForm: FunctionComponent<ContactFormProps> = ({ onChange, onFormSubm
       name='contactForm'
       method='POST'
       onSubmit={onFormSubmit}
-      // netlify-honeypot='bot-field'
-      // data-netlify='true'
     >
       <input type='hidden' name='bot-field' />
       <input type='hidden' name='form-name' value='contactForm' />

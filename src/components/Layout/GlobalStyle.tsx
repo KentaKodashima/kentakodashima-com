@@ -120,6 +120,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
   textarea {
     font: inherit;
     margin: 0;
+    outline: none !important;
   }
   optgroup {
     font-weight: 700;
