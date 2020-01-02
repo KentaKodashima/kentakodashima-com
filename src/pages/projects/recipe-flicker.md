@@ -13,7 +13,7 @@ githubLink: 'https://github.com/KentaKodashima/RecipeFlicker'
 about: >-
   Recipe Flicker is an iOS app that I built with my friends when I was in
   school. The concept behind the app is to simplify the process of finding the
-  meals for the day. By offering random recipes in a intuitive manner, it helps
+  meals for the day. By offering random recipes in an intuitive manner, it helps
   people to decide what to eat.
 technologies:
   - Swift
