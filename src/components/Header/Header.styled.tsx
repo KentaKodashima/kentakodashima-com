@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+
 import Container from '../Container'
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled(motion.header)`
   position: fixed;
   width: 100%;
   height: 100px;
