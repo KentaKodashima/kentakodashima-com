@@ -22,8 +22,9 @@ appLinks:
       url: 'https://barterbay.ca/'
 about: >-
   Barter Bay is an online trading platform where users can buy, sell and trade
-  items that they no longer use for free. The app consists of the Node/Express
-  authentication server, the GraphQL contents server and the app itself.
+  items that they no longer use for free. The app consists of the
+  Node.js/Express.js authentication server, the GraphQL contents server and the
+  app itself.
 
 
   My responsibility is to maintain the app and add new features. So far, I was
