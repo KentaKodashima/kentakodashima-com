@@ -4,7 +4,7 @@ title: Barter Bay
 priority: 1
 categoryType: Mobile
 thumbnail: /assets/barterbay-thumbnail.png
-thumbnailSubtitle: React / Redux / GraphQL / PostgreSQL / Node
+thumbnailSubtitle: React Native / Redux / GraphQL / PostgreSQL / Node
 mainImages:
   - /assets/barterbay-home.png
   - /assets/barterbay-reward.png
