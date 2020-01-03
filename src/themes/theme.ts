@@ -4,6 +4,7 @@ export type ThemeType = {
     accent: string
     middle: string
     light: string
+    github: string
   },
   fontSize: {
     base: string
@@ -42,6 +43,7 @@ export const theme = {
     accent: '#1F1F1F',
     middle: '#9F9F9F',
     light: '#D9D9D9',
+    github: '#333'
   },
   fontSize: {
     base: '10px',

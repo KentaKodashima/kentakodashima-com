@@ -14,13 +14,12 @@ export type ProjectType = {
       fluid: any
     }
   }]
-  appLinks: {
+  appLinks: [{
     appLink: {
       linkType: string
       url: string
     }
-  }
-  githubLink: string
+  }]
   about: string
   technologies: string[]
   extraImages?: [{

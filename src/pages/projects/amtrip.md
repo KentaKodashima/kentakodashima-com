@@ -9,8 +9,10 @@ mainImages:
   - /assets/top_multi_thumbs.png
   - /assets/creation_page.jpg
   - /assets/creation_google_places_api.png
-appLinks: []
-githubLink: 'https://github.com/KentaKodashima/Amtrip'
+appLinks:
+  - appLink:
+      linkType: GitHub
+      url: 'https://github.com/KentaKodashima/Amtrip'
 about: >-
   Amtrip is a traveler's journal app. Using this app, users can easily make
   records of their trips.

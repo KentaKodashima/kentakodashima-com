@@ -9,7 +9,10 @@ mainImages:
   - /assets/favorite_all_deletion_58.png
   - /assets/favorite_collection_58.png
   - /assets/home_no_data_55.png
-githubLink: 'https://github.com/KentaKodashima/RecipeFlicker'
+appLinks:
+  - appLink:
+      linkType: GitHub
+      url: 'https://github.com/KentaKodashima/RecipeFlicker'
 about: >-
   Recipe Flicker is an iOS app that I built with my friends when I was in
   school. The concept behind the app is to simplify the process of finding the

@@ -48,7 +48,6 @@ const ProjectList: FunctionComponent = () => {
                   url
                 }
               }
-              githubLink
               about
               technologies
             }    

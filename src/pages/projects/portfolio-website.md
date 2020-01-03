@@ -11,7 +11,9 @@ appLinks:
   - appLink:
       linkType: Web
       url: kentakodashima.com
-githubLink: 'https://github.com/KentaKodashima/kentakodashima-com'
+  - appLink:
+      linkType: GitHub
+      url: 'https://github.com/KentaKodashima/kentakodashima-com'
 about: >-
   This is a showcase of my works and skills. During the process of developing my
   portfolio, I have tried out some new technologies such as Gatsby.js, Netlify

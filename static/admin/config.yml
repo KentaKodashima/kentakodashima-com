@@ -27,8 +27,7 @@ collections:
               widget: object
               fields:
                 - { name: url, label: URL, wdget: string }
-                - { name: linkType, label: Media Type, widget: select, options: ['iOS', 'Android', 'Web'] }
-      - { name: githubLink, label: Github Link, widget: string, required: false }
+                - { name: linkType, label: Media Type, widget: select, options: ['iOS', 'Android', 'Web', 'GitHub'] }
       - { name: about, label: About this project, widget: markdown }
       - { name: technologies, label: Technologies, widget: list, field: { name: technology, label: Technology Name, widget: string } }
       - { name: extraImages, label: Extra Images, widget: list, required: false, field: { name: image, label: Image, widget: image } }

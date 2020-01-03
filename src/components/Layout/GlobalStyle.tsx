@@ -348,6 +348,7 @@ export const GlobalStyle = createGlobalStyle<{theme: ThemeType}>`
     margin-bottom: 1.45rem;
     list-style-position: outside;
     list-style-image: none;
+    list-style: none;
   }
   ol {
     margin-left: 1.45rem;

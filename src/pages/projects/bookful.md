@@ -11,7 +11,9 @@ appLinks:
   - appLink:
       linkType: Android
       url: 'https://play.google.com/store/apps/details?id=kentakodashima.com.bookful'
-githubLink: 'https://github.com/KentaKodashima/Bookful'
+  - appLink:
+      linkType: GitHub
+      url: 'https://github.com/KentaKodashima/Bookful'
 about: >-
   Bookful is a simple tool to keep records of the books you've read. It is kind
   of a hard task to remember the contents of the books by reading just one time.
