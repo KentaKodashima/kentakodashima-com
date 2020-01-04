@@ -30,7 +30,7 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
             <SEO title={state.title} />
             <PageTitle title={state.title} />
             <ProjectDetailMainImages state={state} />
-            {/* <ProjectLinkButtons appLinks={state.appLinks} /> */}
+            <ProjectLinkButtons appLinks={state.appLinks} />
             <ProjectDetailSection title='About this project' about={state.about} />
             <ProjectDetailSection title='Technologies' technologies={state.technologies} />
           </React.Fragment>

@@ -10,7 +10,7 @@ export const StyledProjectListWrapper = styled.div<StyledProjectListWrapperProps
   flex-wrap: wrap;
 
   ${({ theme }: StyledProjectListWrapperProps) => css`
-    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+    @media screen and (max-width: ${theme.breakPoint.mobileLandMax}) {
       flex-direction: column;
       flex-wrap: nowrap;
     }

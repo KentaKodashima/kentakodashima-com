@@ -72,7 +72,7 @@ const ProjectLinkButtons: FunctionComponent<ProjectLinkButtonsProps> = ({ appLin
         return (
           <StyledProjectLinkButton>
             <a href={url}>
-              <StyledGithubIcon icon={faGithub} /> Src on GitHub
+              <StyledGithubIcon icon={faGithub} />Src on GitHub
             </a>
           </StyledProjectLinkButton>
         )

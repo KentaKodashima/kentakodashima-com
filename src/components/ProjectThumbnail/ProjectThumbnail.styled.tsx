@@ -18,6 +18,12 @@ export const StyledThumbnailWrapper = styled.div`
     transition: all 0.2s ease-in;
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
   }
+
+  ${({ theme }: Props) => css`
+    @media screen and (max-width: ${theme.breakPoint.tabletMax}) {
+      flex: 0 1 48%;
+    }
+  `}
 `
 export const StyledThumbnailAnchor = styled(Link)`
   text-decoration: none;

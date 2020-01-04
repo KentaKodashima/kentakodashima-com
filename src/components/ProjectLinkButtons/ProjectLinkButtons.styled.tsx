@@ -11,25 +11,34 @@ export const StyledProjectLinksButtonWrapper = styled.ul<Props>`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 `
 
 export const StyledAppStoreLinkButton = styled.li<Props>`
   width: 180px;
+  margin: 10px;
+  box-sizing: border-box;
 `
 
 export const StyledGooglePlayLinkButton = styled.li<Props>`
-  width: 228px;
+  width: 232px;
+  margin: 0;
 `
 
 export const StyledProjectLinkButton = styled.li<Props>`
   width: 180px;
+  height: 60px;
   background-color: ${({ theme }: Props) => theme.colors.github};
   border-radius: 10px;
-  padding: 15px 12px;
+  margin: 10px;
   text-align: center;
+  box-sizing: border-box;
 
   >a {
-    font-size: ${({ theme }: Props) => theme.fontSize.thumbnailTitle};
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    font-size: ${({ theme }: Props) => theme.fontSize.body};
     font-family: ${({ theme }: Props) => theme.fontFamily.bold};
     color: ${({ theme }: Props) => theme.colors.base};
     text-decoration: none;
@@ -42,4 +51,5 @@ export const StyledProjectLinkButton = styled.li<Props>`
 
 export const StyledGithubIcon = styled(FontAwesomeIcon)`
   color: ${({ theme }) => theme.colors.base};
+  margin-right: 8px;
 `
