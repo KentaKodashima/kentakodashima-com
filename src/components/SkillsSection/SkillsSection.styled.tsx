@@ -11,6 +11,12 @@ export const StyledSkillsSectionWrapper = styled.section<Props>`
     color: ${({ theme }: Props) => theme.colors.accent};
     font-size: ${({ theme }: Props) => theme.fontSize.sectionTitle};
     margin-bottom: 30px;
+
+  ${({ theme }: Props) => css`
+    @media screen and (max-width: ${theme.breakPoint.tabletMax}) {
+      font-size: ${({ theme }: Props) => theme.fontSize.mobile.sectionTitle};
+    }
+  `}
   }
 `
 
@@ -31,7 +37,7 @@ export const StyledSkillsSectionContextBox = styled.div<Props>`
 
   ${({ theme }: Props) => css`
     @media screen and (max-width: ${theme.breakPoint.tabletMax}) {
-      flex: 1;
+      flex: 0 1 100%;
     }
   `}
 `

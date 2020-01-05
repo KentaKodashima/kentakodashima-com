@@ -34,6 +34,6 @@ export const StyledSubmitButton = styled.button`
   margin: 0 auto;
   color: ${({ theme }) => theme.colors.base };
   background-color: ${({ theme }) => theme.colors.accent };
-  font-size: ${({ theme }) => theme.fontSize.body };
+  font-size: ${({ theme }) => theme.fontSize.regular };
   font-weight: bold;
 `

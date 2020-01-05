@@ -84,7 +84,7 @@ export const StyledChevronRightArrowBar = styled.span`
 export const StyledChevronLeftText = styled.span`
   color: ${({ theme }: StyledChevronProps) => theme.colors.accent};
   text-decoration: none;
-  font-size: ${({ theme }: StyledChevronProps) => theme.fontSize.body};
+  font-size: ${({ theme }: StyledChevronProps) => theme.fontSize.regular};
   position: absolute;
   top: calc(50% - 0.5em);
   left: 25%;
@@ -94,7 +94,7 @@ export const StyledChevronLeftText = styled.span`
 export const StyledChevronRightText = styled.span`
   color: ${({ theme }: StyledChevronProps) => theme.colors.accent};
   text-decoration: none;
-  font-size: ${({ theme }: StyledChevronProps) => theme.fontSize.body};
+  font-size: ${({ theme }: StyledChevronProps) => theme.fontSize.regular};
   position: absolute;
   top: calc(50% - 0.5em);
   right: 25%;

@@ -32,6 +32,10 @@
       .sectionTitle {
         color: $colorMiddle;
         font-size: $fontSizeThumbnailTitle;
+
+        @include max-screen($mobileLandMax) {
+          font-size: $fontSizeThumbnailTitleMobile;
+        }
       }
   
       .separator {

@@ -13,9 +13,15 @@ export const StyledSkillIconWithTextWrapper = styled.div`
   text-align: center;
 
   ${({ theme }: Props) => css`
+    @media screen and (max-width: ${theme.breakPoint.tabletMax}) {
+      flex: 0 1 32%;
+      margin: 0 2px 24px;
+    }
+
     @media screen and (max-width: ${theme.breakPoint.mobileLandMax}) {
-      flex: 0 1 40%;
-    } 
+      flex: 0 1 48%;
+      margin: 0 2px 24px;
+    }
   `}
 `
 
@@ -27,5 +33,5 @@ export const StyledSkillIconWithTextImage = styled(Img)`
 `
 
 export const StyledSkillIconWithTextLabel = styled.p<Props>`
-  font-size: ${({ theme }: Props) => theme.fontSize.body}
+  font-size: ${({ theme }: Props) => theme.fontSize.small}
 `

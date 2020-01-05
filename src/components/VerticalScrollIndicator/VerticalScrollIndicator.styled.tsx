@@ -50,7 +50,7 @@ export const StyledVeticalScrollIndicator = styled.div<StyledVeticalScrollIndica
     margin-bottom: 4.8rem;
     text-align: center;
     color: ${({ theme }: StyledVeticalScrollIndicatorProps) => theme.colors.middle};
-    font-size: ${({ theme }: StyledVeticalScrollIndicatorProps) => theme.fontSize.body};
+    font-size: ${({ theme }: StyledVeticalScrollIndicatorProps) => theme.fontSize.regular};
     font-family: ${({ theme }: StyledVeticalScrollIndicatorProps) => theme.fontFamily.bold};
   }
 `

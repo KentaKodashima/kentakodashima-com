@@ -18,14 +18,14 @@ export const StyledProjectDetailSection = styled.div<StyledProjectDetailSectionP
   }
 
   >p {
-    font-size: ${({ theme }) => theme.fontSize.body};
+    font-size: ${({ theme }) => theme.fontSize.regular};
     color: ${({ theme }) => theme.colors.middle};
     margin-bottom: 50px;
   }
 
   >ul {
     >li {
-      font-size: ${({ theme }) => theme.fontSize.body};
+      font-size: ${({ theme }) => theme.fontSize.regular};
       color: ${({ theme }) => theme.colors.middle};
     }
   }

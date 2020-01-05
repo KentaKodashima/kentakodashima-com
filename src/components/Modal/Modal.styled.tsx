@@ -31,19 +31,19 @@ export const StyledModalDialogWrapper = styled.div<StyledModalProps>`
 
 export const StyledModalDialogTitle = styled.div<StyledModalProps>`
   font-family: ${({ theme }: StyledModalProps) => theme.fontFamily.bold};
-  font-size: ${({ theme }: StyledModalProps) => theme.fontSize.body};
+  font-size: ${({ theme }: StyledModalProps) => theme.fontSize.regular};
   margin-bottom: 8px;
 `
 
 export const StyledModalDialogMessage = styled.div<StyledModalProps>`
-  font-size: ${({ theme }: StyledModalProps) => theme.fontSize.body};
+  font-size: ${({ theme }: StyledModalProps) => theme.fontSize.regular};
   margin-bottom: 16px;
 `
 
 export const StyledModalDialogButton = styled.button<StyledModalProps>`
   display: block;
   background-color: ${({ theme }: StyledModalProps) => theme.colors.accent};
-  font-size: ${({ theme }: StyledModalProps) => theme.fontSize.body};
+  font-size: ${({ theme }: StyledModalProps) => theme.fontSize.regular};
   color: ${({ theme }: StyledModalProps) => theme.colors.base};
   padding: 8px 16px;
   margin: 0 auto;

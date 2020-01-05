@@ -27,6 +27,9 @@ const SkillsSection = () => {
       androidLogo: file(relativePath: { eq: "brands/android_logo.png" }) {
         ...brandsChildImageSharpFragment
       }
+      apolloLogo: file(relativePath: { eq: "brands/apollo_logo.png" }) {
+        ...brandsChildImageSharpFragment
+      }
       appleLogo: file(relativePath: { eq: "brands/apple_logo.png" }) {
         ...brandsChildImageSharpFragment
       }
@@ -75,6 +78,9 @@ const SkillsSection = () => {
       jestLogo: file(relativePath: { eq: "brands/jest_logo.png" }) {
         ...brandsChildImageSharpFragment
       }
+      jwtLogo: file(relativePath: { eq: "brands/jwt_logo.png" }) {
+        ...brandsChildImageSharpFragment
+      }
       mongodbLogo: file(relativePath: { eq: "brands/mongodb_logo.png" }) {
         ...brandsChildImageSharpFragment
       }
@@ -114,6 +120,9 @@ const SkillsSection = () => {
       typescriptLogo: file(relativePath: { eq: "brands/typescript_logo.png" }) {
         ...brandsChildImageSharpFragment
       }
+      woocommerceLogo: file(relativePath: { eq: "brands/woocommerce_logo.png" }) {
+        ...brandsChildImageSharpFragment
+      }
       wordpressLogo: file(relativePath: { eq: "brands/wordpress_logo.png" }) {
         ...brandsChildImageSharpFragment
       }
@@ -144,6 +153,10 @@ const SkillsSection = () => {
               label='Redux'
             />
             <SkillIconWithText
+              fluid={brands.apolloLogo.childImageSharp.fluid}
+              label='Apollo GraphQL'
+            />
+            <SkillIconWithText
               fluid={brands.gatsbyLogo.childImageSharp.fluid}
               label='Gatsby.js'
             />
@@ -168,12 +181,12 @@ const SkillsSection = () => {
               label='Sass'
             />
             <SkillIconWithText
-              fluid={brands.gulpLogo.childImageSharp.fluid}
-              label='Gulp.js'
-            />
-            <SkillIconWithText
               fluid={brands.wordpressLogo.childImageSharp.fluid}
               label='WordPress'
+            />
+            <SkillIconWithText
+              fluid={brands.woocommerceLogo.childImageSharp.fluid}
+              label='WooCommerce'
             />
           </StyledSkillsSectionIconsWrapper>
         </StyledSkillsSectionContextBox>
@@ -183,6 +196,10 @@ const SkillsSection = () => {
             <SkillIconWithText
               fluid={brands.nodejsLogo.childImageSharp.fluid}
               label='Node.js / Express.js'
+            />
+            <SkillIconWithText
+              fluid={brands.jwtLogo.childImageSharp.fluid}
+              label='JWT'
             />
             <SkillIconWithText
               fluid={brands.graphqlLogo.childImageSharp.fluid}
@@ -253,6 +270,10 @@ const SkillsSection = () => {
             <SkillIconWithText
               fluid={brands.dockerLogo.childImageSharp.fluid}
               label='Docker'
+            />
+            <SkillIconWithText
+              fluid={brands.gulpLogo.childImageSharp.fluid}
+              label='Gulp.js'
             />
             <SkillIconWithText
               fluid={brands.gitLogo.childImageSharp.fluid}

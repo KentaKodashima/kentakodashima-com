@@ -21,7 +21,11 @@ const SkillIconWithText: FunctionComponent<SkillIconWithTextProps> = ({ fluid, l
           objectFit: 'contain'
         }}
       />
-      <StyledSkillIconWithTextLabel>{label}</StyledSkillIconWithTextLabel>
+      <StyledSkillIconWithTextLabel
+        style={label === 'WooCommerce' ? { fontSize: '1.2rem' } : {}}
+      >
+        {label}
+      </StyledSkillIconWithTextLabel>
     </StyledSkillIconWithTextWrapper>
   )
 }

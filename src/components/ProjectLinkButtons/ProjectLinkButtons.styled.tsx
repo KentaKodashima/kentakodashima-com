@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { ThemeType } from '../../themes/theme'
@@ -40,10 +40,16 @@ export const StyledProjectLinkButton = styled.li<Props>`
     display: inline-block;
     height: 100%;
     line-height: 60px;
-    font-size: ${({ theme }: Props) => theme.fontSize.body};
+    font-size: ${({ theme }: Props) => theme.fontSize.regular};
     font-family: ${({ theme }: Props) => theme.fontFamily.bold};
     color: ${({ theme }: Props) => theme.colors.base};
     text-decoration: none;
+
+    ${({ theme }: Props) => css`
+      @media screen and (max-width: ${theme.breakPoint.mobileLandMax}) {
+        font-size: ${({ theme }: Props) => theme.fontSize.xs};
+      }
+    `}
   }
 
   >a:visited {

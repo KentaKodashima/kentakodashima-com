@@ -39,7 +39,7 @@ export const ArticleThumbnailTextTitle = styled.h4<Props>`
 `
 
 export const ArticleThumbnailTextDescription = styled.p<Props>`
-  font-size: ${({ theme }) => theme.fontSize.body};
+  font-size: ${({ theme }) => theme.fontSize.regular};
   margin: 0;
   color: ${({ theme }) => theme.middle};
 `

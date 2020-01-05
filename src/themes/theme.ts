@@ -5,10 +5,13 @@ export type ThemeType = {
     middle: string
     light: string
     github: string
-  },
+  }
   fontSize: {
     base: string
-    body: string
+    regular: string
+    xs: string
+    small: string
+    large: string
     thumbnailTitle: string
     navMenu: string
     heroSubtitle: string
@@ -17,14 +20,17 @@ export type ThemeType = {
     mobile: {
       pageTitle: string
       navMenu: string
+      thumbnailTitle: string
+      thumbnailSubtitle: string
+      sectionTitle: string
     }
-  },
+  }
   fontFamily: {
     default: string
     base: string
     bold: string
     extraBold: string
-  },
+  }
   breakPoint: {
     mobilePortraitMin: string
     mobilePortraitMax: string
@@ -34,6 +40,9 @@ export type ThemeType = {
     tabletMax: string
     pcMin: string
     pcMax: string
+  }
+  constants: {
+    DURATION: number
   }
 }
 
@@ -47,7 +56,10 @@ export const theme = {
   },
   fontSize: {
     base: '10px',
-    body: '1.6rem',
+    regular: '1.6rem',
+    xs: '1.2rem',
+    small: '1.4rem',
+    large: '1.8rem',
     thumbnailTitle: '2.4rem',
     thumbnailSubtitle: '2.1rem',
     navMenu: '4.8rem',

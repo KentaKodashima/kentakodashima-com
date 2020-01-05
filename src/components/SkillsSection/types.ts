@@ -3,6 +3,7 @@ import { ImageQueryType } from '../../themes/types'
 export type BrandsType = {
   alibabaCloudLogo: ImageQueryType
   androidLogo: ImageQueryType
+  apolloLogo: ImageQueryType
   appleLogo: ImageQueryType
   awsLogo: ImageQueryType
   css3Logo: ImageQueryType
@@ -19,6 +20,7 @@ export type BrandsType = {
   html5Logo: ImageQueryType
   javaLogo: ImageQueryType
   jestLogo: ImageQueryType
+  jwtLogo: ImageQueryType
   mongodbLogo: ImageQueryType
   netlifyLogo: ImageQueryType
   nodejsLogo: ImageQueryType
@@ -32,5 +34,6 @@ export type BrandsType = {
   styledComponentsLogo: ImageQueryType
   swiftLogo: ImageQueryType
   typescriptLogo: ImageQueryType
+  woocommerceLogo: ImageQueryType
   wordpressLogo: ImageQueryType
 }
