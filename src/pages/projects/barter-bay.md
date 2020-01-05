@@ -24,7 +24,7 @@ about: >-
   Barter Bay is an online trading platform where users can buy, sell and trade
   items that they no longer use for free. The app consists of the
   Node.js/Express.js authentication server, the GraphQL contents server and the
-  app itself.  
+  app itself.
 
 
   My responsibility is to maintain the app including the backend and add new
