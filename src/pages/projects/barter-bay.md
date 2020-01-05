@@ -27,8 +27,6 @@ about: >-
   app itself.
 
 
-
-
   My responsibility is to maintain the app including the backend and add new
   features. So far, I was in charge of fixing some bugs and adding the daily
   reward feature.
