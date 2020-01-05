@@ -12,6 +12,8 @@ export const StyledProjectLinksButtonWrapper = styled.ul<Props>`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-left: 0;
+  margin-bottom: 40px;
 `
 
 export const StyledAppStoreLinkButton = styled.li<Props>`

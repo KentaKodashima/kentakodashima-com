@@ -1,3 +1,5 @@
+import { FluidObject } from 'gatsby-image'
+
 export type ProjectType = {
   title: string
   categoryType: string
@@ -53,4 +55,10 @@ export type PageTransitionContextType = {
   location: LocationType
   direction: string
   provideDirection: (direction: string) => {}
+}
+
+export type ImageQueryType = {
+  childImageSharp: {
+    fluid: FluidObject
+  }
 }

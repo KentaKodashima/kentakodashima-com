@@ -1,0 +1,40 @@
+<-- Frontend -->
+Typescript: https://github.com/exercism/meta/issues/78
+Javascript/ES: https://github.com/wingsuitist/ecmascript-logo
+React: https://commons.wikimedia.org/wiki/File:React-icon.svg
+Redux: https://github.com/reduxjs/redux/tree/master/logo
+Gatsby: https://www.gatsbyjs.org/guidelines/logo/
+Netlify CMS: https://www.netlify.com/press/
+Styled Components: https://github.com/styled-components/brand/blob/master/styled-components.png
+HTML5: https://www.w3.org/html/logo/
+CSS3: https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg
+Sass: https://sass-lang.com/styleguide/brand
+Gulp.js: https://commons.wikimedia.org/wiki/File:Gulp.js_Logo.svg
+WordPress: https://wordpress.org/about/logos/
+
+
+<-- Backend -->
+Node.js: https://nodejs.org/en/about/resources/
+GraphQL: https://commons.wikimedia.org/wiki/File:GraphQL_Logo.svg
+PostgreSQL: https://wiki.postgresql.org/wiki/Logo
+MongoDB: https://www.mongodb.com/brand-resources
+Firebase: https://firebase.google.com/brand-guidelines
+Alibaba Cloud: https://www.alibabagroup.com/en/news/article?news=p160809
+AWS: https://aws.amazon.com/architecture/icons/
+
+<-- Mobile -->
+React Native: https://commons.wikimedia.org/wiki/File:React-icon.svg
+Expo: https://expo.io/brand
+Swift: https://developer.apple.com/swift/resources/
+Java: https://github.com/exercism/meta/issues/52
+Android: https://developer.android.com/distribute/marketing-tools/brand-guidelines
+iOS: https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg
+Realm: https://github.com/realm/realm-cocoa/blob/master/logo.png
+
+<-- Tools -->
+Jest: https://github.com/facebook/jest/blob/master/website/static/img/jest.png
+Git: https://git-scm.com/downloads/logos
+Github: https://github.com/logos
+GitLab: https://about.gitlab.com/blog/2015/07/03/our-new-logo/
+Sketch: https://www.sketch.com/press/
+PhotoShop: https://commons.wikimedia.org/wiki/File:Adobe_Photoshop_CC_icon.svg

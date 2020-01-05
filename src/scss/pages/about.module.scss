@@ -2,45 +2,49 @@
 @import '../common/mixin';
 
 .contentWrapper {
-  display: flex;
 
-  @include max-screen($mobileLandMax) {
-    flex-direction: column;
-  }
-
-  .leftCol {
-    flex: 2;
-    margin-right: 50px;
+  .profileSectionWrapper {
+    display: flex;
+    margin-bottom: 50px;
 
     @include max-screen($mobileLandMax) {
-      flex: 1;
-      margin-right: 0;
-      margin-bottom: 30px;
+      flex-direction: column;
     }
-  }
-
-  .rightCol {
-    flex: 3;
-
-    @include max-screen($mobileLandMax) {
-      flex: 1;
+  
+    .leftCol {
+      flex: 2;
+      margin-right: 50px;
+  
+      @include max-screen($mobileLandMax) {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
     }
-
-    .sectionTitle {
-      color: $colorMiddle;
-      font-size: $fontSizeThumbnailTitle;
-    }
-
-    .separator {
-      width: 50%;
-      height: 2px;
-      background-color: $colorLight;
-      margin: 20px 0;
-    }
-
-    .paragraph {
-      font-size: 1.6rem;
-      color: $colorMiddle;
+  
+    .rightCol {
+      flex: 3;
+  
+      @include max-screen($mobileLandMax) {
+        flex: 1;
+      }
+  
+      .sectionTitle {
+        color: $colorMiddle;
+        font-size: $fontSizeThumbnailTitle;
+      }
+  
+      .separator {
+        width: 50%;
+        height: 2px;
+        background-color: $colorLight;
+        margin: 20px 0;
+      }
+  
+      .paragraph {
+        font-size: 1.6rem;
+        color: $colorMiddle;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@ export const StyledProjectMainImages = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 `
 
 export const StyledGatsbyImage = styled(Img)`
