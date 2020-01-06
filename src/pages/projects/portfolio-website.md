@@ -33,5 +33,7 @@ technologies:
   - Styled Components
   - React Hooks API
   - React Context API
+extraImages:
+  - /assets/pagespeed-insights.png
 ---
 
