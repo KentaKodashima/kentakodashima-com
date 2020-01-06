@@ -20,9 +20,9 @@ about: >-
 
   The app adopts MVC architecture and Realm is used as the database. Although
   Realm is very fast and easy to structure models, it has the the memory limit
-  of 16MB. Therefore, the app copies the images and store them into the app
-  sandbox when the user uploads images. I store only the paths to the images in
-  the database to save memory space.
+  of 16MB. In order to save memory space, the app copies the uploaded images
+  into the app sandbox, and only the paths to the copied images are stored into
+  the database.
 technologies:
   - Swift
   - Realm
