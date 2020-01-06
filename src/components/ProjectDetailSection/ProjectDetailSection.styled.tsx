@@ -6,6 +6,8 @@ type StyledProjectDetailSectionProps = {
 }
 
 export const StyledProjectDetailSection = styled.div<StyledProjectDetailSectionProps>`
+  margin-bottom: 50px;
+  
   >h3 {
     font-family: ${({ theme }) => theme.fontFamily.bold};
     font-size: ${({ theme }) => theme.fontSize.sectionTitle};
@@ -20,7 +22,6 @@ export const StyledProjectDetailSection = styled.div<StyledProjectDetailSectionP
   >p {
     font-size: ${({ theme }) => theme.fontSize.regular};
     color: ${({ theme }) => theme.colors.middle};
-    margin-bottom: 50px;
   }
 
   >ul {

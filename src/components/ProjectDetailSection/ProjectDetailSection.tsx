@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import ReactMarkdown from 'react-markdown'
 
 import { StyledProjectDetailSection } from './ProjectDetailSection.styled'
 
@@ -15,9 +16,9 @@ const ProjectDetailSection: FunctionComponent<ProjectDetailSectionProps> = ({ ti
         {title}
       </h3>
       { about &&
-        <p>
-          {about}
-        </p>
+        <ReactMarkdown
+          source={about}
+        />
       }
       { technologies &&
         <ul>
