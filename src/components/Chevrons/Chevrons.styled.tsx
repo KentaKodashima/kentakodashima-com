@@ -15,7 +15,7 @@ export const StyledChevron = styled(motion.div)`
   height: 1px;
 
   ${({ theme }: StyledChevronProps) => css`
-    @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+    @media screen and (max-width: ${theme.breakPoint.mobileLandMax}) {
       display: none;
     }
   `}
