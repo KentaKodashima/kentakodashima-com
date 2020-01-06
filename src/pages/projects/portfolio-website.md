@@ -15,9 +15,10 @@ appLinks:
       linkType: GitHub
       url: 'https://github.com/KentaKodashima/kentakodashima-com'
 about: >-
-  This is a showcase of my works and skills. During the process of developing my
+  This is a showcase of my works and skills. In the process of developing my
   portfolio, I have tried out some new technologies such as Gatsby.js, Netlify
-  CMS and Styled Components.
+  CMS and Styled Components. The post requests from the contact form is handed
+  with AWS Lambda function.
 
 
   My old portfolio was built using my own custom WordPress theme to manage
