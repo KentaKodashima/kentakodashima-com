@@ -25,7 +25,7 @@
 .heroTitle {
   font-size: 7.2rem;
 
-  @include max-screen(480px) {
+  @include max-screen($mobileLandMax) {
     font-size: 2.8rem;
   }
 }
@@ -33,7 +33,7 @@
 .heroSubTitle {
   font-size: 4.8rem;
 
-  @include max-screen(480px) {
+  @include max-screen($mobileLandMax) {
     font-size: 1.8rem;
   }
 }
