@@ -13,6 +13,9 @@ appLinks:
   - appLink:
       linkType: GitHub
       url: 'https://github.com/KentaKodashima/Amtrip'
+  - appLink:
+      linkType: iOS
+      url: 'https://apps.apple.com/us/app/id1416443046'
 about: >-
   Amtrip is a traveler's journal app. Using this app, users can easily make
   records of their trips.
