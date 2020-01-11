@@ -9,9 +9,6 @@ mainImages:
   - /assets/portfolio-main.png
 appLinks:
   - appLink:
-      linkType: Web
-      url: www.kentakodashima.com
-  - appLink:
       linkType: GitHub
       url: 'https://github.com/KentaKodashima/kentakodashima-com'
 about: >-
