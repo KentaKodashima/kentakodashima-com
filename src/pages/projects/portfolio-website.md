@@ -10,7 +10,7 @@ mainImages:
 appLinks:
   - appLink:
       linkType: Web
-      url: kentakodashima.com
+      url: www.kentakodashima.com
   - appLink:
       linkType: GitHub
       url: 'https://github.com/KentaKodashima/kentakodashima-com'
