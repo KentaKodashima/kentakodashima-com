@@ -34,7 +34,9 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
             <ProjectLinkButtons appLinks={state.appLinks} />
             <ProjectDetailSection title='About this project' about={state.about} />
             <ProjectDetailSection title='Technologies' technologies={state.technologies} />
-            <ProjectExtraImagesSection  sectionTitle='Extra Images' imageTitle={state.title} extraImages={state.extraImages} />
+            { state.extraImages &&
+              <ProjectExtraImagesSection  sectionTitle='Extra Images' imageTitle={state.title} extraImages={state.extraImages} />
+            }
           </React.Fragment>
         }
       </Layout>
