@@ -8,18 +8,31 @@ type Props = {
 }
 
 export const StyledProjectExtraImages = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  margin-bottom: 40px;
+  >h3 {
+    font-family: ${({ theme }) => theme.fontFamily.bold};
+    font-size: ${({ theme }) => theme.fontSize.sectionTitle};
 
-  ${({ theme }: Props) => css`
-    @media screen and (max-width: ${theme.breakPoint.mobileLandMax}) {
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-  `}
+    ${({ theme }) => css`
+      @media screen and (max-width: ${theme.breakPoint.mobilePortraitMax}) {
+        font-size: ${({ theme }) => theme.fontSize.mobile.sectionTitle};
+      }
+    `}
+  }
+
+  >div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-bottom: 40px;
+
+    ${({ theme }: Props) => css`
+      @media screen and (max-width: ${theme.breakPoint.mobileLandMax}) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+    `}
+  }
 `
 
 export const StyledGatsbyImage = styled(Img)`

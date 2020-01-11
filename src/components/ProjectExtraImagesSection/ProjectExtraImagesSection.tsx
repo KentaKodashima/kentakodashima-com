@@ -3,7 +3,8 @@ import React, { FunctionComponent } from 'react'
 import { StyledProjectExtraImages, StyledGatsbyImage } from './ProjectExtraImagesSection.styled'
 
 type ProjectDetailMainImagesProps = {
-  title: string
+  sectionTitle: string
+  imageTitle: string
   extraImages: [{
     id: string
     childImageSharp: {
@@ -12,20 +13,25 @@ type ProjectDetailMainImagesProps = {
   }]
 }
 
-const ProjectExtraImagesSection: FunctionComponent<ProjectDetailMainImagesProps> = ({ title, extraImages }) => {
+const ProjectExtraImagesSection: FunctionComponent<ProjectDetailMainImagesProps> = ({ sectionTitle, imageTitle, extraImages }) => {
   return (
     <StyledProjectExtraImages>
-      {
-        extraImages.map((image) => {
-          return (
-            <StyledGatsbyImage
-              title={title}
-              alt={title}
-              fluid={{ ...image.childImageSharp.fluid }}
-            />
-          )
-        })
-      }
+      <h3>
+        {sectionTitle}
+      </h3>
+      <div>
+        {
+          extraImages.map((image) => {
+            return (
+              <StyledGatsbyImage
+                title={imageTitle}
+                alt={imageTitle}
+                fluid={{ ...image.childImageSharp.fluid }}
+              />
+            )
+          })
+        }
+      </div>
     </StyledProjectExtraImages>
   )
 }

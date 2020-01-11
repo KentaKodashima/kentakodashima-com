@@ -6,7 +6,8 @@ import {
   PageTitle,
   ProjectDetailMainImages,
   ProjectDetailSection,
-  ProjectLinkButtons
+  ProjectLinkButtons,
+  ProjectExtraImagesSection
 } from '../components'
 import Img from 'gatsby-image'
 import { PaddingTopContext } from '../themes/contexts'
@@ -33,6 +34,7 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
             <ProjectLinkButtons appLinks={state.appLinks} />
             <ProjectDetailSection title='About this project' about={state.about} />
             <ProjectDetailSection title='Technologies' technologies={state.technologies} />
+            <ProjectExtraImagesSection  sectionTitle='Extra Images' imageTitle={state.title} extraImages={state.extraImages} />
           </React.Fragment>
         }
       </Layout>
