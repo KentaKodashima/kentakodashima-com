@@ -34,6 +34,6 @@ technologies:
   - React Hooks API
   - React Context API
 extraImages:
-  - /assets/pagespeed-insights.png
+  - /assets/kentakodashima_com-pagespeed-insights.png
 ---
 
