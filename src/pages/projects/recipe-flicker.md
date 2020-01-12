@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Recipe Flicker
-priority: 4
+priority: 5
 categoryType: Mobile
 thumbnail: /assets/recipe-flicker-thumbnail.png
 thumbnailSubtitle: Swift / Firebase / Realm
