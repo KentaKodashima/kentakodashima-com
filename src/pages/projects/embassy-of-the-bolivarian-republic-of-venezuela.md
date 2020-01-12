@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Embassy of the Bolivarian Republic of Venezuela
-priority: 3
+priority: 4
 categoryType: Web
 thumbnail: /assets/venezuela-thumbnail.png
 thumbnailSubtitle: 'WordPress, HTML, CSS, jQuery'
