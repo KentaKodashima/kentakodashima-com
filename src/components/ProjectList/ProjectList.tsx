@@ -28,7 +28,7 @@ const ProjectList: FunctionComponent = () => {
               mainImages {
                 id
                 childImageSharp {
-                  fluid(maxWidth: 300) {
+                  fluid(maxWidth: 1920) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -36,7 +36,7 @@ const ProjectList: FunctionComponent = () => {
               extraImages {
                 id
                 childImageSharp {
-                  fluid(maxWidth: 300) {
+                  fluid(maxWidth: 1920) {
                     ...GatsbyImageSharpFluid
                   }
                 }

@@ -9,7 +9,6 @@ import {
   ProjectLinkButtons,
   ProjectExtraImagesSection
 } from '../components'
-import Img from 'gatsby-image'
 import { PaddingTopContext } from '../themes/contexts'
 import { ProjectType } from '../themes/types'
 
@@ -34,7 +33,7 @@ const ProjectDetailPage: FunctionComponent<ProjectDetailPageProps> = ({ location
             <ProjectLinkButtons appLinks={state.appLinks} />
             <ProjectDetailSection title='About this project' about={state.about} />
             <ProjectDetailSection title='Technologies' technologies={state.technologies} />
-            { state.extraImages &&
+            { state.extraImages && state.extraImages.length > 0 &&
               <ProjectExtraImagesSection  sectionTitle='Extra Images' imageTitle={state.title} extraImages={state.extraImages} />
             }
           </React.Fragment>
