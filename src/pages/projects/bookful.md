@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Bookful
-priority: 5
+priority: 6
 categoryType: Mobile
 thumbnail: /assets/bookful-thumbnail.png
 thumbnailSubtitle: Java / Realm
@@ -35,7 +35,7 @@ about: >-
   - This app is available on the [Google Play
   Store](https://play.google.com/store/apps/details?id=kentakodashima.com.bookful).
 technologies:
-  - Java  
+  - Java
   - Realm
 ---
 
