@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Bookful
-priority: 6
+priority: 7
 categoryType: Mobile
 thumbnail: /assets/bookful-thumbnail.png
 thumbnailSubtitle: Java / Realm
