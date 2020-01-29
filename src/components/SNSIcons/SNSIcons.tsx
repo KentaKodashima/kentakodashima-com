@@ -22,7 +22,7 @@ const Container: FunctionComponent = () => {
         </a>
       </li>
       <li>
-        <a href="www.linkedin.com/in/kenta-kodashima">
+        <a href="https://www.linkedin.com/in/kenta-kodashima">
           <StyledFontAwesomeIcon icon={faLinkedinIn} />
         </a>
       </li>
