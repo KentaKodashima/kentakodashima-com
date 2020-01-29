@@ -21,7 +21,6 @@ technologies:
   - Vanilla JS
   - HTML/CSS
   - Sass
-  - Ubuntu 18.4
-  - DigitalOcean Droplet
+  - 'Linux (Ubuntu 18.4: DigitalOcean Droplet)'
 ---
 
