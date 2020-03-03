@@ -13,6 +13,7 @@ import {
   StyledHeaderLogo
 } from './Header.styled'
 import { theme } from '../../themes/theme'
+import CatLogo from '../../images/logo.svg'
 
 const duration = theme.constants.DURATION
 
@@ -59,12 +60,14 @@ const Header = () => {
                     <Link
                       to="/"
                       style={{
-                        color: `black`,
-                        textDecoration: `none`,
-                        fontSize: '50px'
+                        // color: `black`,
+                        // textDecoration: `none`,
+                        // fontSize: '50px'
+                        display: 'block'
                       }}
                     >
-                      K
+                      <img src={CatLogo} style={{ width: '50px', margin: 0 }} />
+                      {/* Ks */}
                     </Link>
                   </StyledHeaderLogo>
                 </div>
@@ -94,12 +97,14 @@ const Header = () => {
                     <Link
                       to="/"
                       style={{
-                        color: `black`,
-                        textDecoration: `none`,
-                        fontSize: '50px'
+                        // color: `black`,
+                        // textDecoration: `none`,
+                        // fontSize: '50px'
+                        display: 'block'
                       }}
                     >
-                      K
+                      <img src={CatLogo} style={{ width: '50px', margin: 0 }} />
+                      {/* K */}
                     </Link>
                   </StyledHeaderLogo>
                 </div>

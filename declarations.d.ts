@@ -5,3 +5,8 @@ declare module '*.scss' {
   const classNames: IClassNames
   export default classNames
 }
+
+declare module "*.svg" {
+  const content: string
+  export default content
+}

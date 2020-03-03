@@ -11,7 +11,7 @@ const Footer = () => {
       <Container>© {new Date().getFullYear()} Kenta Kodashima</Container>
       <Container>
         <StyledCredit>
-          The cool cat image is created by my awesome designer friend, <a href='http://katherinexz.com/' target='_blank'>Katherine Zhang</a>.
+          The cool cats on this website are created by my awesome designer friend, <a href='http://katherinexz.com/' target='_blank'>Katherine Zhang</a>.
         </StyledCredit>
       </Container>
     </StyledFooter>
