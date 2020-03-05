@@ -22,10 +22,12 @@ about: >-
   React Native app.
 technologies:
   - React Native
+  - React Navigation
   - Typescript
   - Node.js
   - Express.js
   - JWT
+  - GraphQL
   - PostgreSQL
   - Handlebars
   - 'AWS (Lambda, S3, Amazon API Gateway, CloudFront and EC2)'
