@@ -9,11 +9,14 @@ mainImages:
   - /assets/yumii-rewards-main.png
 appLinks:
   - appLink:
-      linkType: Web
-      url: 'https://yumiirewards.com/'
-  - appLink:
       linkType: iOS
       url: 'https://apps.apple.com/ca/app/yumii-rewards/id1499382112'
+  - appLink:
+      linkType: Android
+      url: 'https://play.google.com/store/apps/details?id=com.yumiirewards'
+  - appLink:
+      linkType: Web
+      url: 'https://yumiirewards.com/'
 about: >-
   Yumii Rewards is the cross platform mobile app that allows the bubble tea /
   coffee shops in town to offer a variety of promotions through the app. It is
