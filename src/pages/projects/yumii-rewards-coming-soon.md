@@ -1,6 +1,6 @@
 ---
 templateKey: project-detail
-title: Yumii Rewards (coming soon)
+title: Yumii Rewards
 priority: 0
 categoryType: Mobile
 thumbnail: /assets/yumii-rewards-thumbnail.png
@@ -8,6 +8,12 @@ thumbnailSubtitle: React Native / Typescript / Node / Express / JWT / GraphQL / 
 mainImages:
   - /assets/yumii-rewards-main.png
 appLinks:
+  - appLink:
+      linkType: iOS
+      url: 'https://apps.apple.com/ca/app/yumii-rewards/id1499382112'
+  - appLink:
+      linkType: Android
+      url: 'https://play.google.com/store/apps/details?id=com.yumiirewards'
   - appLink:
       linkType: Web
       url: 'https://yumiirewards.com/'
