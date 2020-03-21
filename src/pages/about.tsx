@@ -59,13 +59,13 @@ const AboutPage = () => {
                   Hi, I’m Kenta, a passionate and responsible developer who strives to come up with the best solution under the given conditions.
                 </p>
                 <p className={aboutStyles.paragraph}>
-                  I find the meaning of my existance in helping people around me, so I have been mentoring my friends to learn HTML/CSS, ES6, React, etc.
+                  I find the meaning of my existence in helping people, so I have been mentoring my friends to learn HTML/CSS, ES6, React, etc.
                 </p>
                 <p className={aboutStyles.paragraph}>
-                  To contribute to the developer community, I also have published more than 25 articles on Medium. Some of my articles got some attentions enough to receive over 200 claps with over 12.2k views.
+                  To contribute to the developer community, I also have published more than 25 articles on Medium. Some of my articles got some attention enough to receive over 200 claps with over 12.2k views.
                 </p>
                 <p className={aboutStyles.paragraph}>
-                  Aside from technologies, I enjoy studying Philosophy and playing piano.
+                  Aside from technologies, I enjoy studying philosophy and playing the piano.
                 </p>
               </div>
             </section>
