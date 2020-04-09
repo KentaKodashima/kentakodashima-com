@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import tabStyles from '../scss/components/Tab.module.scss'
+import { Container, TabItem } from './Tab.styled'
 
 type TabProps = {
   tabItems: string[]
@@ -8,20 +8,17 @@ type TabProps = {
 
 const Tab: FunctionComponent<TabProps> = ({ tabItems }) => {
   return (
-    <ul className={tabStyles.tabWrapper}>
+    <Container>
       {
         tabItems.map((item, index) => {
           return (
-            <li 
-              key={index}
-              className={tabStyles.tabItems}
-            >
+            <TabItem key={index}>
               {item}
-            </li>
+            </TabItem>
           )
         })
       }
-    </ul>
+    </Container>
   )
 }
 

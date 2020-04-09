@@ -1,4 +1,4 @@
 {
-  "include": ["declarations.d.ts"],
+  "include": ["./src/typyings.d.ts"],
   "exclude": ["node_modules"]
 }

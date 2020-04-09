@@ -1,3 +1,9 @@
+import { ThemeType } from './themes/theme'
+
+declare module "styled-components" {
+  interface DefaultTheme extends ThemeType {}
+}
+
 declare module '*.scss' {
   interface IClassNames {
     [className: string]: string

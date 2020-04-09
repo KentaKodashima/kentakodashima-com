@@ -1,51 +1,3 @@
-export type ThemeType = {
-  colors: {
-    base: string
-    accent: string
-    middle: string
-    light: string
-    github: string
-  }
-  fontSize: {
-    base: string
-    regular: string
-    xs: string
-    small: string
-    large: string
-    thumbnailTitle: string
-    navMenu: string
-    heroSubtitle: string
-    sectionTitle: string
-    pageTitle: string
-    mobile: {
-      pageTitle: string
-      navMenu: string
-      thumbnailTitle: string
-      thumbnailSubtitle: string
-      sectionTitle: string
-    }
-  }
-  fontFamily: {
-    default: string
-    base: string
-    bold: string
-    extraBold: string
-  }
-  breakPoint: {
-    mobilePortraitMin: string
-    mobilePortraitMax: string
-    mobileLnadMin: string
-    mobileLandMax: string
-    tabletMin: string
-    tabletMax: string
-    pcMin: string
-    pcMax: string
-  }
-  constants: {
-    DURATION: number
-  }
-}
-
 export const theme = {
   colors: {
     base: '#F9F9F9',
@@ -94,3 +46,5 @@ export const theme = {
     DURATION: 0.5
   }
 }
+
+export type ThemeType = typeof theme
