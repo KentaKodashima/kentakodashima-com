@@ -1,1 +1,1 @@
-export { default } from './Chevrons'
+export { default as Chevrons } from './Chevrons'

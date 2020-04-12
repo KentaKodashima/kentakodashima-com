@@ -1,1 +1,1 @@
-export { default } from './ProjectDetailSection'
+export { default as ProjectDetailSection } from './ProjectDetailSection'

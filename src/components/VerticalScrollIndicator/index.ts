@@ -1,1 +1,1 @@
-export { default } from './VerticalScrollIndicator'
+export { default as VerticalScrollIndicator } from './VerticalScrollIndicator'

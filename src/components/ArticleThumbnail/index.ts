@@ -1,1 +1,1 @@
-export { default } from './ArticleThumbnail'
+export { default as ArticleThumbnail } from './ArticleThumbnail'

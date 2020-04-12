@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { StyledProjectListWrapper } from './ProjectList.styled'
-import ProjectThumbnail from '../ProjectThumbnail'
+import { ProjectThumbnail } from '../ProjectThumbnail'
 
 const ProjectList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`

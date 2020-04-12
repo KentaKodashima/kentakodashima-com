@@ -1,1 +1,1 @@
-export { default } from './SNSIcons'
+export { default as SNSIcons } from './SNSIcons'

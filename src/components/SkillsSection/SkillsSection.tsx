@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import SkillIconWithText from '../SkillIconWithText'
+import { SkillIconWithText } from '../SkillIconWithText'
 import {
   StyledSkillsSectionWrapper,
   StyledSkillsSectionContentWrapper,

@@ -1,1 +1,1 @@
-export { default } from './ProjectExtraImagesSection'
+export { default as ProjectExtraImagesSection } from './ProjectExtraImagesSection'

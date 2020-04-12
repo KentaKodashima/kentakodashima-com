@@ -5,7 +5,7 @@ import {
 } from 'react-transition-group'
 import styled, { css, keyframes } from 'styled-components'
 
-import { PageTransitionContext } from '../components/TransitionProvider'
+import { PageTransitionContext } from './TransitionProvider'
 import { PageTransitionContextType } from '../themes/types'
 
 const duration = 1000

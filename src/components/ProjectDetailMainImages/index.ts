@@ -1,1 +1,1 @@
-export { default } from './ProjectDetailMainImage'
+export { default as ProjectDetailMainImages } from './ProjectDetailMainImage'

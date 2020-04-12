@@ -1,7 +1,7 @@
 import React, { useState, useEffect, FunctionComponent } from 'react'
 
-import Transition from './Transition'
-import { LocationType } from '../themes/types'
+import { Transition } from '../Transition'
+import { LocationType } from '../../themes/types'
 
 export const PageTransitionContext = React.createContext({
   direction: '',

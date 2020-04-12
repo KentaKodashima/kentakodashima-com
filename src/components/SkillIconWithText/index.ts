@@ -1,1 +1,1 @@
-export { default } from './SkillIconWithText'
+export { default as SkillIconWithText } from './SkillIconWithText'

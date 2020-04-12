@@ -6,10 +6,10 @@ import { PaddingTopContext } from '../../themes/contexts'
 import { GlobalStyle } from './GlobalStyle'
 import { theme } from '../../themes/theme'
 import { StyledLayoutMain } from './Layout.styled'
-import Header from '../Header'
-import Footer from '../Footer'
-import Container from '../Container'
-import Chevrons from '../Chevrons'
+import { Header } from '../Header'
+import { Footer } from '../Footer'
+import { Container } from '../Container'
+import { Chevrons } from '../Chevrons'
 
 type LayoutProps = {
   isFooterVisible: boolean

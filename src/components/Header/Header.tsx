@@ -4,8 +4,8 @@ import { AnimatePresence } from 'framer-motion'
 
 import { PageTransitionContextType } from '../../themes/types'
 import { PageTransitionContext } from '../TransitionProvider'
-import BurgerButton from '../BurgerButton'
-import NavMenu from '../NavMenu'
+import { BurgerButton } from '../BurgerButton'
+import { NavMenu } from '../NavMenu'
 import {
   StyledHeader,
   StyledHeaderContainer,

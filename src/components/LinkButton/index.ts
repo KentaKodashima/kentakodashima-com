@@ -1,1 +1,1 @@
-export { default } from './LinkButton'
+export { default as LinkButton } from './LinkButton'

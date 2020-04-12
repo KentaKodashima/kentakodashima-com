@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 import { StyledFooter, StyledCredit } from './Footer.styled'
-import Container from '../Container'
-import SNSIcons from '../SNSIcons'
+import { Container } from '../Container'
+import { SNSIcons } from '../SNSIcons'
 
 const Footer = () => {
   return (

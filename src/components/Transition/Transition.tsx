@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-import { PageTransitionContext } from '../components/TransitionProvider'
-import { PageTransitionContextType } from '../themes/types'
-import { theme } from '../themes/theme'
+import { PageTransitionContext } from '../TransitionProvider'
+import { PageTransitionContextType } from '../../themes/types'
+import { theme } from '../../themes/theme'
 
 const duration = theme.constants.DURATION
 
