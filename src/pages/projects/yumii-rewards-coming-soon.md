@@ -19,13 +19,14 @@ appLinks:
       url: 'https://yumiirewards.com/'
 about: >-
   Yumii Rewards is the cross platform mobile app that allows the bubble tea /
-  coffee shops in town to offer a variety of promotions through the app. It is
-  planed to be released at the end of February.
+  coffee shops in town to offer a variety of promotions through the app. Using
+  Yumii Rewards, users can collect stamps to redeem rewards at their favorite
+  stores.
 
 
-  In this project, I am in charge of developing the Node / Express
-  authentication server, GraphQL content server and the customer-side UI of the
-  React Native app.
+  In this project, I was in charge of developing the Node/Express authentication
+  server, GraphQL server and the customer-side UI of the React Native app. I
+  have also automated the builds using App Center and CodePush from Microsoft.
 technologies:
   - React Native
   - React Navigation
