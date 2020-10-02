@@ -1,6 +1,6 @@
 ---
 templateKey: project-detail
-title: Barter Bay
+title: Barter Aye
 priority: 1
 categoryType: Mobile
 thumbnail: /assets/barterbay-thumbnail.png
@@ -21,15 +21,15 @@ appLinks:
       linkType: Web
       url: 'https://barterbay.ca/'
 about: >-
-  Barter Bay is an online trading platform where users can buy, sell and trade
+  Barter Aye is an online trading platform where users can buy, sell and trade
   items that they no longer use for free. The app consists of the
   Node.js/Express.js authentication server, the GraphQL contents server and the
   React Native app itself. The servers are hosted on AWS.
 
 
   My responsibility is to maintain the app including the backend and add new
-  features. So far, I was in charge of fixing some bugs and adding the daily
-  reward feature.
+  features. The trickiest task related to this app was to change the domain name
+  through out the app.
 technologies:
   - React Native
   - Expo
