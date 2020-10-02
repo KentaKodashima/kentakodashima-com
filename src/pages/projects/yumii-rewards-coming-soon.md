@@ -4,7 +4,9 @@ title: Yumii Rewards
 priority: 0
 categoryType: Mobile
 thumbnail: /assets/yumii-rewards-thumbnail.png
-thumbnailSubtitle: React Native / Typescript / Node / Express / JWT / GraphQL / PostgreSQL / AWS
+thumbnailSubtitle: >-
+  React Native / Typescript / Node / Express / JWT / GraphQL / PostgreSQL / AWS
+  / CodePush
 mainImages:
   - /assets/yumii-rewards-main.png
 appLinks:
