@@ -1,6 +1,6 @@
 ---
 title: (React Native) Create a Custom Text Component with Custom font-family
-priority: 2
+priority: 3
 thumbnail: /assets/react-native-logo.png
 url: >-
   https://medium.com/@KentaKodashima/react-native-create-a-custom-text-component-with-custom-font-family-61c5fcdf9388
