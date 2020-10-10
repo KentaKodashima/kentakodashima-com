@@ -1,6 +1,6 @@
 ---
 title: Host Your React App on AWS S3 with SSL
-priority: 0
+priority: 1
 thumbnail: /assets/aws-s3-react.png
 url: >-
   https://medium.com/@KentaKodashima/host-your-react-app-on-aws-s3-with-ssl-2b58d62fd377
