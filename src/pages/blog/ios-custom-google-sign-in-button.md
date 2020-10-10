@@ -1,6 +1,6 @@
 ---
 title: (iOS) Custom Google Sign in Button
-priority: 5
+priority: 6
 thumbnail: /assets/ios-custom-google-signin-button.png
 url: 'https://link.medium.com/jno1cUNiG1'
 date: 2018-04-20T08:00:39.005Z
