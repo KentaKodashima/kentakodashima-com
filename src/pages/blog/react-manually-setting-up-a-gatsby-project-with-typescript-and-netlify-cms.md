@@ -1,6 +1,6 @@
 ---
 title: (React) Manually Setting up a Gatsby Project with Typescript and Netlify CMS
-priority: 3
+priority: 4
 thumbnail: >-
   /assets/manually-setting-up-a-gatsby-project-with-typescript-and-netlify-cms-thumbnail.png
 url: >-
