@@ -14,8 +14,8 @@ appLinks:
 about: >-
   This is the old version of my portfolio. In order to manage the contents
   easily, I created the custom WordPress theme from scratch. Originally, I was
-  using jQuery with CSS3 to make animations. However, I rewrote the JS part with
-  Vanilla JS just for fun.
+  using jQuery with CSS3 to make animations. However, I re-wrote the JS part
+  with Vanilla JS just for fun.
 technologies:
   - WordPress (Custom Theme)
   - Vanilla JS
