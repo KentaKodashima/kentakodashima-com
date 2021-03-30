@@ -28,7 +28,8 @@ about: >-
 
   In this project, I was in charge of developing the Node/Express authentication
   server, GraphQL server and the customer-side UI of the React Native app. I
-  have also automated the builds using App Center and CodePush from Microsoft.
+  have also automated the build process using App Center and CodePush from
+  Microsoft.
 technologies:
   - React Native
   - React Navigation
@@ -42,5 +43,6 @@ technologies:
   - 'AWS (Lambda, S3, Amazon API Gateway, CloudFront and EC2)'
   - OneSignal
   - Sentry
+  - Microsoft App Center / CodePush
 ---
 
