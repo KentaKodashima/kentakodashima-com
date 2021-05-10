@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Portfolio Website
-priority: 2
+priority: 1 High
 categoryType: Web
 thumbnail: /assets/portfolio-thumbnail.png
 thumbnailSubtitle: React / Typescript / Gatsby / Netlify CMS
