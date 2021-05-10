@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Barter Aye
-priority: 1
+priority: 1 High
 categoryType: Mobile
 thumbnail: /assets/barterbay-thumbnail.png
 thumbnailSubtitle: React Native / Node / Express / GraphQL / PostgreSQL / Redux
