@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Yumii Rewards
-priority: 0
+priority: 1 High
 categoryType: Mobile
 thumbnail: /assets/yumii-rewards-thumbnail.png
 thumbnailSubtitle: >-
