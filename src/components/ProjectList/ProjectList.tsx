@@ -7,7 +7,7 @@ import { ProjectThumbnail } from '../ProjectThumbnail'
 const ProjectList: FunctionComponent = () => {
   const data = useStaticQuery(graphql`
     query projectsQuery {
-      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/projects)/.*\\.md$/"}}, sort: {fields: frontmatter___priority}) {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(\/src\/pages\/projects)/.*\\.md$/"}}, sort: {fields: [frontmatter___priority, frontmatter___date]}) {
         edges {
           node {
             fields {

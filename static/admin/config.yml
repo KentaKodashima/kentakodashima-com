@@ -12,7 +12,8 @@ collections:
     fields:
       - { name: 'templateKey', label: 'Template Key', widget: 'hidden', default: 'project-detail' }
       - { name: title, label: Title }
-      - { name: priority, label: Priority, widget: number, default: 0, valueType: int }
+      - { name: priority, label: Priority, widget: select, options: ['1 High', '2 Middle', '3 Low'] }
+      # - { name: priority, label: Priority, widget: number, default: 0, valueType: int }
       - { name: categoryType, label: Media Type, widget: select, options: ['Web', 'Mobile'] }
       - { name: thumbnail, label: Thumbnail Image, widget: image }
       - { name: thumbnailSubtitle, label: Thumbnail Subtitle, widget: string }
