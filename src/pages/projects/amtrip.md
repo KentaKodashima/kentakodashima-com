@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Amtrip
-priority: 3
+priority: 3 Low
 categoryType: Mobile
 thumbnail: /assets/amtrip-thumbnail.png
 thumbnailSubtitle: Swift / Realm
