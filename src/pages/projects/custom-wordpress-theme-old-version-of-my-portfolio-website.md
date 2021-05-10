@@ -1,7 +1,7 @@
 ---
 templateKey: project-detail
 title: Custom WordPress Theme (Old Version of My Portfolio Website)
-priority: 6
+priority: 2 Middle
 categoryType: Web
 thumbnail: /assets/old-portfolio-thumbnail.png
 thumbnailSubtitle: 'WordPress, Vanilla JS, HTML/CSS, Sass'
