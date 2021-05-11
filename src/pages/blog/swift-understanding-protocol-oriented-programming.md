@@ -1,6 +1,6 @@
 ---
 title: (Swift) Understanding Protocol-Oriented Programming
-priority: 9
+priority: 3 Low
 thumbnail: /assets/understanding-protocol-oriented-programming-thumbnail.png
 url: >-
   https://medium.com/@KentaKodashima/swift-understanding-protocol-oriented-programming-bbef282ae922

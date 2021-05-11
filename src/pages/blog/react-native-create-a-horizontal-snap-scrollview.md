@@ -1,6 +1,6 @@
 ---
 title: (React Native) Create a Horizontal Snap ScrollView
-priority: 2
+priority: 1 High
 thumbnail: /assets/create-a-horizontal-snap-scrollview-thumbnail.png
 url: >-
   https://medium.com/@KentaKodashima/react-native-create-a-horizontal-snap-scrollview-e1d01ac3ba09

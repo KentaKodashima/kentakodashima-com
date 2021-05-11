@@ -1,6 +1,6 @@
 ---
 title: '(iOS) ARC: Memory Management in iOS'
-priority: 7
+priority: 3 Low
 thumbnail: /assets/arc-thumbnail.jpeg
 url: >-
   https://medium.com/@KentaKodashima/ios-arc-memory-management-in-ios-30aae3da92cf
