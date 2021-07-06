@@ -12,14 +12,15 @@ appLinks:
       linkType: Web
       url: 'http://tokyo7s.com/'
 about: >-
-  This is the website for Tokyo Sevens Rugby School. They were having critical
-  issues with the previous version of their website and needed the new website
-  as soon as possible.
+  The website for Tokyo Sevens Rugby School. They were having critical issues
+  with the previous version of their website and needed the new website as soon
+  as possible.
 
 
-  The main requirement was to have functionality to post news and letters. In
-  order to deliver the website as soon as possible, I decided to add custom post
-  types based on an existing WordPress theme. Everything was done in a week.
+  The main requirement was to have the functionality to post news and letters.
+  In order to deliver the website as soon as possible, I decided to pick a free
+  WordPress theme and add custom post types to it. Everything was done in a
+  week.
 technologies:
   - HTML / CSS
   - WordPress
