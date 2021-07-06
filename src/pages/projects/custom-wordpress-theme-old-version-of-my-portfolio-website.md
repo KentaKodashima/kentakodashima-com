@@ -12,10 +12,11 @@ appLinks:
       linkType: Web
       url: 'https://old.kentakodashima.com/'
 about: >-
-  This is the old version of my portfolio. In order to manage the contents
+  The old version of my portfolio website. In order to manage the contents
   easily, I created the custom WordPress theme from scratch. Originally, I was
-  using jQuery with CSS3 to make animations. However, I re-wrote the JS part
-  with Vanilla JS just for fun.
+  using jQuery with CSS to implement animations. However, I re-wrote the JS part
+  with pure Javascript to deepen my understanding of DOM manipulation with
+  Javascript.
 technologies:
   - WordPress (Custom Theme)
   - Pure Javascript
