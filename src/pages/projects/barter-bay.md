@@ -27,9 +27,11 @@ about: >-
   React Native app itself. The servers are hosted on AWS.
 
 
-  My responsibility is to maintain the app including the backend and add new
+  My responsibility was to maintain the app including the backend and add new
   features. The trickiest task related to this app was to change the domain name
-  through out the app.
+  throughout the app. In order to make domain changes, I had to go through EC2
+  instances, modify the Nginx configuration and check env variables to make
+  everything work as it is now.
 technologies:
   - React Native
   - Expo
