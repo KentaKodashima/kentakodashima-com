@@ -44,5 +44,6 @@ technologies:
   - OneSignal
   - Sentry
   - Microsoft App Center / CodePush
+  - PM2
 ---
 
