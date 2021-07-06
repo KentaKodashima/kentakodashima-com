@@ -18,7 +18,7 @@ about: >-
   with Vanilla JS just for fun.
 technologies:
   - WordPress (Custom Theme)
-  - Vanilla JS
+  - Pure Javascript
   - HTML/CSS
   - Sass
   - 'Linux (Ubuntu 18.4: DigitalOcean Droplet)'
