@@ -52,17 +52,17 @@ const AboutPage = () => {
               </div>
               <div className={aboutStyles.rightCol}>
                 <h3 className={aboutStyles.sectionTitle}>
-                  A Full-Stack Developer with over 2 years of experience.
+                  A Full-Stack / Software Developer
                 </h3>
                 <div className={aboutStyles.separator}></div>
                 <p className={aboutStyles.paragraph}>
-                  Hi, I’m Kenta, a passionate developer who loves figuring out efficient logics to deliver the best products.
+                  Hi, I’m Kenta, a Full-Stack developer who has a passion for figuring out efficient logics and writing readable code to enhance maintanability.
                 </p>
                 <p className={aboutStyles.paragraph}>
-                  In order to contribute to the developer community, I constantly write articles on Medium. Some of my articles got some attention enough to receive over 200 claps with over 12.2k views.
+                  In order to contribute to the developer community, I constantly write articles on Medium. Some of my articles got some attention enough to receive over 27K views. In march, 2021, I bacame a contributor for "Nerd for Tech", a publisher on Medium.
                 </p>
                 <p className={aboutStyles.paragraph}>
-                  Aside from technologies, I enjoy studying philosophy and playing the piano.
+                  Aside from technologies, I enjoy reading philosophical books, watching movies and playing the piano.
                 </p>
               </div>
             </section>
