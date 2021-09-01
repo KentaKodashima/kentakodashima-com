@@ -27,6 +27,7 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const ogImage = { src:  site.siteMetadata.image, width: 1200, height: 630 }
 
   return (
     <Helmet
@@ -54,7 +55,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: 'og:image',
-          content: site.siteMetadata.image
+          content: ogImage
         },
         {
           name: `twitter:card`,
@@ -80,14 +81,14 @@ const SEO = ({ description, lang, meta, title }) => {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: ``
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 export default SEO
