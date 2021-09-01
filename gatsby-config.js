@@ -19,7 +19,7 @@ module.exports = {
     description: `This is the portfolio website of Kenta Kodashima, a full-stack developer`,
     author: `Kenta Kodashima`,
     url: `https://kentakodashima.com`,
-    image: 'src/images/ogimage.png'
+    image: `${__dirname}/src/images/ogimage.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
