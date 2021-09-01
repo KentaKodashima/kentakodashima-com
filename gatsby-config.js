@@ -18,6 +18,7 @@ module.exports = {
     title: `Kenta Kodashima | Full-Stack Developer`,
     description: `This is the portfolio website of Kenta Kodashima, a full-stack developer`,
     author: `Kenta Kodashima`,
+    siteUrl: `https://kentakodashima.com`,
     url: `https://kentakodashima.com`,
     image: `/assets/ogimage.png`
   },
