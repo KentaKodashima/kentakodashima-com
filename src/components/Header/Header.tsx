@@ -10,7 +10,7 @@ import {
   StyledHeader,
   StyledHeaderContainer,
   StyledHeaderContentWrapper,
-  StyledHeaderLogo
+  StyledHeaderLogo,
 } from './Header.styled'
 import { theme } from '../../themes/theme'
 import CatLogo from '../../images/logo.svg'
@@ -19,7 +19,7 @@ const duration = theme.constants.DURATION
 
 const variants = {
   initial: {
-    opacity: 0
+    opacity: 0,
   },
   enter: {
     opacity: [0, 0.5, 1],
@@ -28,11 +28,11 @@ const variants = {
       delay: duration * 3,
       when: 'beforeChildren',
       staggerChildren: 0.3,
-    }
+    },
   },
   exit: {
-    opacity: 0
-  }
+    opacity: 0,
+  },
 }
 
 const Header = () => {
@@ -40,83 +40,74 @@ const Header = () => {
 
   return (
     <PageTransitionContext.Consumer>
-      {(context: PageTransitionContextType) => (
-        context.direction ?
-        <AnimatePresence>
-          <StyledHeader
-            key={context.location.pathname}
-            variants={variants}
-            initial='initial'
-            animate='enter'
-            exit='exit'
-          >
-            <NavMenu
-              open={open}
-            />
-            <StyledHeaderContainer>
-              <StyledHeaderContentWrapper>
-                <div>
-                  <StyledHeaderLogo>
-                    <Link
-                      to="/"
-                      style={{
-                        // color: `black`,
-                        // textDecoration: `none`,
-                        // fontSize: '50px'
-                        display: 'block'
-                      }}
-                    >
-                      <img src={CatLogo} style={{ width: '50px', margin: 0 }} />
-                      {/* Ks */}
-                    </Link>
-                  </StyledHeaderLogo>
-                </div>
-                <BurgerButton 
-                  open={open}
-                  setOpen={setOpen}
-                />
-              </StyledHeaderContentWrapper>
-            </StyledHeaderContainer>
-          </StyledHeader>
-        </AnimatePresence>
-        :
-        <AnimatePresence>
-          <StyledHeader
-            key={context.location.pathname}
-            initial='initial'
-            animate='enter'
-            exit='exit'
-          >
-            <NavMenu
-              open={open}
-            />
-            <StyledHeaderContainer>
-              <StyledHeaderContentWrapper>
-                <div>
-                  <StyledHeaderLogo>
-                    <Link
-                      to="/"
-                      style={{
-                        // color: `black`,
-                        // textDecoration: `none`,
-                        // fontSize: '50px'
-                        display: 'block'
-                      }}
-                    >
-                      <img src={CatLogo} style={{ width: '50px', margin: 0 }} />
-                      {/* K */}
-                    </Link>
-                  </StyledHeaderLogo>
-                </div>
-                <BurgerButton 
-                  open={open}
-                  setOpen={setOpen}
-                />
-              </StyledHeaderContentWrapper>
-            </StyledHeaderContainer>
-          </StyledHeader>
-        </AnimatePresence>
-      )}
+      {(context: PageTransitionContextType) =>
+        context.direction ? (
+          <AnimatePresence>
+            <StyledHeader
+              key={context.location.pathname}
+              variants={variants}
+              initial="initial"
+              animate="enter"
+              exit="exit"
+            >
+              <NavMenu open={open} />
+              <StyledHeaderContainer>
+                <StyledHeaderContentWrapper>
+                  <div>
+                    <StyledHeaderLogo>
+                      <Link
+                        to="/"
+                        style={{
+                          color: `black`,
+                          textDecoration: `none`,
+                          fontSize: '50px',
+                          display: 'block',
+                        }}
+                      >
+                        {/* <img src={CatLogo} style={{ width: '50px', margin: 0 }} /> */}
+                        K
+                      </Link>
+                    </StyledHeaderLogo>
+                  </div>
+                  <BurgerButton open={open} setOpen={setOpen} />
+                </StyledHeaderContentWrapper>
+              </StyledHeaderContainer>
+            </StyledHeader>
+          </AnimatePresence>
+        ) : (
+          <AnimatePresence>
+            <StyledHeader
+              key={context.location.pathname}
+              initial="initial"
+              animate="enter"
+              exit="exit"
+            >
+              <NavMenu open={open} />
+              <StyledHeaderContainer>
+                <StyledHeaderContentWrapper>
+                  <div>
+                    <StyledHeaderLogo>
+                      <Link
+                        to="/"
+                        style={{
+                          color: `black`,
+                          textDecoration: `none`,
+                          fontSize: '50px',
+                          display: 'block',
+                        }}
+                      >
+                        {/* <img src={CatLogo} style={{ width: '50px', margin: 0 }} /> */}
+                        K
+                      </Link>
+                    </StyledHeaderLogo>
+                  </div>
+                  <BurgerButton open={open} setOpen={setOpen} />
+                </StyledHeaderContentWrapper>
+              </StyledHeaderContainer>
+            </StyledHeader>
+          </AnimatePresence>
+        )
+      }
     </PageTransitionContext.Consumer>
   )
 }

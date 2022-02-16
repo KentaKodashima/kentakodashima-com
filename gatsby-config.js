@@ -1,15 +1,15 @@
-const proxy = require("http-proxy-middleware")
+const proxy = require('http-proxy-middleware')
 
 module.exports = {
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
   developMiddleware: app => {
     app.use(
-      "/.netlify/functions/",
+      '/.netlify/functions/',
       proxy({
-        target: "http://localhost:9000",
+        target: 'http://localhost:9000',
         pathRewrite: {
-          "/.netlify/functions/": "",
+          '/.netlify/functions/': '',
         },
       })
     )
@@ -20,7 +20,7 @@ module.exports = {
     author: `Kenta Kodashima`,
     siteUrl: `https://kentakodashima.com`,
     url: `https://kentakodashima.com`,
-    image: `/assets/ogimage.png`
+    image: `/assets/ogimage.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#F9F9F9`,
         theme_color: `#1F1F1F`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-k.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -46,26 +46,29 @@ module.exports = {
         name: 'media',
       },
     },
-    { // Local images
+    {
+      // Local images
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
-    { // Blog article thumbnails
+    {
+      // Blog article thumbnails
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `articles`,
         path: `${__dirname}/src/pages/blog`,
-      }
+      },
     },
-    { // Project thumbnails
+    {
+      // Project thumbnails
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
         path: `${__dirname}/src/pages/projects`,
-      }
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -75,14 +78,14 @@ module.exports = {
             resolve: `gatsby-remark-relative-images`,
             options: {
               name: `media`,
-            }, 
+            },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWith: 960
-            }
-          }
+              maxWith: 960,
+            },
+          },
         ],
       },
     },
@@ -92,6 +95,6 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
   ],
 }
